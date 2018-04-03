@@ -40,6 +40,7 @@ aside { width: 50%; position: fixed; top: 0; bottom: 0; background-color: rgba(2
 		.portfolio li { padding-left: 1.5em;}
 	#logo { margin-left: -18px ; margin-top: 1em; }
 		#logo img{ width: 100%;}
+	.contact-footer .heading-typeface { margin-right: 20px;}
 
 section { width: 50%; margin-left: 50%; }
 	section .padded { margin: 0 10%; }
@@ -88,11 +89,11 @@ section { width: 50%; margin-left: 50%; }
 /* ----------------------------- */
 aside hr { border: none; border-bottom: 1px solid rgba(90, 2, 14, 0.1); height: 0; margin-top: 0.5em; margin-bottom: 0.5em; }
 .columns { clear: both; }
-.columns ul { width: 50%; float: left; }
+.columns ul { float: left; }
 
 .typeface-colour-secondary, .typeface-colour-secondary a { color: #5A020E; }
 .typeface-colour-white, .typeface-colour-white a { color: #FFF; }
-.contact-footer { font-size: 0.8em; line-height: 1.5em; }
+.contact-footer { font-size: 0.8em; line-height: 1.5em; bottom: 0; position: absolute; margin-bottom: 40px;}
 
 .rs { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
 
@@ -118,6 +119,7 @@ aside hr { border: none; border-bottom: 1px solid rgba(90, 2, 14, 0.1); height: 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	aside { width: 40%; }
 	section { width: 60%; margin-left: 40%; }
+	.columns ul { width: 100%; float: none; }
 }
 
 
@@ -134,6 +136,7 @@ section { width: 70%; margin-left: 30% }
 	section { width: auto; margin-left: 0; }
 	.projectDetails { width: 100%; }
 	.projectMeta { width: 100%; }
+	.contact-footer{ position: relative;}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
