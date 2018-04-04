@@ -1,0 +1,22 @@
+{
+  "name": "peakshift.com",
+  "version": "1.0.0",
+  "description": "Finally a portfolio site.",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server . -p 8080 -i -o -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/peakshift/peakshift-website.git"
+  },
+  "contributors": [
+    "Johns Beharry <johns@peakshift.com>",
+    "Shazelle Isaacs <shazelle@peakshift.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peakshift/peakshift-website/issues"
+  },
+  "homepage": "https://github.com/peakshift/peakshift-website#readme"
+}

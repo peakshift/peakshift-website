@@ -1,7 +1,7 @@
 $(window).load(function(){
-	var domain = 'http://peakshift.com/portfolio';
+	var domain = 'http://127.0.0.1:8080';
 	var router = new Router();
-	router.route('/portfolio/:id', function(id){ console.log(id)});
+	//router.route('/:id', function(id){ console.log(id)});
 
 	History.Adapter.bind(window,'statechange',function() {
 		var State = History.getState()
