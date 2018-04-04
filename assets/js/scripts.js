@@ -1,5 +1,5 @@
 $(window).load(function(){
-	var domain = 'http://127.0.0.1:8080';
+	var domain = 'http://6c59b.peakshift.com';
 	var router = new Router();
 	//router.route('/:id', function(id){ console.log(id)});
 
