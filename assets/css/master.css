@@ -20,9 +20,8 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -webkit-font-smoothing:a
 
 html { overflow-y: scroll; }
 html,body { margin: 0; height: 100%; }
-body { font: 14px/1.8em 'Tisa OT'; color: #505050; }
+body { font: 18px/1.8em 'Tisa OT'; color: #505050; }
 
-h1,h2,h3,h4,h5,h6,p { margin-top: 0; }
 a, h1,h2,h3,h4,h5,h6 { color: #CE0C26; text-decoration: none; }
 hr { border-bottom: 1px solid #EEE; border-width: 0 0 1px; margin: 3em 0; }
 .heading-typeface,h1,h2,h3,h4,h5,h6 { font-family: 'Univers LT Std - 47 Light Condensed'; font-weight: lighter; text-transform: uppercase; }
@@ -32,17 +31,17 @@ hr { border-bottom: 1px solid #EEE; border-width: 0 0 1px; margin: 3em 0; }
 .fill { max-width: 120%; margin-left: -10%;}
 
 
-aside { width: 50%; position: fixed; top: 0; bottom: 0; background-color: rgba(221,30,62,1); color: #FFF; }
+aside { width: 30%; position: fixed; top: 0; bottom: 0; background-color: rgba(221,30,62,1); color: #FFF; }
 	aside .padded { padding: 2em 10% ; width: 80%; max-width: 480px;}
 	aside .intro { font-style: italic; }
 	aside .portfolio { background-color:#fff; list-style-type: none; padding: 0;}
 		.portfolio li:first-child{ color:#5A020E; padding-left: 0.6em; }
 		.portfolio li { padding-left: 1.5em;}
 	#logo { margin-left: -18px ; margin-top: 1em; }
-		#logo img{ width: 100%;}
-	.contact-footer .heading-typeface { margin-right: 20px;}
+		#logo img{ width: 60%;}
+		.contact-footer .columns ul { width: 100%; }
 
-section { width: 50%; margin-left: 50%; }
+section { width: 70%; margin-left: 30%; }
 	section .padded { margin: 0 10%; }
 	section figure { display: block; margin: 0; background-repeat: no-repeat; background-size: 100% auto; overflow: hidden; }
 
@@ -93,7 +92,15 @@ aside hr { border: none; border-bottom: 1px solid rgba(90, 2, 14, 0.1); height: 
 
 .typeface-colour-secondary, .typeface-colour-secondary a { color: #5A020E; }
 .typeface-colour-white, .typeface-colour-white a { color: #FFF; }
-.contact-footer { font-size: 0.8em; line-height: 1.5em; bottom: 0; position: absolute; margin-bottom: 40px;}
+.contact-footer {
+	position: absolute; 
+	font-size: 0.8em; 
+	line-height: 1.5em; 
+	bottom: 0; 
+	left: 10%;
+	right: 10%;
+	margin-bottom: 40px;
+}
 
 .rs { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
 
