@@ -100,6 +100,7 @@ aside hr { border: none; border-bottom: 1px solid rgba(90, 2, 14, 0.1); height: 
 	left: 10%;
 	right: 10%;
 	margin-bottom: 40px;
+	max-width: 480px;
 }
 
 .rs { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
@@ -143,7 +144,12 @@ section { width: 70%; margin-left: 30% }
 	section { width: auto; margin-left: 0; }
 	.projectDetails { width: 100%; }
 	.projectMeta { width: 100%; }
-	.contact-footer{ position: relative;}
+	.contact-footer{
+		position: relative;
+		left: auto;
+		right: auto;
+		margin-bottom: 0;
+	}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
