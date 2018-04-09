@@ -1,0 +1,162 @@
+@font-face {
+	font-family: 'Tisa OT';
+	src: url(/assets/typefaces/TisaOT.otf);
+}
+
+@font-face {
+	font-family: 'Univers LT Std - 47 Light Condensed';
+	src: url(/assets/typefaces/UniversLTStd-Cn.otf);
+}
+
+::-webkit-scrollbar-thumb:vertical { background-color:#DC1D3F; width:6px; border-left: green; }
+::-webkit-scrollbar-thumb:horizontal { background-color:#DC1D3F; height:6px !important; }
+::-webkit-scrollbar { height:6px; width:6px; background-color:#FFF; }
+
+::selection { background: #DC1D3F; color: white; }
+::-moz-selection { background: #DC1D3F; color: white; }
+
+body { color: #141414; font: 400 14px/1.5em "Tisa OT", Georgia, sans-serif; }
+
+.univers-light-condensed, h1,h2,h3,h4,h5,h6, nav { font-family: 'Univers LT Std - 47 Light Condensed'; color: #DC1D3F; margin-top: 0; font-weight: lighter; }
+h1,h2,h3,h4,h5,h6 { font-size: 36px; line-height: 1em; }
+/* link styles */
+a { text-decoration: none; color: #DC1D3F; text-decoration: none; border-bottom: 1px dotted #CCC; -webkit-transition: color 0.25s linear; }
+a:hover, article a:hover { border-bottom: 1px solid #CCC; color: black; }
+
+
+.pad-left { padding-left: 24px; }
+.no-baseline { padding-bottom: 0; margin-bottom: 0; }
+
+.site-nav { position: fixed; background: white; box-shadow: 0 6px 12px white; padding: 10px 0; width: 100%; }
+
+
+.white { color: white }
+.bg-white { background: white; border-bottom: 1px solid red; margin-bottom: 1px; padding: 3px 1em; }
+.black { color: black }
+.roman { font-family: 'Univers LT Std - 47 Light Condensed' }
+.condensed { font-family: 'Univers LT Std - 47 Light Condensed'; }
+.tighten { line-height: 1.6em }
+p.exdent { margin-left: -78px; margin-top: 1em; }
+	p.exdent img { margin: 0; }
+
+.pad-top { padding-top: 28px; }
+aside#masthead, article, .entry-meta, #modal { padding-top: 28px; padding-bottom: 28px; }
+aside#masthead { background: #DC1D3F /* url(http://peakshift.com/assets/splash/pattern.png) */; border: 1px solid #900; border-width: 0 1px 0 0; color: #FFF; position: fixed; top: 0; bottom: 0; }
+	.padded { padding: 0 1.5em 1.5em; }
+	#logo { margin-left: -6px }	
+	#masthead .sections { border: 0 solid white; border-left-width: 3px; }
+	#masthead .sections li { line-height: 32px; background: rgba(0,0,0,0.14); border-bottom: 1px solid rgba(0,0,0,0.18); box-shadow: 0 1px 0 rgba(255,255,255,0.12) }
+	#masthead .sections li:first-child { border-top: 1px solid rgba(0,0,0,0.18); }
+	#masthead .sections a { display: block; padding: 12px; border: 0; text-decoration: none; color: white; }
+
+/* article */
+article { padding-bottom: 3em; }
+	article .entry_content { padding-bottom: 2em; }
+article a { color: #242424;  }
+article a::after { content: '\221E'; display: inline; padding-left: 3px; color: #DDD; border-bottom: 1px solid white; font-size: 1em }
+article a:hover::after { color: #AAA }
+
+article p { margin-bottom: 1em; }
+article p::before { content: ' \00b6'; display: inline; margin: 0 0 0 -2em; width: 2em; display: inline-block; color: #EFEFEF; font-family: "Lucida Grande", Verdana, "Helvetica", Arial; }
+article p:hover::before { color: #CDCDCD; }
+article p:hover, blockquote:hover { color: #141414; border-color: #CCC; }
+	article p.exdent::before { content: ''; display: inline; margin: 0; width: 0; display: inline-block; }
+	article p.exdent:first-child { margin-top: 0; }
+
+/* block quote */
+blockquote {
+padding: 0;
+margin: 0 0 1em;
+border-left: 0;
+}
+blockquote p { margin-bottom: 0.5em; }
+blockquote p::before { color: red; content: ''; padding: 0; }
+
+
+.entry-meta { color: #999; -webkit-transition: all 0.25s linear; }
+.entry-meta:hover { color: #333; }
+	.entry-meta a { color: #666; border: 0; }
+	.entry-meta:hover a { color: #DC1D3F; }
+
+
+.entry-meta, .entry_content, h1 { -webkit-transition: all 0.45s linear; }
+body.comments-open h1 { color: #333;  }
+body.comments-open .entry-meta { opacity: 0.24;  }
+body.comments-open .entry-meta:hover { opacity: 1;  }
+body.comments-open .entry_content { color: #666  }
+
+
+#modal h2 { padding: 0 20px; }
+#modal a.close-comment { border: 0; }
+.comments { font-size: 11px; line-height: 1.5em; font-family: "Lucida Grande"; padding: 0 20px; }
+.comments p { margin-bottom: 11px; }
+
+.comment-form { position: absolute; bottom: 0; width: 100%; background-color: #F6F6F6 }
+	.comment-form .rel { padding: 20px; box-shadow: 10px -15px 20px #F6F6F6 }
+	.comment-form h4 { color: #333; }
+	textarea, input { border: 1px solid #AAA; border-radius: 0; font-size: 11px; margin-bottom: 1em; }
+
+/* nav */
+nav {
+	position: fixed; top: 0; bottom: 0; margin-left: -20px!important;
+	line-height: 60px; overflow: hidden; }
+	
+	nav ul { position: absolute; top: 0; bottom: 0; padding-top: 28px!important; width: 61px; border-right: 1px solid #e0e0e0;  }
+	nav ul li { width: 60px; border: 1px solid #e0e0e0; border-width: 0 0 1px 0; margin-left: 1px!important; }
+	nav ul li:first-child { border-width: 1px 0 1px 0; }
+
+	nav li a { display: block; text-decoration: none; color: #c2c2c2; border: 0;  }
+	nav li a:hover { color: #999; border: 0;  }
+	nav li:hover { background-color: #EFEFEF;  }
+	nav li.text { color: #c2c2c2; padding: 0 1.5em; }
+	nav li a.square { padding: 0; opacity: 0.19; text-indent: -9999px; }
+	.twitter { background: url(http://peakshift.com/assets/splash/img/twitter.png) no-repeat center center;  }
+	.facebook { background: url(http://peakshift.com/assets/splash/img/facebook.png) no-repeat center center;  }
+	nav li a.square:hover { opacity: 0.3; }
+
+
+/**/
+@media only screen and (max-width: 767px) {
+	aside#masthead, nav, nav ul { position: static; top: auto; bottom: auto; border-width: 0 0 1px 0; }
+	nav, nav ul { margin: 0!important; padding: 0!important; width: 100%; }
+	nav ul li { border-width: 0 0 1px 1px; }
+	#mti_wfs_colophon { position: static!important; }
+	#contact-bottom { position: static; bottom: auto; }
+}
+
+
+/* comments */
+html,body { overflow: hidden; height: 100%; }
+.wrapping { width: 100%; height: 100%; overflow-y: auto; }
+#modal { display: none; }
+#pageslide {
+    /* These styles MUST be included. Do not change. */
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    
+    /* Specify the width of your pageslide here */
+    width: 359px;
+    
+    /* These styles are optional, and describe how the pageslide will look */
+/*
+    background-color: #333;
+    color: #FFF;
+    -webkit-box-shadow: inset 0 0 5px 5px #222;
+    -moz-shadow: inset 0 0 5px 5px #222;
+    box-shadow: inset 0 0 5px 5px #222;
+*/
+    /* other style */
+    border-left: 1px solid #e0e0e0;
+    background-color: #F6F6F6
+
+}
+
+/* attr */
+#feedlyMiniIcon { bottom: 3em!important }
+#mti_wfs_colophon { opacity: 0.1; -webkit-transition: all 0.25s linear; }
+#mti_wfs_colophon:hover { opacity: 1 }
+
