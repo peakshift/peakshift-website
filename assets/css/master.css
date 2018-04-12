@@ -149,7 +149,9 @@ aside {
       max-width: 480px; }
       @media only screen and (max-width: 767px) {
         aside .padded .contact-footer {
-          position: relative; } }
+          position: relative;
+          left: auto;
+          right: auto; } }
       aside .padded .contact-footer hr {
         border: none;
         border-bottom: 1px solid rgba(90, 2, 14, 0.1);
