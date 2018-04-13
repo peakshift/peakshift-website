@@ -4,10 +4,11 @@
   "description": "Finally a portfolio site.",
   "main": "index.html",
   "scripts": {
-    "start": "npm run sass-build; npm run server",
+    "start": "npm run sass-build; npm run sass & npm run server",
     "server": "http-server . -p 8080 -i -o -c-1 -P http://127.0.0.1:8080",
-    "sass": "sass --watch assets/sass/master.scss:assets/css/master.css",
-    "sass-build": "sass assets/sass/master.scss:assets/css/master.css"
+    "sass": "node-sass -w assets/sass/master.scss -o assets/css",
+    "sass-build": "npm run cleanup; node-sass assets/sass/master.scss -o assets/css",
+    "cleanup": "rm -rf assets/css/master.css"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/peakshift/peakshift-website/issues"
   },
-  "homepage": "https://github.com/peakshift/peakshift-website#readme"
+  "homepage": "https://github.com/peakshift/peakshift-website#readme",
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
 }
