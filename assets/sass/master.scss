@@ -5,7 +5,7 @@
 
 @font-face {
 	font-family: 'Univers LT Std - 47 Light Condensed';
-	src: url(/assets/typefaces/UniversLTStd-Cn.otf);
+	src: url(../typefaces/UniversLTStd-Cn.otf);
 }
 
 /*
@@ -81,7 +81,8 @@ aside {
 	width: 30%; 
 	position: fixed; 
 	top: 0; 
-	bottom: 0; 
+	bottom: 0;
+	left: 0;
 	background-color: rgba(221,30,62,1); 
 	color: #FFF; 
 	@media only screen and (min-width: 768px) and (max-width: 959px) {

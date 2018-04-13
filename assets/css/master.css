@@ -1,9 +1,11 @@
 @font-face {
   font-family: 'Tisa OT';
   src: url(../typefaces/TisaOT.otf); }
+
 @font-face {
   font-family: 'Univers LT Std - 47 Light Condensed';
-  src: url(/assets/typefaces/UniversLTStd-Cn.otf); }
+  src: url(../typefaces/UniversLTStd-Cn.otf); }
+
 /*
 @font-face {
 	font-family: 'Univers LT Std';
@@ -110,6 +112,7 @@ aside {
   position: fixed;
   top: 0;
   bottom: 0;
+  left: 0;
   background-color: #dd1e3e;
   color: #FFF; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -161,8 +164,8 @@ aside {
       aside .padded .contact-footer .columns {
         clear: both;
         /*.heading-typeface {
-        	margin-right: 20px;
-        }*/ }
+					margin-right: 20px;
+				}*/ }
         aside .padded .contact-footer .columns ul {
           float: left;
           width: 100%;
@@ -252,5 +255,3 @@ section {
       @media only screen and (max-width: 767px) {
         section .contentArea .projectMeta {
           width: 100%; } }
-
-/*# sourceMappingURL=master.css.map */
