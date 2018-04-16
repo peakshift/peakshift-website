@@ -17,10 +17,14 @@
 
 
 html { 
-	font-size: 100%; 
-	-webkit-text-size-adjust: 100%; -webkit-font-smoothing:antialiased; font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+	font-size: 100%;
+	overflow-y: scroll;  
+	-webkit-text-size-adjust: 100%; 
+	-webkit-font-smoothing:antialiased; 
+	font-smoothing:antialiased; 
+	text-rendering:optimizeLegibility; 
+}
 
-html { overflow-y: scroll; }
 html,body { margin: 0; height: 100%; }
 body { font: 18px/1.8em 'Tisa OT'; color: #505050; }
 
@@ -29,9 +33,7 @@ hr { border-bottom: 1px solid #EEE; border-width: 0 0 1px; margin: 3em 0; }
 .heading-typeface,h1,h2,h3,h4,h5,h6 { font-family: 'Univers LT Std - 47 Light Condensed'; font-weight: lighter; text-transform: uppercase; }
 
 #wrapper { height: 100%; }
-.column { float: left; display: inline; }
 .fill { max-width: 120%; margin-left: -10%;}
-
 .typeface-colour-secondary, .typeface-colour-secondary a { color: #5A020E; }
 .typeface-colour-white, .typeface-colour-white a { color: #FFF; }
 .rs { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
@@ -67,29 +69,29 @@ section#mainContent h6 {
 }
 
 .column { 
-	float: left; 
-	display: inline;
-	@media only screen and (max-width: 767px) {
-		position: relative; 
-		float: none; 
-		display: block; 
+	float: none; 
+	display: block;
+	@media only screen and (min-width: 768px) {
+		float: left; 
+		display: inline; 
 	}
 } 
 
 
 aside { 
-	width: 30%; 
-	position: fixed; 
+	width: auto; 
 	top: 0; 
 	bottom: 0;
 	left: 0;
 	background-color: rgba(221,30,62,1); 
 	color: #FFF; 
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	overflow-y: scroll;
+	@media only screen and (min-width: 768px) {
 		width: 40%;
+		position: fixed;
 	}
-	@media only screen and (max-width: 767px) {
-		width: auto; 
+	@media only screen and (min-width: 960px) {
+		width: 30%; 
 	}
 	.padded {
 		 padding: 2em 10% ; 
@@ -118,18 +120,23 @@ aside {
 			}
 		}
 		.contact-footer {
-			position: absolute; 
+			position: relative; 
 			font-size: 0.8em; 
 			line-height: 1.5em; 
 			bottom: 0; 
-			left: 10%;
-			right: 10%;
+			left: auto;
+			right: auto;
 			margin-bottom: 40px;
 			max-width: 480px;
-			@media only screen and (max-width: 767px) {
-				position: relative;
-				left: auto;
-				right: auto;
+			@media only screen and (min-width: 768px) {
+				@media only screen and (max-height: 670px){
+					position: relative;
+					left: auto;
+					right: auto;
+				}
+				position: absolute;
+				left: 10%;
+				right: 10%;
 			}
 			hr { 
 				border: none; 
@@ -140,36 +147,27 @@ aside {
 			.columns { 
 				clear: both; 
 				ul { 
-					float: left; 
+					float: none; 
 					width: 100%;
-					@media only screen and (min-width: 768px) and (max-width: 959px) {
-						width: 100%; 
-						float: none; 
-					}
-					/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-					@media only screen and (max-width: 460px) {
-						width: 100%; 
-						float: none; 
+					@media only screen and (min-width: 460px) {
+						float: left; 
 					}
 				}
-				/*.heading-typeface {
-					margin-right: 20px;
-				}*/
 			}
 		}
 	}
 }
 
 section { 
-	width: 70%; 
-	margin-left: 30%;
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	width: auto; 
+	margin-left: 0;	
+	@media only screen and (min-width: 768px) {
 		width: 60%; 
 		margin-left: 40%; 
 	}
-	@media only screen and (max-width: 767px) {
-		width: auto; 
-		margin-left: 0; 
+	@media only screen and (min-width: 960px) {
+		width: 70%; 
+		margin-left: 30%;
 	} 
 	figure { 
 		display: block; 
@@ -209,10 +207,10 @@ section {
 		padding-bottom: 30px; 
 		padding-top: 45px; 
 		.projectDetails { 
-			width: 65%; 
-			margin-right: 5%; 
-			@media only screen and (max-width: 767px) {
-				width: 100%; 
+			width: 100%; 
+			@media only screen and (min-width: 768px) {
+				width: 65%; 
+				margin-right: 5%; 
 			}
 			ol { 
 				list-style-position: outside; 
@@ -238,15 +236,15 @@ section {
 
 		}
 		.projectMeta { 
-			width: 30%; 
+			width: 100%; 
 			text-align: right; 
 			font-size: 0.8em; 
 			font-style: italic; 
 			padding: 0; 
 			margin-top: 0; 
 			list-style: none inside; 
-			@media only screen and (max-width: 767px) {
-				width: 100%; 
+			@media only screen and (min-width: 768px) {
+				width: 30%; 
 			}
 		}
 	}

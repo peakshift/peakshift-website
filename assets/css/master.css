@@ -14,13 +14,11 @@
 */
 html {
   font-size: 100%;
+  overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
-
-html {
-  overflow-y: scroll; }
 
 html, body {
   margin: 0;
@@ -46,10 +44,6 @@ hr {
 
 #wrapper {
   height: 100%; }
-
-.column {
-  float: left;
-  display: inline; }
 
 .fill {
   max-width: 120%;
@@ -99,28 +93,28 @@ section#mainContent h6 {
   padding-right: 0; }
 
 .column {
-  float: left;
-  display: inline; }
-  @media only screen and (max-width: 767px) {
+  float: none;
+  display: block; }
+  @media only screen and (min-width: 768px) {
     .column {
-      position: relative;
-      float: none;
-      display: block; } }
+      float: left;
+      display: inline; } }
 
 aside {
-  width: 30%;
-  position: fixed;
+  width: auto;
   top: 0;
   bottom: 0;
   left: 0;
   background-color: #dd1e3e;
-  color: #FFF; }
-  @media only screen and (min-width: 768px) and (max-width: 959px) {
+  color: #FFF;
+  overflow-y: scroll; }
+  @media only screen and (min-width: 768px) {
     aside {
-      width: 40%; } }
-  @media only screen and (max-width: 767px) {
+      width: 40%;
+      position: fixed; } }
+  @media only screen and (min-width: 960px) {
     aside {
-      width: auto; } }
+      width: 30%; } }
   aside .padded {
     padding: 2em 10%;
     width: 80%;
@@ -142,19 +136,24 @@ aside {
           color: #5A020E;
           padding-left: 0.6em; }
     aside .padded .contact-footer {
-      position: absolute;
+      position: relative;
       font-size: 0.8em;
       line-height: 1.5em;
       bottom: 0;
-      left: 10%;
-      right: 10%;
+      left: auto;
+      right: auto;
       margin-bottom: 40px;
       max-width: 480px; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (min-width: 768px) {
         aside .padded .contact-footer {
-          position: relative;
-          left: auto;
-          right: auto; } }
+          position: absolute;
+          left: 10%;
+          right: 10%; } }
+  @media only screen and (min-width: 768px) and (max-height: 670px) {
+    aside .padded .contact-footer {
+      position: relative;
+      left: auto;
+      right: auto; } }
       aside .padded .contact-footer hr {
         border: none;
         border-bottom: 1px solid rgba(90, 2, 14, 0.1);
@@ -162,34 +161,25 @@ aside {
         margin-top: 0.5em;
         margin-bottom: 0.5em; }
       aside .padded .contact-footer .columns {
-        clear: both;
-        /*.heading-typeface {
-					margin-right: 20px;
-				}*/ }
+        clear: both; }
         aside .padded .contact-footer .columns ul {
-          float: left;
-          width: 100%;
-          /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */ }
-          @media only screen and (min-width: 768px) and (max-width: 959px) {
+          float: none;
+          width: 100%; }
+          @media only screen and (min-width: 460px) {
             aside .padded .contact-footer .columns ul {
-              width: 100%;
-              float: none; } }
-          @media only screen and (max-width: 460px) {
-            aside .padded .contact-footer .columns ul {
-              width: 100%;
-              float: none; } }
+              float: left; } }
 
 section {
-  width: 70%;
-  margin-left: 30%; }
-  @media only screen and (min-width: 768px) and (max-width: 959px) {
+  width: auto;
+  margin-left: 0; }
+  @media only screen and (min-width: 768px) {
     section {
       width: 60%;
       margin-left: 40%; } }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 960px) {
     section {
-      width: auto;
-      margin-left: 0; } }
+      width: 70%;
+      margin-left: 30%; } }
   section figure {
     display: block;
     margin: 0;
@@ -222,11 +212,11 @@ section {
     padding-bottom: 30px;
     padding-top: 45px; }
     section .contentArea .projectDetails {
-      width: 65%;
-      margin-right: 5%; }
-      @media only screen and (max-width: 767px) {
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
         section .contentArea .projectDetails {
-          width: 100%; } }
+          width: 65%;
+          margin-right: 5%; } }
       section .contentArea .projectDetails ol {
         list-style-position: outside;
         padding-left: 1.2em; }
@@ -245,13 +235,13 @@ section {
             width: 1.2em;
             font-style: normal; }
     section .contentArea .projectMeta {
-      width: 30%;
+      width: 100%;
       text-align: right;
       font-size: 0.8em;
       font-style: italic;
       padding: 0;
       margin-top: 0;
       list-style: none inside; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (min-width: 768px) {
         section .contentArea .projectMeta {
-          width: 100%; } }
+          width: 30%; } }
