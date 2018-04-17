@@ -174,7 +174,12 @@ section {
 		margin: 0; 
 		background-repeat: no-repeat; 
 		background-size: 100% auto; 
-		overflow: hidden; 
+		overflow: hidden;
+		&.cover-photo {
+			height: 80vh;
+			background-position: center center;
+			background-size: cover;
+		}
 		&.active{
 			img {
 				-webkit-transform: translate(0, 0);

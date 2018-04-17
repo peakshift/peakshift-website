@@ -186,6 +186,10 @@ section {
     background-repeat: no-repeat;
     background-size: 100% auto;
     overflow: hidden; }
+    section figure.cover-photo {
+      height: 80vh;
+      background-position: center center;
+      background-size: cover; }
     section figure.active img {
       -webkit-transform: translate(0, 0);
       -moz-transform: translate(0, 0);
