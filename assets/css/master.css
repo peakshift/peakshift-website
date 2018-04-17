@@ -107,7 +107,7 @@ aside {
   left: 0;
   background-color: #dd1e3e;
   color: #FFF;
-  overflow-y: scroll; }
+  overflow-y: auto; }
   @media only screen and (min-width: 768px) {
     aside {
       width: 40%;
@@ -149,7 +149,7 @@ aside {
           position: absolute;
           left: 10%;
           right: 10%; } }
-  @media only screen and (min-width: 768px) and (max-height: 670px) {
+  @media only screen and (min-width: 768px) and (max-height: 640px) {
     aside .padded .contact-footer {
       position: relative;
       left: auto;
