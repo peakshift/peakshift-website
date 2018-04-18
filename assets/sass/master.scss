@@ -1,28 +1,28 @@
 @font-face {
-	font-family: 'Tisa OT';
-	src: url(../typefaces/TisaOT.otf);
+  font-family: 'Tisa OT';
+  src: url(../typefaces/TisaOT.otf);
 }
 
 @font-face {
-	font-family: 'Univers LT Std - 47 Light Condensed';
-	src: url(../typefaces/UniversLTStd-Cn.otf);
+  font-family: 'Univers LT Std - 47 Light Condensed';
+  src: url(../typefaces/UniversLTStd-Cn.otf);
 }
 
 /*
 @font-face {
-	font-family: 'Univers LT Std';
-	src: url(../typefaces/UniversLTStd-Cn.otf);
+  font-family: 'Univers LT Std';
+  src: url(../typefaces/UniversLTStd-Cn.otf);
 }
 */
 
 
 html { 
-	font-size: 100%;
-	overflow-y: scroll;  
-	-webkit-text-size-adjust: 100%; 
-	-webkit-font-smoothing:antialiased; 
-	font-smoothing:antialiased; 
-	text-rendering:optimizeLegibility; 
+  font-size: 100%;
+  overflow-y: scroll;  
+  -webkit-text-size-adjust: 100%; 
+  -webkit-font-smoothing:antialiased; 
+  font-smoothing:antialiased; 
+  text-rendering:optimizeLegibility; 
 }
 
 html,body { margin: 0; height: 100%; }
@@ -41,19 +41,19 @@ hr { border-bottom: 1px solid #EEE; border-width: 0 0 1px; margin: 3em 0; }
 section#mainContent h4,
 section#mainContent h5,
 section#mainContent h6 { 
-	color: #505050; 
+  color: #505050; 
 }
 
 .clearfix { zoom: 1; }
 .clearfix:after { clear: both; }
 .clearfix:before,
 .clearfix:after {
-	content: '\0020';
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-	height: 0; 
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; 
 }
 
 .list-unstyled,
@@ -69,188 +69,189 @@ section#mainContent h6 {
 }
 
 .column { 
-	float: none; 
-	display: block;
-	@media only screen and (min-width: 768px) {
-		float: left; 
-		display: inline; 
-	}
+  float: none; 
+  display: block;
+  @media only screen and (min-width: 768px) {
+    float: left; 
+    display: inline; 
+  }
 } 
 
 
 aside { 
-	width: auto; 
-	top: 0; 
-	bottom: 0;
-	left: 0;
-	background-color: rgba(221,30,62,1); 
-	color: #FFF; 
-	overflow-y: auto;
-	@media only screen and (min-width: 768px) {
-		width: 40%;
-		position: fixed;
-	}
-	@media only screen and (min-width: 960px) {
-		width: 30%; 
-	}
-	.padded {
-		 padding: 2em 10% ; 
-		 width: 80%; 
-		 max-width: 480px;
-		#logo { 
-			margin-left: -7%; 
-			margin-top: 1em; 
-			img{ 
-				width: 60%;
-			}
-		}
-		.intro { 
-			font-style: italic;
-		}
-		.portfolio { 
-			background-color:#fff; 
-			list-style-type: none; 
-			padding: 0;
-			li {
-				padding-left: 1.5em;
-				&:first-child{ 
-					color:#5A020E; 
-					padding-left: 0.6em;
-				}
-			}
-		}
-		.contact-footer {
-			position: relative; 
-			font-size: 0.8em; 
-			line-height: 1.5em; 
-			bottom: 0; 
-			left: auto;
-			right: auto;
-			margin-bottom: 40px;
-			max-width: 480px;
-			@media only screen and (min-width: 768px) {
-				@media only screen and (max-height: 640px){
-					position: relative;
-					left: auto;
-					right: auto;
-				}
-				position: absolute;
-				left: 10%;
-				right: 10%;
-			}
-			hr { 
-				border: none; 
-				border-bottom: 1px solid rgba(90, 2, 14, 0.1); 
-				height: 0; margin-top: 0.5em; 
-				margin-bottom: 0.5em; 
-			}			
-			.columns { 
-				clear: both; 
-				ul { 
-					float: none; 
-					width: 100%;
-					@media only screen and (min-width: 460px) {
-						float: left; 
-					}
-				}
-			}
-		}
-	}
+  width: auto; 
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  background-color: rgba(221,30,62,1); 
+  color: #FFF; 
+  overflow-y: auto;
+  @media only screen and (min-width: 768px) {
+    width: 40%;
+    position: fixed;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 30%; 
+  }
+  .padded {
+     padding: 2em 10% ; 
+     width: 80%; 
+     max-width: 480px;
+    #logo { 
+      margin-left: -7%; 
+      margin-top: 1em; 
+      img{ 
+        width: 60%;
+      }
+    }
+    .intro { 
+      font-style: italic;
+    }
+    .portfolio { 
+      background-color:#fff; 
+      list-style-type: none; 
+      padding: 0;
+      li {
+        padding-left: 1.5em;
+        &:first-child{ 
+          color:#5A020E; 
+          padding-left: 0.6em;
+        }
+      }
+    }
+    .contact-footer {
+      position: relative; 
+      font-size: 0.8em; 
+      line-height: 1.5em; 
+      bottom: 0; 
+      left: auto;
+      right: auto;
+      margin-bottom: 40px;
+      max-width: 480px;
+      @media only screen and (min-width: 768px) {
+        @media only screen and (max-height: 640px){
+          position: relative;
+          left: auto;
+          right: auto;
+        }
+        position: absolute;
+        left: 10%;
+        right: 10%;
+      }
+      hr { 
+        border: none; 
+        border-bottom: 1px solid rgba(90, 2, 14, 0.1); 
+        height: 0; margin-top: 0.5em; 
+        margin-bottom: 0.5em; 
+      }     
+      .columns { 
+        clear: both; 
+        ul { 
+          float: none; 
+          width: 100%;
+          @media only screen and (min-width: 460px) {
+            float: left; 
+          }
+        }
+      }
+    }
+  }
 }
 
 section { 
-	width: auto; 
-	margin-left: 0;	
-	@media only screen and (min-width: 768px) {
-		width: 60%; 
-		margin-left: 40%; 
-	}
-	@media only screen and (min-width: 960px) {
-		width: 70%; 
-		margin-left: 30%;
-	} 
-	figure { 
-		display: block; 
-		margin: 0; 
-		background-repeat: no-repeat; 
-		background-size: 100% auto; 
-		overflow: hidden;
-		&.cover-photo {
-			height: 80vh;
-			background-position: center center;
-			background-size: cover;
-		}
-		&.active{
-			img {
-				-webkit-transform: translate(0, 0);
-				-moz-transform: translate(0, 0);
-				-ms-transform: translate(0, 0);
-				-o-transform: translate(0, 0);
-				transform: translate(0, 0);
-				opacity: 1;
-			}
-		}
-		img {
-			-webkit-transition: all 0.25s ease-in-out;
-			-moz-transition: all 0.25s ease-in-out;
-			-ms-transition: all 0.25s ease-in-out;
-			-o-transition: all 0.25s ease-in-out;
-			transition: all 0.25s ease-in-out;
-			-webkit-transform: translate(0, 80%);
-			-moz-transform: translate(0, 80%);
-			-ms-transform: translate(0, 80%);
-			-o-transform: translate(0, 80%);
-			transform: translate(0, 80%);
-			width: 120%;
-			opacity: 0;
-	  	}
-	}
-	.padded { 
-		margin: 0 10%; 
-	}
-	.contentArea { 
-		padding-bottom: 30px; 
-		padding-top: 45px; 
-		.projectDetails { 
-			width: 100%; 
-			@media only screen and (min-width: 768px) {
-				width: 65%; 
-				margin-right: 5%; 
-			}
-			ol { 
-				list-style-position: outside; 
-				padding-left: 1.2em; 
-			}
-			ul {
-			    font-family: 'Tisa OT';
-			    color:#7f7f7f;
-			    padding-left: 0;
-			    list-style-type: none;
-			    list-style-position: inside;
-			    li { 
-			    	padding-left: 0; 
-			    	&:before {
-					    content: '\203A';
-					    color: #DD1E3E;
-					    display: inline-block;
-					    width: 1.2em;
-					    font-style: normal;
-					}
-			    }
-			}
+  width: auto; 
+  margin-left: 0; 
+  @media only screen and (min-width: 768px) {
+    width: 60%; 
+    margin-left: 40%; 
+  }
+  @media only screen and (min-width: 960px) {
+    width: 70%; 
+    margin-left: 30%;
+  } 
+  figure { 
+    display: block; 
+    margin: 0; 
+    background-repeat: no-repeat; 
+    background-size: 100% auto; 
+    overflow: hidden;
+    &.cover-photo {
+      height: 80vh;
+      background-position: center center;
+      background-size: cover;
+    }
+    &.active{
+      img {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+    img {
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -ms-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      -webkit-transform: translate(0, 80%);
+      -moz-transform: translate(0, 80%);
+      -ms-transform: translate(0, 80%);
+      -o-transform: translate(0, 80%);
+      transform: translate(0, 80%);
+      width: 120%;
+      opacity: 0;
+      }
+  }
+  .padded { 
+    margin: 0 10%; 
+  }
+  .contentArea { 
+    padding-bottom: 30px; 
+    padding-top: 45px; 
+    .projectDetails { 
+      width: 100%; 
+      @media only screen and (min-width: 768px) {
+        width: 65%; 
+        margin-right: 5%; 
+      }
+      ol { 
+        list-style-position: outside; 
+        padding-left: 1.2em; 
+      }
+      ul {
+        font-family: 'Tisa OT';
+        color:#7f7f7f;
+        padding-left: 0;
+        list-style-type: none;
+        list-style-position: inside;
+        li { 
+          padding-left: 0; 
+          &:before {
+            content: '\203A';
+            color: #DD1E3E;
+            display: inline-block;
+            width: 1.2em;
+            margin-left: -1.2em;
+            font-style: normal;
+          }
+        }
+      }
 
-		}
-		.projectMeta { 
-			width: 100%; 
-			text-align: right; 
-			font-size: 0.8em; 
-			font-style: italic; 
-			padding: 0; 
-			margin-top: 0; 
-			list-style: none inside; 
-			@media only screen and (min-width: 768px) {
-				width: 30%; 
-			}
-		}
-	}
+    }
+    .projectMeta { 
+      width: 100%; 
+      text-align: right; 
+      font-size: 0.8em; 
+      font-style: italic; 
+      padding: 0; 
+      margin-top: 0; 
+      list-style: none inside; 
+      @media only screen and (min-width: 768px) {
+        width: 30%; 
+      }
+    }
+  }
 }

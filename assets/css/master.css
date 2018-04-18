@@ -8,8 +8,8 @@
 
 /*
 @font-face {
-	font-family: 'Univers LT Std';
-	src: url(../typefaces/UniversLTStd-Cn.otf);
+  font-family: 'Univers LT Std';
+  src: url(../typefaces/UniversLTStd-Cn.otf);
 }
 */
 html {
@@ -237,6 +237,7 @@ section {
             color: #DD1E3E;
             display: inline-block;
             width: 1.2em;
+            margin-left: -1.2em;
             font-style: normal; }
     section .contentArea .projectMeta {
       width: 100%;
