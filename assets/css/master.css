@@ -124,6 +124,9 @@ aside {
       margin-top: 1em; }
       aside .padded #logo img {
         width: 60%; }
+    aside .padded #portfolioLinks a {
+      color: #FFF;
+      text-decoration: underline; }
     aside .padded .intro {
       font-style: italic; }
     aside .padded .portfolio {
@@ -250,3 +253,51 @@ section {
       @media only screen and (min-width: 768px) {
         section .contentArea .projectMeta {
           width: 30%; } }
+
+.imgs {
+  width: 200px;
+  margin-bottom: 10%; }
+  @media only screen and (min-width: 960px) {
+    .imgs {
+      float: right; } }
+
+.imgs img {
+  width: 100%; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: black;
+  /* Black w/ opacity */ }
+
+.modal div {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  position: relative;
+  margin: 2% auto;
+  padding: 5px 15px; }
+
+.modal div img {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .modal div img {
+      width: 20%; } }
+
+.close, .close1, .close2, .close3 {
+  color: white;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer; }

@@ -20,8 +20,7 @@ $(window).load(function(){
 		});
 
 	});
-
-	$('a').click(function(e){
+	$('#portfolioLinks a').click(function(e){
 		e.preventDefault();
 		var theLink = $(this).data('fetch');
 		console.log(theLink);
