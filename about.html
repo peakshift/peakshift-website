@@ -34,7 +34,7 @@
 <div id="wrapper">
   <aside id="mainSide" class="column">
     <div class="padded">  
-      <div id="logo"><a href="/"><img src="/assets/i/logo.svg"></a></div>
+      <div id="logo"><a href="/" data-fetch="/index.html"><img src="/assets/i/logo.svg"></a></div>
       <h2 id="portfolioLinks" style="color: #FFF;margin: 1em 0 0;">We craft digital products for <a href="/portfolio/mindsky" data-fetch="/item/mindsky.html">web</a>, <a href="/portfolio/lemariku" data-fetch="/item/lemariku.html">mobile</a> &amp; blockchain.</h2>
 
       <div class="contact-footer typeface-colour-secondary">
@@ -75,8 +75,94 @@
   </aside>
   
   <section id="mainContent" class="column">
-    <figure style="background-image:url('/assets/content/team.jpg');" class="cover-photo active">
+    <figure class="active">
+      <h1 id="team"> Meet the team </h1>
+      <div id="first" class="card">
+        <img src="/assets/content/johns.jpg" style="width:80%;" alt="Johns Beharry">
+        <div class="container">
+          <h4><b>Johns Beharry</b></h4> 
+          <p>Principal</p> 
+        </div>
+      </div>
+
+      <div id="second" class="card">
+        <img src="/assets/content/Early.jpg" style="width:80%;" alt="Early Charlemagne">
+        <div class="container">
+          <h4><b>Early Charlemagne</b></h4> 
+          <p>Web Developer</p> 
+        </div>
+      </div>
+
+      <div id="third" class="card">
+        <img src="/assets/content/Selimira.jpg" style="width:80%;" alt="Selimira Dimitrova">
+        <div class="container">
+          <h4><b>Selimira Dimitrova</b></h4> 
+          <p>Digital Marketing Strategist</p>
+        </div> 
+      </div>
+
+      <div id="fourth" class="card">
+        <img src="/assets/content/Shazelle.png" style="width:80%;" alt="Shazelle Isaacs">
+        <div class="container">
+          <h4><b>Shazelle Isaacs</b></h4> 
+          <p>Junior Web Developer</p>
+        </div>
+      </div>
     </figure>
+    <!-----Modal images---------->    
+      <div id="myModal" class="modal">
+        <div>
+          <span class="close">x</span>
+          <img src="/assets/content/johns.jpg"><br/>
+          <b> Johns Beharry </b>
+          <p> Principal </p>
+          <p> As the principal of Peak Shift Inc., Johns coordinates the team, leading interface design, development, and integration tasks.<br/>
+          Johns has spent nearly a decade helping businesses and startups with digital design and development services. He founded the Caribbean-based (Saint Lucia) web agency Peak Shift Inc. in 2012, which merges technology and design to solve business problems.</p>
+
+          <p>“Just me, my soylent and my machine.”</p>
+        </div>
+      </div>
+      
+      <div id="myModal1" class="modal">
+        <div>
+          <span class="close1">x</span>
+          <img src="/assets/content/Early.jpg"><br/>
+          <b> Early Charelmagne </b>
+          <p> Web Developer </p>
+          <p> Early is a motivated individual with a passion for web technology. He is tasked with the front-end and back-end development of websites.<br/>
+          He recently graduated with a bachelor’s degree in finance at the School of Business and Economics in Amsterdam. Although involved in finance, he has pursued his passion for IT over the years to become a programmer. His practiced finance in the hospitality industry for Sandals, a leading resort in the Caribbean. Thereafter, he started working for Peak Shift Inc., as a web developer.</p>
+
+          <p>“I'm up for anything....just not school.”</p>
+        </div>
+      </div>
+
+      <div id="myModal2" class="modal">
+        <div>
+          <span class="close2">x</span>
+          <img src="/assets/content/Selimira.jpg"><br/>
+          <b> Selimira Dimitrova </b>
+          <p> Digital Marketing Strategist </p>
+          <p> Selimira is part of the Peak Shift Inc. team and in charge of optimizing digital marketing efforts as well as web design. <br/>
+          Born in Sofia, Bulgaria, Selimira is currently based in London. She's passionate about exploring as many places and cultures as possible. She enjoys photography and recently found out that she is fascinated by the underwater world, ​so scuba diving and snorkeling have become fun pastimes too.<br/>
+          She has worked with Peak Shift Inc. since January 2015 on multiple projects from various industries. She is studying for a Bachelor of Arts in International Marketing with German at the University of Westminster in London with a focus on brand management, research, expansion strategy, and strategic marketing planning.</p>
+
+          <p>“Thinking of Sun, Sand and Sea.” </p>
+        </div>
+      </div>
+
+      <div id="myModal3" class="modal">
+        <div>
+          <span class="close3">x</span>
+          <img src="/assets/content/Shazelle.png"><br/>
+          <b> Shazelle Isaacs </b>
+          <p> Junior Web Developer </p>
+          <p> Shazelle is the newest member of the Peak Shift team. Hailing from the beautiful multi-island caribbean nation of St. Vincent &amp; the Grenadines, she is fluent in laughing and sarcasm. She enjoys brain teasers and problem solving which lends to her passion of programming.<br/>
+          She graduated with a bachelor's degree in Computer Science and Management and is currently working on finding her niche in this vast technological world.
+
+          <p>"Ooh, awesome!"</p>
+        </div>
+      </div>
+      
     <div class="contentArea padded clearfix">
       <div class="projectDetails column">
         <blockquote>
@@ -118,7 +204,7 @@
         </div> 
       </div>        
       <ul class="projectMeta column">
-        <li><a href="http://6c59b.peakshift.com/journal/" target="_blank"> Read Our Minds &rarr;</a></li>
+        <li><a href="/journal" target="_blank"> Read Our Minds &rarr;</a></li>
         <li>Peak Shift Ltd.</li>
       </ul>
     </div>

@@ -189,6 +189,8 @@ section {
     background-repeat: no-repeat;
     background-size: 100% auto;
     overflow: hidden; }
+    section figure #team {
+      text-align: center; }
     section figure.cover-photo {
       height: 80vh;
       background-position: center center;
@@ -215,6 +217,31 @@ section {
       opacity: 0; }
   section .padded {
     margin: 0 10%; }
+  section .card {
+    width: 100%;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 5%;
+    min-height: 320px;
+    cursor: pointer; }
+    @media only screen and (min-width: 768px) {
+      section .card {
+        float: left;
+        width: 50%; } }
+    @media only screen and (min-width: 960px) {
+      section .card {
+        width: 25%; } }
+    section .card img {
+      margin: 2% auto;
+      display: block; }
+    section .card .container {
+      padding: 2px 16px; }
+      section .card .container h4, section .card .container p {
+        margin: 0;
+        text-align: center; }
+    section .card:hover {
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.6); }
   section .contentArea {
     padding-bottom: 30px;
     padding-top: 45px; }
@@ -253,16 +280,6 @@ section {
       @media only screen and (min-width: 768px) {
         section .contentArea .projectMeta {
           width: 30%; } }
-
-.imgs {
-  width: 200px;
-  margin-bottom: 10%; }
-  @media only screen and (min-width: 960px) {
-    .imgs {
-      float: right; } }
-
-.imgs img {
-  width: 100%; }
 
 .modal {
   display: none;
