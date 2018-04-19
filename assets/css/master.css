@@ -261,7 +261,7 @@ section {
         list-style-type: none;
         list-style-position: inside; }
         section .contentArea .projectDetails ul li {
-          padding-left: 0; }
+          padding-left: 1.2em; }
           section .contentArea .projectDetails ul li:before {
             content: '\203A';
             color: #DD1E3E;
