@@ -181,9 +181,6 @@ section {
     background-repeat: no-repeat; 
     background-size: 100% auto; 
     overflow: hidden;
-    #team{
-      text-align: center;
-    }
     &.cover-photo {
       height: 80vh;
       background-position: center center;
@@ -219,11 +216,8 @@ section {
   }
   .card{
     width: 100%;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     margin-bottom: 5%;
-    min-height: 320px;
     cursor: pointer;
     @media only screen and (min-width: 768px) {
       float: left;
@@ -242,9 +236,6 @@ section {
         margin: 0;
         text-align: center;
       }
-    }
-    &:hover {
-      box-shadow: 0 12px 24px 0 rgba(0,0,0,0.6);
     }
   }
   .contentArea { 
