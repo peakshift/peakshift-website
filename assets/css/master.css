@@ -274,7 +274,7 @@ section {
         section .contentArea .projectMeta {
           width: 30%; } }
 
-.modal {
+.team-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -288,26 +288,94 @@ section {
   /* Fallback color */
   background-color: black;
   /* Black w/ opacity */ }
+  .team-modal div {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    position: relative;
+    margin: 2% auto;
+    padding: 5px 15px; }
+    .team-modal div .close, .team-modal div .close1, .team-modal div .close2, .team-modal div .close3 {
+      color: white;
+      float: right;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer; }
+    .team-modal div img {
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .team-modal div img {
+          width: 20%; } }
 
-.modal div {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 80%;
-  position: relative;
-  margin: 2% auto;
-  padding: 5px 15px; }
+article p::before {
+  content: ' \00b6';
+  display: inline;
+  margin: 0 0 0 -2em;
+  width: 2em;
+  display: inline-block;
+  color: #EFEFEF;
+  font-family: "Lucida Grande", Verdana, "Helvetica", Arial; }
 
-.modal div img {
+article a {
+  text-decoration: none;
+  color: #505050;
+  border-bottom: 1px dotted #CCC;
+  -webkit-transition: color 0.25s linear; }
+
+article a:hover {
+  border-bottom: 1px solid #CCC;
+  color: black; }
+
+article a::after {
+  content: '\221E';
+  display: inline;
+  padding-left: 3px;
+  color: #DDD;
+  border-bottom: 1px solid white;
+  font-size: 1em; }
+
+article blockquote p::before {
+  color: red;
+  content: '';
+  padding: 0; }
+
+cite::before {
+  content: '\2014 \00A0'; }
+
+cite {
+  display: block;
+  line-height: 18px;
+  color: #999999;
+  font-size: 13px; }
+
+.entry-meta:hover {
+  color: #333; }
+  .entry-meta:hover a {
+    color: #DC1D3F; }
+
+.entry-meta {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #999;
+  text-align: right;
   width: 100%; }
-  @media only screen and (min-width: 768px) {
-    .modal div img {
-      width: 20%; } }
 
-.close, .close1, .close2, .close3 {
-  color: white;
-  float: right;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer; }
+.entry-meta a {
+  color: #666;
+  border: 0; }
+
+.rs {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  list-style: inside none; }
+
+.small {
+  font-size: 0.8em; }
