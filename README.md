@@ -8,7 +8,7 @@
 
 - node
 - npm
-- sass
+
 
 
 ### Setup: 
@@ -18,8 +18,8 @@
 
 ### Compile and Run:
 
+- run `npm install` to download the dependencies
 - run `npm start` to get the development server running
-- run `npm run sass` to watch the sass file for changes and automatically compile the css
 
 
 ### Who do I talk to?
