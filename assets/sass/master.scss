@@ -242,9 +242,15 @@ section {
     padding-bottom: 30px; 
     padding-top: 45px;
     .articleTitle {
-      font-size: 36px;
+      font-size: 35px;
       line-height: 48px;
-      width: 65%;
+      width: 100%;
+      @media only screen and (min-width: 768px){
+        width: 85%;
+      }
+      @media only screen and (min-width: 960px){
+        width: 65%;
+      }
     }
     .projectDetails { 
       width: 100%; 
@@ -328,7 +334,21 @@ section {
 }
 
 article{
+  .exdent { 
+    margin-top: 1em; 
+    img { 
+      width: 100%;
+      margin: 0; 
+    }
+  }
   p {
+    &:hover { 
+      color: #141414; 
+      border-color: #CCC;
+      &::before {
+        color: #CDCDCD; 
+      } 
+    }
     &::before {
       content: ' \00b6';
       display: inline;
@@ -346,7 +366,10 @@ article{
     -webkit-transition: color 0.25s linear;
     &:hover { 
       border-bottom: 1px solid #CCC; 
-      color: black; 
+      color: black;
+      &::after { 
+        color: #AAA;
+      } 
     }
     &::after {
       content: '\221E';
@@ -418,6 +441,10 @@ blockquote {
     &::before {
       content: '\2014 \00A0';
     }
+  }
+  &:hover { 
+    color: #141414; 
+    border-color: #CCC; 
   }
 }
 

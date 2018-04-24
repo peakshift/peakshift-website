@@ -239,9 +239,15 @@ section {
     padding-bottom: 30px;
     padding-top: 45px; }
     section .contentArea .articleTitle {
-      font-size: 36px;
+      font-size: 35px;
       line-height: 48px;
-      width: 65%; }
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
+        section .contentArea .articleTitle {
+          width: 85%; } }
+      @media only screen and (min-width: 960px) {
+        section .contentArea .articleTitle {
+          width: 65%; } }
     section .contentArea .projectDetails {
       width: 100%; }
       @media only screen and (min-width: 768px) {
@@ -313,6 +319,18 @@ section {
         .team-modal div img {
           width: 20%; } }
 
+article .exdent {
+  margin-top: 1em; }
+  article .exdent img {
+    width: 100%;
+    margin: 0; }
+
+article p:hover {
+  color: #141414;
+  border-color: #CCC; }
+  article p:hover::before {
+    color: #CDCDCD; }
+
 article p::before {
   content: ' \00b6';
   display: inline;
@@ -330,6 +348,8 @@ article a {
   article a:hover {
     border-bottom: 1px solid #CCC;
     color: black; }
+    article a:hover::after {
+      color: #AAA; }
   article a::after {
     content: '\221E';
     display: inline;
@@ -388,3 +408,7 @@ blockquote cite {
   font-size: 13px; }
   blockquote cite::before {
     content: '\2014 \00A0'; }
+
+blockquote:hover {
+  color: #141414;
+  border-color: #CCC; }
