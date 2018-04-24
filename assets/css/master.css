@@ -334,6 +334,18 @@ article a {
     border-bottom: 1px solid white;
     font-size: 1em; }
 
+article pre {
+  font-size: small;
+  margin: 0;
+  background: #f7f7f7;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre; }
+  article pre code {
+    display: block;
+    word-wrap: normal;
+    overflow-x: auto; }
+
 .entry-meta {
   margin: 0;
   padding: 0;

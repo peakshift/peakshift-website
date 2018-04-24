@@ -352,6 +352,19 @@ article{
       font-size: 1em;
     }
   }
+  pre {
+    font-size: small;
+    margin: 0;
+    background: #f7f7f7;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    code {
+      display: block;
+      word-wrap: normal;
+      overflow-x: auto;
+    }
+  }
 }
 .entry-meta{
   margin: 0;
