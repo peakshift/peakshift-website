@@ -337,14 +337,20 @@ article a {
 article pre {
   font-size: small;
   margin: 0;
-  background: #f7f7f7;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre; }
   article pre code {
     display: block;
     word-wrap: normal;
-    overflow-x: auto; }
+    overflow-x: auto;
+    padding: 0; }
+
+article code {
+  background: #f7f7f7;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  border-radius: 2px; }
 
 .entry-meta {
   margin: 0;
