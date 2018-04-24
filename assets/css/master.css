@@ -238,6 +238,10 @@ section {
   section .contentArea {
     padding-bottom: 30px;
     padding-top: 45px; }
+    section .contentArea .articleTitle {
+      font-size: 36px;
+      line-height: 48px;
+      width: 65%; }
     section .contentArea .projectDetails {
       width: 100%; }
       @media only screen and (min-width: 768px) {
