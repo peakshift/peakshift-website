@@ -335,10 +335,16 @@ section {
 
 article{
   .exdent { 
-    margin-top: 1em; 
+    margin-top: 1em;
+    margin-left: -10%;
+    margin-right: -10%;
+    @media only screen and (min-width: 768px) {
+      margin-right: 5%; 
+      margin-left: -15%;
+    }
     img { 
       width: 100%;
-      margin: 0; 
+      margin: 0;
     }
   }
   p {
@@ -407,6 +413,7 @@ article{
   text-align: right;
   width: 100%; 
   list-style: inside none;
+  -webkit-transition: all 0.25s linear;
   &.small {
     font-size: 0.8em;
   }

@@ -320,7 +320,13 @@ section {
           width: 20%; } }
 
 article .exdent {
-  margin-top: 1em; }
+  margin-top: 1em;
+  margin-left: -10%;
+  margin-right: -10%; }
+  @media only screen and (min-width: 768px) {
+    article .exdent {
+      margin-right: 5%;
+      margin-left: -15%; } }
   article .exdent img {
     width: 100%;
     margin: 0; }
@@ -382,7 +388,8 @@ article code {
   color: #999;
   text-align: right;
   width: 100%;
-  list-style: inside none; }
+  list-style: inside none;
+  -webkit-transition: all 0.25s linear; }
   .entry-meta.small {
     font-size: 0.8em; }
   @media only screen and (min-width: 768px) {
