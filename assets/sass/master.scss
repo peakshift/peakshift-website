@@ -107,7 +107,7 @@ aside {
     #portfolioLinks{
       a{
         color: #FFF;
-        text-decoration: underline;
+        border-bottom: 2px solid #FFF;
       }
     }
     .intro { 
@@ -401,7 +401,7 @@ article{
   }
 }
 .entry-meta{
-  margin: 0;
+  margin: 1em 0 0;
   padding: 0;
   color: #999;
   text-align: right;

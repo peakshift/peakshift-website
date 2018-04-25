@@ -126,7 +126,7 @@ aside {
         width: 60%; }
     aside .padded #portfolioLinks a {
       color: #FFF;
-      text-decoration: underline; }
+      border-bottom: 2px solid #FFF; }
     aside .padded .intro {
       font-style: italic; }
     aside .padded .portfolio {
@@ -377,7 +377,7 @@ article code {
   border-radius: 2px; }
 
 .entry-meta {
-  margin: 0;
+  margin: 1em 0 0;
   padding: 0;
   color: #999;
   text-align: right;
