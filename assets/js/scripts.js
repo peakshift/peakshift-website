@@ -20,12 +20,6 @@ $(window).load(function(){
 		});
 
 	});
-	$('#portfolioLinks a').click(function(e){
-		e.preventDefault();
-		var theLink = $(this).data('fetch');
-		console.log(theLink);
-		router.navigate(theLink);
-	});
 });
 
 $(document).ready(function(){
