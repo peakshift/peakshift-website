@@ -277,6 +277,20 @@ section {
             width: 1.2em;
             margin-left: -1.2em;
             font-style: normal; }
+      section .contentArea .projectDetails .media--stretched {
+        width: 100vw;
+        margin-left: -13%; }
+        @media only screen and (min-width: 768px) {
+          section .contentArea .projectDetails .media--stretched {
+            margin-left: -20%;
+            width: 60vw; } }
+        @media only screen and (min-width: 960px) {
+          section .contentArea .projectDetails .media--stretched {
+            width: 70vw; } }
+        @media only screen and (min-width: 1280px) {
+          section .contentArea .projectDetails .media--stretched {
+            margin-left: -22%;
+            width: 70vw; } }
     section .contentArea .projectMeta {
       width: 100%;
       text-align: right;
