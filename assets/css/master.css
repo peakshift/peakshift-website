@@ -45,10 +45,6 @@ hr {
 #wrapper {
   height: 100%; }
 
-.fill {
-  max-width: 120%;
-  margin-left: -10%; }
-
 .typeface-colour-secondary, .typeface-colour-secondary a {
   color: #5A020E; }
 
@@ -124,9 +120,12 @@ aside {
       margin-top: 1em; }
       aside .padded #logo img {
         width: 60%; }
-    aside .padded #portfolioLinks a {
+    aside .padded #portfolioLinks {
       color: #FFF;
-      border-bottom: 2px solid #FFF; }
+      margin: 1em 0 0; }
+      aside .padded #portfolioLinks a {
+        color: #FFF;
+        border-bottom: 2px solid #FFF; }
     aside .padded .intro {
       font-style: italic; }
     aside .padded .portfolio {
@@ -171,6 +170,8 @@ aside {
           @media only screen and (min-width: 460px) {
             aside .padded .contact-footer .columns ul {
               float: left; } }
+        aside .padded .contact-footer .columns .dribble {
+          padding: 2px 1 0; }
 
 section {
   width: auto;
@@ -215,6 +216,9 @@ section {
       opacity: 0; }
   section .padded {
     margin: 0 10%; }
+  section .fill {
+    max-width: 120%;
+    margin-left: -10%; }
   section .card {
     width: 100%;
     transition: 0.3s;
@@ -229,7 +233,8 @@ section {
         width: 25%; } }
     section .card img {
       margin: 2% auto;
-      display: block; }
+      display: block;
+      width: 80%; }
     section .card .container {
       padding: 2px 16px; }
       section .card .container h4, section .card .container p {
@@ -272,6 +277,19 @@ section {
             width: 1.2em;
             margin-left: -1.2em;
             font-style: normal; }
+      section .contentArea .projectDetails .media--stretched {
+        width: 100vw;
+        margin-left: -13%; }
+        @media only screen and (min-width: 768px) {
+          section .contentArea .projectDetails .media--stretched {
+            margin-left: -20%;
+            width: 60vw; } }
+        @media only screen and (min-width: 960px) {
+          section .contentArea .projectDetails .media--stretched {
+            width: 70vw; } }
+        @media only screen and (min-width: 1280px) {
+          section .contentArea .projectDetails .media--stretched {
+            margin-left: -22%; } }
     section .contentArea .projectMeta {
       width: 100%;
       text-align: right;
