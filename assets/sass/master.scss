@@ -14,11 +14,14 @@
   src: url(../typefaces/UniversLTStd-Cn.otf);
 }
 */
-
+// html::-webkit-scrollbar-thumb:vertical { background-color:#00ff00; width:12px; }
+// html::-webkit-scrollbar-thumb:horizontal { background-color:#00ff00; height:12px; }
+// html::-webkit-scrollbar { height:12px; width:12px; background-color:rgba(255,255,255,0.1); }
 
 html { 
   font-size: 100%;
   overflow-y: scroll;  
+  overflow-x: hidden;  
   -webkit-text-size-adjust: 100%; 
   -webkit-font-smoothing:antialiased; 
   font-smoothing:antialiased; 
@@ -33,10 +36,11 @@ hr { border-bottom: 1px solid #EEE; border-width: 0 0 1px; margin: 3em 0; }
 .heading-typeface,h1,h2,h3,h4,h5,h6 { font-family: 'Univers LT Std - 47 Light Condensed'; font-weight: lighter; text-transform: uppercase; }
 
 #wrapper { height: 100%; }
-.fill { max-width: 120%; margin-left: -10%;}
+
 .typeface-colour-secondary, .typeface-colour-secondary a { color: #5A020E; }
 .typeface-colour-white, .typeface-colour-white a { color: #FFF; }
 .rs { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
+
 
 section#mainContent h4,
 section#mainContent h5,
@@ -105,6 +109,8 @@ aside {
       }
     }
     #portfolioLinks{
+      color: #FFF;
+      margin: 1em 0 0;
       a{
         color: #FFF;
         border-bottom: 2px solid #FFF;
@@ -158,6 +164,9 @@ aside {
           @media only screen and (min-width: 460px) {
             float: left; 
           }
+        }
+        .dribble{
+          padding: 2px 1 0;
         }
       }
     }
@@ -214,6 +223,10 @@ section {
   .padded { 
     margin: 0 10%; 
   }
+  .fill { 
+    max-width: 120%; 
+    margin-left: -10%;
+  }
   .card{
     width: 100%;
     transition: 0.3s;
@@ -229,6 +242,7 @@ section {
     img{
       margin: 2% auto;
       display: block;
+      width: 80%;
     }
     .container {
       padding: 2px 16px;
@@ -280,7 +294,20 @@ section {
           }
         }
       }
-
+      .media--stretched{
+        width: 100vw;
+        margin-left: -10vw;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        @media only screen and (min-width: 768px){
+          margin-left: -6vw;
+          width: 60vw;
+        }
+        @media only screen and (min-width: 960px){
+          width: 70vw;
+          margin-left: -7vw;
+        }
+      }
     }
     .projectMeta { 
       width: 100%; 
