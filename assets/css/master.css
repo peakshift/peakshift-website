@@ -201,7 +201,8 @@ section {
       -ms-transform: translate(0, 0);
       -o-transform: translate(0, 0);
       transform: translate(0, 0);
-      opacity: 1; }
+      opacity: 1;
+      display: block; }
     section figure img {
       -webkit-transition: all 0.25s ease-in-out;
       -moz-transition: all 0.25s ease-in-out;
