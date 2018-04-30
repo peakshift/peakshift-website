@@ -31,7 +31,8 @@ html {
 html,body { margin: 0; height: 100%; }
 body { font: 18px/1.8em 'Tisa OT'; color: #505050; }
 
-a, h1,h2,h3,h4,h5,h6 { color: #CE0C26; text-decoration: none; }
+a { color: #CE0C26; }
+a, h1,h2,h3,h4,h5,h6 { text-decoration: none; }
 hr { border-bottom: 1px solid #EEE; border-width: 0 0 1px; margin: 3em 0; }
 .heading-typeface,h1,h2,h3,h4,h5,h6 { font-family: 'Univers LT Std - 47 Light Condensed'; font-weight: lighter; text-transform: uppercase; }
 
@@ -256,7 +257,8 @@ section {
   .contentArea { 
     padding-bottom: 30px; 
     padding-top: 45px;
-    .articleTitle {
+    .articleTitle,
+    .projectTitle {
       font-size: 35px;
       line-height: 48px;
       width: 100%;

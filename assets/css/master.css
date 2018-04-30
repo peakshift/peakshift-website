@@ -29,8 +29,10 @@ body {
   font: 18px/1.8em 'Tisa OT';
   color: #505050; }
 
+a {
+  color: #CE0C26; }
+
 a, h1, h2, h3, h4, h5, h6 {
-  color: #CE0C26;
   text-decoration: none; }
 
 hr {
@@ -245,15 +247,18 @@ section {
   section .contentArea {
     padding-bottom: 30px;
     padding-top: 45px; }
-    section .contentArea .articleTitle {
+    section .contentArea .articleTitle,
+    section .contentArea .projectTitle {
       font-size: 35px;
       line-height: 48px;
       width: 100%; }
       @media only screen and (min-width: 768px) {
-        section .contentArea .articleTitle {
+        section .contentArea .articleTitle,
+        section .contentArea .projectTitle {
           width: 85%; } }
       @media only screen and (min-width: 960px) {
-        section .contentArea .articleTitle {
+        section .contentArea .articleTitle,
+        section .contentArea .projectTitle {
           width: 65%; } }
     section .contentArea .projectDetails {
       width: 100%; }
