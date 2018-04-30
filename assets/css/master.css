@@ -293,12 +293,18 @@ section {
             width: 70vw;
             margin-left: -7vw; } }
       @media only screen and (min-width: 960px) {
-        section .contentArea .projectDetails .section {
+        section .contentArea .projectDetails .section .media--right {
           position: absolute;
           right: -7vw;
-          top: 0;
           width: 25vw;
-          margin-top: 60px; } }
+          margin: 0; } }
+      section .contentArea .projectDetails .section .text {
+        float: none; }
+        @media only screen and (min-width: 960px) {
+          section .contentArea .projectDetails .section .text {
+            float: left; } }
+      section .contentArea .projectDetails .section .clear {
+        clear: both; }
     section .contentArea .projectMeta {
       width: 100%;
       text-align: right;
@@ -310,9 +316,6 @@ section {
       @media only screen and (min-width: 768px) {
         section .contentArea .projectMeta {
           width: 30%; } }
-      @media only screen and (min-width: 960px) {
-        section .contentArea .projectMeta {
-          /*position: absolute;*/ } }
   section p:hover {
     color: #141414;
     border-color: #CCC; }

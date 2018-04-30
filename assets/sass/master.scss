@@ -309,13 +309,23 @@ section {
           margin-left: -7vw;
         }
       }
-      .section{
-        @media only screen and (min-width: 960px){
-          position: absolute;
-          right: -7vw;
-          top: 0;
-          width: 25vw;
-          margin-top: 60px;
+     .section{
+        .media--right {
+          @media only screen and (min-width: 960px){
+            position: absolute;
+            right: -7vw;
+            width: 25vw;
+            margin: 0;
+          }
+        }
+        .text{
+          float: none;
+          @media only screen and (min-width: 960px){
+            float: left;
+          }
+        }
+        .clear{
+          clear: both;
         }
       }
     }
@@ -329,10 +339,6 @@ section {
       list-style: none inside; 
       @media only screen and (min-width: 768px) {
         width: 30%; 
-      }
-      @media only screen and (min-width: 960px) {
-        /*position: absolute;*/
-
       }
     }
   }
