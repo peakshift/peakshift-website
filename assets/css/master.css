@@ -191,12 +191,28 @@ section {
     display: block;
     margin: 0;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     overflow: hidden; }
     section figure.cover-photo {
       height: 80vh;
       background-position: center center;
       background-size: cover; }
+    section figure.gradient-fade {
+      position: relative; }
+      section figure.gradient-fade::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
     section figure.active img {
       -webkit-transform: translate(0, 0);
       -moz-transform: translate(0, 0);
