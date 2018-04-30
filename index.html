@@ -47,6 +47,23 @@
   <!-- The Styles -->
   <link href="assets/css/master.css?v=0004" rel="stylesheet" type="text/css">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6502879-7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-6502879-7');
+  </script>
+  <!-- End Google Analytics -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TPS5PB');</script>
+  <!-- End Google Tag Manager -->
 </head>
 <body class="">
 
@@ -54,10 +71,7 @@
   <aside id="mainSide" class="column">
     <div class="padded">
       <div id="logo"><a href="/"><img src="/assets/i/logo.svg"></a></div>
-      <h2 id="portfolioLinks">
-        We craft digital products built on <a href="/mindsky">web</a>, <a href="/lemariku">mobile</a> &amp; <a href="/zed">blockchain</a>.
-        <br><br>Learn more <a href="/about">about us</a>.
-      </h2>
+      <h2 id="portfolioLinks">We craft digital products built on web, mobile &amp; blockchain &mdash; <a href="/about">Meet The Team</a>.</h2>
 
       <div class="contact-footer typeface-colour-secondary">
         <hr>
@@ -101,11 +115,64 @@
 
   <section id="mainContent" class="column">
     <figure class="active" style="background-image:url('/assets/content/lemariku/lemariku-bg-2.png');">
-      <a href="/lemariku"><div class="padded"><img class="fill" src="/assets/content/lemariku/header-details.png?v=1"></div></a>
+      <a href="/lemariku"><div class="padded"><img class="fill" src="/assets/content/lemariku/header-details-2.png?v=1"></div></a>
     </figure>
-    <figure class="active" style="background-image:url('/assets/content/mindsky/header-bg-light.png'); background-color: #F6F6F6;">
-      <a href="/mindsky"><div class="padded"><img class="fill" src="/assets/content/mindsky/header-details.png?v=03"></div></a>
-    </figure>
+    <div class="contentArea padded clearfix">
+      <h3 class="projectTitle">Branding &amp; UI for a pre-loved fashion marketplace</h3>
+      <div class="projectDetails column">
+        <p>We are passionate to help founders develop their ideas into a product from the ground up.</p>
+
+        <p>The Lemariku founders came to us with an idea to create an online marketplace that allows people in Indonesia to sell second hand fashion items.</p>
+
+        <p>The platform is specifically created and catered to the purchase behaviour to the indonesian consumer allowing for cash payments and utilising local delivery services like GO-Jek.</p>
+
+        <p>In a saturated market, it was our first challenge to clearly communicated the OVP and differentiate Lemariku from the competition. Additional to that was to designing and developing an interface that is intuitive to use for the Indonesian target audience, who find websites too complicated, and don't trust online payments.
+
+        <h4>Strategy &amp; Roadmap</h4>
+        <p>Our collaboration with Lemariku started from the inception of the idea, and when they had only a hypothesis and rough idea for the application.</p>
+
+        <p>Working together, we came up with the following definition.</p>
+
+        <blockquote>
+          <p>Lemariku is an online marketplace connecting buyers and sellers, allowing them to chat to each other, negotiate prices, and select their ideal payment and delivery method for both parties.</p>
+        </blockquote>
+
+        <p>We worked closely with the founders to set objectives which helped us plan a product development roadmap for which we then broke down into a serise of agile sprints.</p>
+
+        <figure class="active media--stretched" style="background-image: url(/assets/content/lemariku/roadmap.svg); height: 300px;">
+        </figure>
+
+        <h4>Branding</h4>
+        <p>The brand was specifically catered to the Indonesian market. The brand name Lemariku means “my closet”, which comes from ‘lemari’ meaning ‘closet’ and ‘ku’ meaning ‘my’ in Indonesian. 
+
+        <p>The logo was created to clearly visualise that it is a fashion application and add to the meaning of the name.</p>
+        <figure class="active media--stretched" style="background-color: #FEF7F9; height: 520px;">
+        </figure>
+
+        <h4>User Interface &amp; Expereince</h4>
+
+        <p>Sellers mainly used Instagram to reach potential buyers to advertise their fashion items so we wanted to create an experience that was familliar, with while providing tools to address the challenges they had with current soltuions</p>
+
+        <p>In order to encourage sellers to share their profiles, we wanted to provide some personalistion options so we allowed them to choose a colour from a pallete that would distinguish their profiles and items in search results.</p>
+        <figure class="active media--stretched" style="background-color: #FEF7F9">
+          <div class="padded"><img class="fill" src="/assets/content/lemariku/lemariku-top.png?v=1"></div>
+        </figure>
+
+        <h4>Technology Stack</h4>
+        <ul>
+          <li>Node.js</li>
+          <li>Web Sockets</li>
+          <li>Phone Gap (iOS and Android)</li>
+          <li>Backbone.js + Marionette</li>
+        </ul>   
+      </div>        
+      <ul class="projectMeta column">
+        <li>Lemariku</li>
+        <li>Jakarta, Indonesia</li>
+        <li>2015 - 2016</li>
+      </ul>
+    </div>
+
   </section>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -113,11 +180,6 @@
   <script src="/assets/js/router.js"></script>
   <script src="/assets/js/scripts.js?v0001"></script>
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TPS5PB');</script>
   <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TPS5PB"
   height="0" width="0" style="display:none; visibility:hidden; "></iframe></noscript>
   <!-- End Google Tag Manager -->
