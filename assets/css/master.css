@@ -243,7 +243,8 @@ section {
         text-align: center; }
   section .contentArea {
     padding-bottom: 30px;
-    padding-top: 45px; }
+    padding-top: 45px;
+    position: relative; }
     section .contentArea .articleTitle {
       font-size: 35px;
       line-height: 48px;
@@ -291,6 +292,13 @@ section {
           section .contentArea .projectDetails .media--stretched {
             width: 70vw;
             margin-left: -7vw; } }
+      @media only screen and (min-width: 960px) {
+        section .contentArea .projectDetails .section {
+          position: absolute;
+          right: -7vw;
+          top: 0;
+          width: 25vw;
+          margin-top: 60px; } }
     section .contentArea .projectMeta {
       width: 100%;
       text-align: right;
@@ -302,6 +310,22 @@ section {
       @media only screen and (min-width: 768px) {
         section .contentArea .projectMeta {
           width: 30%; } }
+      @media only screen and (min-width: 960px) {
+        section .contentArea .projectMeta {
+          /*position: absolute;*/ } }
+  section p:hover {
+    color: #141414;
+    border-color: #CCC; }
+    section p:hover::before {
+      color: #CDCDCD; }
+  section p::before {
+    content: ' \00b6';
+    display: inline;
+    margin: 0 0 0 -2em;
+    width: 2em;
+    display: inline-block;
+    color: #EFEFEF;
+    font-family: "Lucida Grande", Verdana, "Helvetica", Arial; }
 
 .team-modal {
   display: none;
@@ -349,21 +373,6 @@ article .exdent {
   article .exdent img {
     width: 100%;
     margin: 0; }
-
-article p:hover {
-  color: #141414;
-  border-color: #CCC; }
-  article p:hover::before {
-    color: #CDCDCD; }
-
-article p::before {
-  content: ' \00b6';
-  display: inline;
-  margin: 0 0 0 -2em;
-  width: 2em;
-  display: inline-block;
-  color: #EFEFEF;
-  font-family: "Lucida Grande", Verdana, "Helvetica", Arial; }
 
 article a {
   text-decoration: none;
