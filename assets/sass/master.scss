@@ -326,6 +326,24 @@ section {
           margin-left: -7vw;
         }
       }
+      .section{
+        .media--right {
+          @media only screen and (min-width: 960px){
+            position: absolute;
+            right: -7vw;
+            width: 25vw !important;
+          }
+        }
+        .text{
+          float: none;
+          @media only screen and (min-width: 960px){
+            float: left;
+          }
+        }
+        .clear{
+          clear: both;
+        }
+      }
     }
     .projectMeta { 
       width: 100%; 

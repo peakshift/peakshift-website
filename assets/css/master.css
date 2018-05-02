@@ -313,6 +313,18 @@ section {
           section .contentArea .projectDetails .media--stretched {
             width: 70vw;
             margin-left: -7vw; } }
+      @media only screen and (min-width: 960px) {
+        section .contentArea .projectDetails .section .media--right {
+          position: absolute;
+          right: -7vw;
+          width: 25vw !important; } }
+      section .contentArea .projectDetails .section .text {
+        float: none; }
+        @media only screen and (min-width: 960px) {
+          section .contentArea .projectDetails .section .text {
+            float: left; } }
+      section .contentArea .projectDetails .section .clear {
+        clear: both; }
     section .contentArea .projectMeta {
       width: 100%;
       text-align: right;
