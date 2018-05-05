@@ -327,22 +327,27 @@ section {
         }
       }
       .section{
+        display: flex;
+        flex-wrap: wrap;
+        @media only screen and (min-width: 960px){
+          flex-wrap: none;
+        }
         .media--right {
           @media only screen and (min-width: 960px){
             position: absolute;
             right: -7vw;
-            width: 25vw !important;
+            width: 30vw !important;
           }
         }
         .text{
-          float: none;
+          /*float: none;
           @media only screen and (min-width: 960px){
             float: left;
-          }
+          }*/
         }
-        .clear{
+        /*.clear{
           clear: both;
-        }
+        }*/
       }
     }
     .projectMeta { 
