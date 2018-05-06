@@ -314,24 +314,16 @@ section {
             width: 70vw;
             margin-left: -7vw; } }
       section .contentArea .projectDetails .section {
-        display: flex;
-        flex-wrap: wrap;
-        /*.clear{
-          clear: both;
-        }*/ }
+        display: block; }
         @media only screen and (min-width: 960px) {
           section .contentArea .projectDetails .section {
-            flex-wrap: none; } }
+            display: flex; } }
         @media only screen and (min-width: 960px) {
           section .contentArea .projectDetails .section .media--right {
             position: absolute;
-            right: -7vw;
-            width: 30vw !important; } }
-        section .contentArea .projectDetails .section .text {
-          /*float: none;
-          @media only screen and (min-width: 960px){
-            float: left;
-          }*/ }
+            right: 0;
+            margin: 0;
+            width: 25vw !important; } }
     section .contentArea .projectMeta {
       width: 100%;
       text-align: right;

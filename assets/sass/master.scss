@@ -327,27 +327,18 @@ section {
         }
       }
       .section{
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
         @media only screen and (min-width: 960px){
-          flex-wrap: none;
+          display: flex;
         }
         .media--right {
           @media only screen and (min-width: 960px){
             position: absolute;
-            right: -7vw;
-            width: 30vw !important;
+            right: 0;
+            margin: 0;
+            width: 25vw !important;
           }
         }
-        .text{
-          /*float: none;
-          @media only screen and (min-width: 960px){
-            float: left;
-          }*/
-        }
-        /*.clear{
-          clear: both;
-        }*/
       }
     }
     .projectMeta { 
