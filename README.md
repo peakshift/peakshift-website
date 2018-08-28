@@ -2,9 +2,6 @@
 - node
 - npm
 
-To decrease the hassle of installing different versions of dependencies for the project, it is recommended that you use pipenv. Pipenv ships with package management and virtual environment support. To install, just run the command below
-
-`pip install pipenv`
 
 # Getting Started
 
@@ -21,19 +18,6 @@ Follow the steps below to clone and set up the project.
 ### Branches
 - A branch name should begin with the issue number, and have short name (2-4 words). New features or fixes should be based off of the `master` branch.
   - `git checkout -b 123-short-name master`
-
-### Testing
-When making changes or adding a new feature, to ensure the feature works correctly or the changes made have not broken the code then you can do unit testing using the behave framework and gherkin scenarios.
-*[Behave Framework Docs](https://behave.readthedocs.io/en/latest/) 
-
-To begin testing your scenarios
-- run `pipenv install behave`
-- run `pipenv run behave`
-- if it passes
-  - commit and push your branch
-  - open a pull request for your branch in develop
-- if it fails
-  - fix the problem so all tests pass
 
 ### Pushing Changes
 1. Open Terminal.
