@@ -313,6 +313,18 @@ section {
           section .contentArea .projectDetails .media--stretched {
             width: 70vw;
             margin-left: -7vw; } }
+      section .contentArea .projectDetails .section {
+        display: flex;
+        flex-direction: column; }
+        @media only screen and (min-width: 960px) {
+          section .contentArea .projectDetails .section {
+            flex-direction: row; } }
+        @media only screen and (min-width: 960px) {
+          section .contentArea .projectDetails .section .media--right {
+            position: absolute;
+            right: 0;
+            margin: 0;
+            width: 25vw !important; } }
     section .contentArea .projectMeta {
       width: 100%;
       text-align: right;
@@ -324,6 +336,19 @@ section {
       @media only screen and (min-width: 768px) {
         section .contentArea .projectMeta {
           width: 30%; } }
+  section p:hover {
+    color: #141414;
+    border-color: #CCC; }
+    section p:hover::before {
+      color: #CDCDCD; }
+  section p::before {
+    content: ' \00b6';
+    display: inline;
+    margin: 0 0 0 -2em;
+    width: 2em;
+    display: inline-block;
+    color: #EFEFEF;
+    font-family: "Lucida Grande", Verdana, "Helvetica", Arial; }
 
 .team-modal {
   display: none;
@@ -371,21 +396,6 @@ article .exdent {
   article .exdent img {
     width: 100%;
     margin: 0; }
-
-article p:hover {
-  color: #141414;
-  border-color: #CCC; }
-  article p:hover::before {
-    color: #CDCDCD; }
-
-article p::before {
-  content: ' \00b6';
-  display: inline;
-  margin: 0 0 0 -2em;
-  width: 2em;
-  display: inline-block;
-  color: #EFEFEF;
-  font-family: "Lucida Grande", Verdana, "Helvetica", Arial; }
 
 article a {
   text-decoration: none;
