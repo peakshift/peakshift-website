@@ -66,10 +66,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    <aside id="mainSide" class="column">
       <div class="padded">  
          <div id="logo"><a href="/"><img src="/assets/i/logo.svg"></a></div>
-         <h2 id="portfolioLinks">
-           We craft digital products built on <a href="/mindsky">web</a>, <a href="/lemariku">mobile</a> &amp; blockchain.
-           <br><br>Learn more <a href="/about">about us</a>.
-         </h2>
+         <h2 id="portfolioLinks">We craft digital products built on web, mobile &amp; Bitcoin &mdash; <a href="/about">Learn more</a>.</h2>
 
          <div class="contact-footer typeface-colour-secondary">
             <hr>
@@ -116,25 +113,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                <h2>Header Level 2</h2>
 
 <pre>
-   <code data-type="solidity">
-      pragma solidity ^0.4.21;
-      pragma experimental "v0.5.0";
-
-
-      /** @title Invoicing Contract */
-      contract Invoicing {
-
-         address public owner;
-         int public disputePeriod;
-
-         /**
-          * Constructor function runs once upon contract creation
-          */
-         function Invoicing() public {
-            owner = msg.sender;
-            disputePeriod = 5;
-         }
-      }
+   <code data-type="miniscript">
+<key_1> OP_CHECKSIG OP_SWAP <key_2> OP_CHECKSIG OP_ADD OP_SWAP <key_3>
+OP_CHECKSIG OP_ADD OP_SWAP OP_DUP OP_IF
+  <a032> OP_CHECKSEQUENCEVERIFY OP_VERIFY
+OP_ENDIF
+OP_ADD 3 OP_EQUAL
    </code>
 </pre>
 
