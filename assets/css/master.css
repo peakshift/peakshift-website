@@ -313,11 +313,11 @@ section figure.active img {
    display: block;
 }
 section figure img {
-   -webkit-transition: all 0.25s ease-in-out;
-   -moz-transition: all 0.25s ease-in-out;
-   -ms-transition: all 0.25s ease-in-out;
-   -o-transition: all 0.25s ease-in-out;
-   transition: all 0.25s ease-in-out;
+   -webkit-transition: all 0.75s ease-in-out;
+   -moz-transition: all 0.75s ease-in-out;
+   -ms-transition: all 0.75s ease-in-out;
+   -o-transition: all 0.75s ease-in-out;
+   transition: all 0.75s ease-in-out;
    -webkit-transform: translate(0, 80%);
    -moz-transform: translate(0, 80%);
    -ms-transform: translate(0, 80%);

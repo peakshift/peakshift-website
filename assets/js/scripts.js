@@ -1,5 +1,5 @@
-$(window).load(function(){
-	var domain = 'http://6c59b.peakshift.com';
+/*$(window).load(function(){
+	var domain = 'https://peakshift.com';
 	var router = new Router();
 	//router.route('/:id', function(id){ console.log(id)});
 
@@ -21,6 +21,8 @@ $(window).load(function(){
 
 	});
 });
+*/
 
 $(document).ready(function(){
+	setTimeout(function() { $('figure').addClass('active') }, 3000);
 });
