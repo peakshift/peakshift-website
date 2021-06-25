@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "The state of publishing: Lorem ipsum dolor sit amet, consectetur adipisicing"
-date:   2021-06-25 01:15:10 +0200
+date:   2021-06-25
 author: Johns Beharry
 author_url: https://twitter.com/johnsBeharry
 tags: [Books, Publishing]
