@@ -598,6 +598,28 @@ article code {
    color: #dc1d3f;
 }
 
+blockquote {
+   position: relative;
+   margin-left: 0px;
+   padding-left: 2em;
+}
+
+blockquote:before {
+   content: "";
+   display: block;
+   width: 3px;
+   background-color: rgb(221, 30, 62);
+   position: absolute;
+   left: 0px;
+   border-radius: 3px;
+   top: 5%;
+   bottom: 0;
+}
+
+blockquote p {
+   font-size: 1.1em;
+}
+
 blockquote p::before {
    color: red;
    content: "";
