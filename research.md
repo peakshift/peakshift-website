@@ -7,7 +7,7 @@ author_url: https://twitter.com/johnsBeharry
 tags: [Research, Design, Bitcoin]
 ---
 
-We take opaque primitives already available in bitcoin and lightning like the protocol itself, and the specs then packaging them in an intuitive way to make them more accessible for non-technical end-users.
+We take opaque primitives already available in bitcoin and lightning like the protocol itself, and the specs then package them in an intuitive way to make them more accessible for non-technical end-users.
 
 The ultimate goal is to have bitcoin user experiences that feel familiar to a mainstream audience, even though complex things are happening in the background. 
 
