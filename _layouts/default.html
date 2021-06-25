@@ -79,8 +79,10 @@
           <ul class="heading-typeface">
             <li><span class="typeface-colour-white">&mdash; Learn more </span></li>
             <li><span class="typeface-colour-white">›</span> <a href="/about">About Us</a></li>
-            <li><span class="typeface-colour-white">›</span> <a href="{% post_url 2021-06-25-the-state-of-publishing %}">Latest Article</a></li>
+{% for post in site.posts limit:1 %}
+            <li><span class="typeface-colour-white">›</span> <a href="{{ post.url }}" title="{{ post.title }}">Latest Article</a></li>
             </li>
+{% endfor %}
           </ul>
 
           <ul class="heading-typeface">
@@ -94,7 +96,8 @@
           <ul class="heading-typeface">
             <li><span class="typeface-colour-white">&mdash; Contact </span></li>
             <li><span class="typeface-colour-white">›</span> SKYPE: <a href="skype:peakshift?chat">peakshift</a></li>
-            <li><span class="typeface-colour-white">›</span> EMAIL: <a href="mailto:team@peakshift.com">team@peakshift.com</a>
+            <li><span class="typeface-colour-white">›</span> EMAIL: <a href="mailto:team@peakshift.com">team@peakshift.com</a><br />
+              <span class="typeface-colour-white">›</span> 
             </li>
           </ul>
           <p class="typeface-colour-secondary rs small">
