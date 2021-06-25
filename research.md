@@ -1,10 +1,24 @@
 ---
 layout: article
-title: "Bitcoin Design Research Projects"
+title: "Research Lab"
 date:   2021-06-25 01:15:10 +0200
 author: Johns Beharry
 author_url: https://twitter.com/johnsBeharry
 tags: [Research, Design, Bitcoin]
+---
+
+We take opaque primitives already available in bitcoin and lightning like the protocol itself, and the specs then packaging them in an intuitive way to make them more accessible for non-technical end-users.
+
+The ultimate goal is to have bitcoin user experiences that feel familiar to a mainstream audience, even though complex things are happening in the background. 
+
+The main challenge with this research is to find strategies that uphold principles of privacy and self-sovereignty. As many of the current design patterns people may be familiar with are achieved due to centralized services and architectures available to application developers.
+
+### Design & Research Principals
+- Privacy by default, and for everyone.
+- Familiarity
+- Empathy
+- Truthfulness, designs that are truthful to bitcoin.
+
 ---
 
 ### Bitcoin Design Abstractions
