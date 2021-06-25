@@ -18,6 +18,10 @@ More privacy weary coin selection, channel openings, and payment requests using 
 - [Docs / Social Payjoins](https://hackmd.io/@BitcoinDesign/SJHBGFkru)
 - [Onion 78' (MIT Hackathon Winner) - Presentation](https://docs.google.com/presentation/u/1/d/1RWXk9A7V519o5C2rNhvrHW63b7Iz_Y7oVtujYxDTicI/edit#slide=id.gce634cc104_0_70)
 
+#### [Other Abstractions](https://docs.google.com/presentation/d/1qIhzGTTFxwRZlvu33Fuwkv70YtJoj-tMHNmS_dt1n6M/edit?usp=sharing)
+
+---
+
 ### Workshops
 #### WabiSabi: Design Sprints for Coinjoins and Privacy
 We explore onchain payments and privacy through the lense of WabiSabi a coinjoin protocol in Design Sprint inspired sessions every week.
@@ -30,6 +34,8 @@ Online web tool to simulate bitcoin transactions (including advanced features su
 
 - [Design File](https://www.figma.com/file/k50JDqDG5qG73NI3ELcscA/UTXO.tools)
 - [Proof of Concept](https://utxo.tools)
+
+---
 
 #### Bitcoin Design Mentorship / Payments / Rwandan Wallet
 Workshops to explore designing a mobile payments wallet for low connectivity regions while educating designers about how the underlying technology works.
@@ -45,8 +51,10 @@ Topics covered; Wallet UI Components, Contacts, Labelling, Coin Selection
 
 - [Coins of Bitcoin](https://www.figma.com/file/XUJH1IENYxgzDC1ob8EW08/Coins-of-Bitcoin)
 
+---
+
 ### Collaborations
-#### Chaincase
+#### Chaincase & Wasabi
 
 Coin Selection and transaction privacy collaboration
 
@@ -60,6 +68,8 @@ Collaboration on OpenSats design. Research into platforms + concepts for landing
 
 #### Zeus
 - [Landing Page Design](https://www.figma.com/file/TqAM4LvuqvY7FBzFoaezJC/Zeus?node-id=702%3A0)
+
+---
 
 ### Design Explorations
 #### Tetris Wallet
@@ -78,7 +88,7 @@ Designs for a printable Giftcard wallet for friends, family and loved ones.
 - [Bitcoin Design Guide / Onboarding / Protecting a wallet](https://bitcoin.design/guide/onboarding/protecting-a-wallet/#hiding-sensitive-information)
 
 #### Signing messages
-https://github.com/Tiana01/bitcoin-ux/blob/3a28c5c860cc8ff5480be3fe778355d07f21709a/security/Wallet%20Security.md
+- [Verifying your identity, proving payments](https://github.com/Tiana01/bitcoin-ux/blob/3a28c5c860cc8ff5480be3fe778355d07f21709a/security/Wallet%20Security.md#signing-messages---verifying-your-identity-proving-ownership-of-fund)
 
 #### Account scanning
 ###### Problem
@@ -89,22 +99,25 @@ Provide an interface after seed recovery step that makes the scanning process ex
 
 - [Wireframes & Docs](https://github.com/peakshift/bitcoin-ux/blob/master/payments/account-scanning.md)
 
+---
+
 ### Application Layer
-### Wallet UI Kit
+
+#### Wallet UI Kit
 - [Dev Proposasl](https://hackmd.io/@BitcoinDesign/HJNK8edO_/edit)
 - Tailwind React
 - React Native
 
-### BOLT.FUN
+#### BOLT.FUN
 Lightning Network Builder Docs - a fun place for builders to learn about and experiment with Lightning Network technology.
 
 - [Website](https://bolt.fun)
 
-### Bitcoin & Lightning TestNet
+#### Bitcoin & Lightning TestNet
 - [Website](https://bolt.fun/testnet/)
 
 
-### Research Documents
+### Otheer Research Documents
 
 - [The Coins of Bitcoin](https://hackmd.io/ut_mjAvzQUWfeJ6YGXELWQ)
 - [Contacts, Labelling, and Coin Control](https://hackmd.io/mrnylJgTQUyY0JghKQV0jQ)
