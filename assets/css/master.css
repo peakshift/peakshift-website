@@ -88,6 +88,18 @@ h6 {
    padding-bottom: 0;
 }
 
+.wb {
+   word-break: break-all;
+}
+
+.mt1 {
+   margin-top: 1em;
+}
+
+.mb1 {
+   margin-top: 1em;
+}
+
 section#mainContent h4,
 section#mainContent h5,
 section#mainContent h6 {
