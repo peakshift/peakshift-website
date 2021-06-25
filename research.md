@@ -1,8 +1,11 @@
 ---
-layout: default
+layout: article
+title: "Bitcoin Design Research Projects"
+date:   2021-06-25 01:15:10 +0200
+author: Johns Beharry
+author_url: https://twitter.com/johnsBeharry
+tags: [Research, Design, Bitcoin]
 ---
-
-# Bitcoin Design Research Projects
 
 ### Bitcoin Design Abstractions
 #### Contacts
