@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<section id="mainContent" class="column">
+   <div class="contentArea padded clearfix">
+      <h2 class="articleTitle">{{ page.title }}</h2>
+      <article class="projectDetails column">
+         <div class="entry_content">
+         	{{ content }}
+
+            <hr />
+
+            <h4>All Posts</h4>
+
+            <ul>
+              {% for post in site.posts %}
+                <li>
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+         </div>       
+      </article>
+
+      <ul class="entry-meta column small">
+         <li>
+            <p>
+               <strong>Published</strong><br> 
+               <em>{{ page.date | date: "%b %d, %Y" }}</em>
+            </p>
+         </li>
+         <li>
+            <p>
+               <span><em>by</em></span><br>
+               <a href="{{ page.author_url }}" target="_blank">{{ page.author }}</a>
+            </p>
+          </li>
+         <li>
+            <p>
+               <strong>Filed in</strong><br> 
+{% for tag in page.tags %}
+               <em><a href="#">{{ tag }}</a></em><br> 
+{% endfor %}
+            </p>
+         </li>
+      </ul>
+   </div>
+</section>
