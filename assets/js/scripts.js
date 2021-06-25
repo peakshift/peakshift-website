@@ -24,5 +24,5 @@
 */
 
 $(document).ready(function(){
-	setTimeout(function() { $('figure').addClass('active') }, 3000);
+	//setTimeout(function() { $('figure').addClass('active') }, 3000);
 });

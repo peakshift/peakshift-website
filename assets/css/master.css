@@ -35,6 +35,20 @@ body {
    color: #505050;
 }
 
+body.loading {
+   overflow: hidden;
+}
+body.loading::after {
+   content: "";
+   position: fixed;
+   height: 100%;
+   width: 72%;
+   background-color: rgb(221, 30, 62);
+   z-index: 1;
+   top: 0px;
+   left: 28%;
+}
+
 a {
    color: #ce0c26;
 }
