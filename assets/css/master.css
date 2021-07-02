@@ -654,3 +654,25 @@ blockquote:hover {
    color: #141414;
    border-color: #ccc;
 }
+
+section .contentArea .projectDetails ul.pills li::before {
+   content: "";
+   margin-left: auto;
+   color: inherit;
+   width: auto;
+}
+
+section .contentArea .projectDetails ul.pills li {
+   margin: 0px 4px 6px 0px;
+   padding-top: 8px 14px 4px auto;
+   list-style: none inside;
+   display: inline-block;
+   width: auto;
+   background-color: rgb(236, 236, 236);
+   border-radius: 21px;
+   font-family: "Univers LT Std - 47 Light Condensed";
+   vertical-align: baseline;
+   line-height: 1em;
+   color: rgb(80, 80, 80);
+   border: 1px solid rgba(153, 153, 153, 0.08);
+}
