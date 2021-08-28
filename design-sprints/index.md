@@ -17,7 +17,7 @@ To preserve time when coming to a decision we will utilise voting on suggestions
 
 ## Schedule
 
-## MONDAY: DEFINE THE CHALLENGE (2-4 hours)
+### MONDAY: DEFINE THE CHALLENGE (2-4 hours)
 1. Kick Off Call / Expert Interviews [20-30 mins][tool: realtime board]
 2. What is the product?
 3. What what are the project's core principals?
@@ -28,18 +28,19 @@ To preserve time when coming to a decision we will utilise voting on suggestions
 8. Group Voting: How might We?
 9. Decider Votes: How might we?
 
-## TUESDAY: MAPPING + CUSTOMER JOURNEY + FOCUS (2-4 hours)
+### TUESDAY: MAPPING + CUSTOMER JOURNEY + FOCUS (2-4 hours)
 1. Mapping smaller flows for how might we's.
 2. Combining flows into a user journey.
 3. Voting on steps and flows as focus areas for the prototype.
 
-## WEDNESDAY: FOCUS + STORY BOARD (2-4 hours)
+### WEDNESDAY: FOCUS + STORY BOARD (2-4 hours)
 1. Design research to solve some of the focus
 2. Presenting & Discussing solutions
 3. Crazy 8s Sketching
 4. Storyboard
 
-## THURSDAY: PROTOTYPE
-## FRIDAY: PROTOTYPE
-## MONDAY: PROTOTYPE
-## TUESDAY: USER TESTING
+### THURSDAY: PROTOTYPE
+### FRIDAY: PROTOTYPE
+### MONDAY: PROTOTYPE
+### TUESDAY: USER TESTING
+### WEDNESDAY: FINAL REPORT
