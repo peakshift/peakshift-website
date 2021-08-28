@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page
 title: "Payment Requests"
 date:   2021-08-26 07:39:00 +0200
 author: Johns Beharry
