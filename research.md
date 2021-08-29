@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page
 title: "Research Lab"
 date:   2021-06-25 01:15:10 +0200
 author: Johns Beharry
