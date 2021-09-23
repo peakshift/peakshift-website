@@ -7,7 +7,7 @@ author_url: https://twitter.com/johnsBeharry
 tags: [bitcoin design abstractions]
 ---
 
-*Direct P2P connection between sender and receiver wallets.*
+Secure, and direct peer-to-peer communication between wallets to help facilitate the coordination of various payment procedures without having to leave the application.
 
 ---
 
