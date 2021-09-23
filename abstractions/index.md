@@ -35,3 +35,6 @@ This collection of abstractions form a language, that hopefully enables easier d
 - Raw address: Native Segwit
 - Raw address: Public key
 - Raw address: Legacy address
+
+##### [Wallet Messaging](/abstractions/wallet-messaging)
+Secure, and direct peer-to-peer communication between wallets to help facilitate the coordination of various payment procedures without having to leave the application.
