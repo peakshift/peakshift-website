@@ -10,7 +10,7 @@ tags: [bitcoin design abstractions]
 > How might we enable bitcoin applications to talk to one another, in a privacy preserving way?
 
 
-Wallet Messaging is a method of secure, and direct peer-to-peer communication between wallets to help facilitate the coordination of various payment procedures without having to leave the application.
+Wallet Messaging is a method of secure, and direct peer-to-peer communication between wallets to help facilitate the coordination of various payment procedures without the user having to leave the application.
 
 ---
 
