@@ -7,6 +7,8 @@ author_url: https://twitter.com/johnsBeharry
 tags: [bitcoin design abstractions]
 ---
 
+> How might we easier store and reference payment destinations for the various entities and individuals we transact with?
+
 An encrypted and locally stored contact list that maps Contacts details with bitcoin addresses/output descriptors or other address generators, peer-to-peer style endpoints for messaging another contact like a Tor hidden service url or node public key.
 
 This abstraction is able to touch on a number of challenges encountered by application developers and end users.
@@ -33,3 +35,13 @@ REF
 
 ### Use Cases
 - [Coin selection](./coin-selection)
+
+---
+
+### Terminology
+- [Output Descriptors](https://bitcoin.design/guide/glossary/output-descriptor)
+- [Partially Signed Bitcoin Transactions](https://bitcoin.design/guide/glossary/psbt)
+- [Coin Selection Algorithms](https://bitcoin.design/guide/payments/send/coin-selection)
+- [UTXO](https://bitcoin.design/guide/glossary/utxo)
+- Payment Channels
+- Multi Sig

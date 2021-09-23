@@ -7,7 +7,7 @@ author_url: https://twitter.com/johnsBeharry
 tags: [bitcoin design abstractions]
 ---
 
-> How might we enable bitcoin applications to talk to one another, in a privacy preserving way?
+> How do we enable bitcoin applications to communicate to each other, while safeguarding privacy?
 
 
 Wallet Messaging is a method of secure, and direct peer-to-peer communication between wallets to help facilitate the coordination of various payment procedures without the user having to leave the application.
@@ -18,7 +18,7 @@ Payments in bitcoin can be very straight forward when you are moving funds betwe
 
 When it comes to coordination of bitcoin payments that require any kind of collaboration things can be quite cumbersome though.
 
-Where to use it?-
+Where to use it?
 
 - Creating multisig
 - Paying from multisig
