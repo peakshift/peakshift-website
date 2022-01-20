@@ -32,7 +32,9 @@ html {
   -o-tab-size: 4;
   tab-size: 4;
   /* 3 */
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   /* 4 */
   font-weight: 500;
 }
@@ -108,7 +110,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -191,9 +194,9 @@ select {
 2. Remove default button styles.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -235,7 +238,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -342,7 +345,7 @@ textarea::placeholder {
 Set the default cursor for buttons.
 */
 button,
-[role=button] {
+[role="button"] {
   cursor: pointer;
 }
 
@@ -1968,18 +1971,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .content-wrapper {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.content-wrapper::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  overflow-y: scroll;
 }
 .content-wrapper .content {
   max-width: min(65%, 540px);
+  max-height: 100%;
+  padding-top: 20vh;
 }
 @media screen and (max-width: 1279px) {
   .content-wrapper .content {
     max-width: min(75%, 540px);
-    padding-bottom: 120px;
+    padding-top: 32px;
   }
 }
 .content-wrapper .email-input {
@@ -2068,6 +2087,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 20%;
   right: 29px;
   width: 68px;
+}
+
+footer {
+  padding-bottom: 64px;
+}
+@media screen and (max-width: 1279px) {
+  footer {
+    padding-bottom: 32px;
+  }
 }
 
 .creative-block-pc {
