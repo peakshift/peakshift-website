@@ -10,17 +10,29 @@
 }
 
 .content-wrapper {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.content-wrapper::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  overflow-y: scroll;
 
   .content {
     max-width: min(65%, 540px);
+    max-height: 100%;
+    padding-top: 20vh;
 
     @include lt-lg {
       max-width: min(75%, 540px);
-      padding-bottom: 120px;
+      padding-top: 32px;
     }
   }
 
@@ -115,6 +127,13 @@
     top: 20%;
     right: 29px;
     width: 68px;
+  }
+}
+
+footer {
+  padding-bottom: 64px;
+  @include lt-lg {
+    padding-bottom: 32px;
   }
 }
 
