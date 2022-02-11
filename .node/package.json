@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/peakshift/peakshift-website#readme",
   "dependencies": {
-    "node-sass": "^4.8.3"
+    "node-sass": "^7.0.0"
   }
 }
