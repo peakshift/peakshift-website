@@ -23,7 +23,9 @@ In this two-part article, we will first look at the evolution and rise in popula
 
 Many anthropologists and sociologists would agree that human relations are built and rely on trust. The history of authentication most likely goes back to the beginning of human relationships between individuals, families, or tribes. In daylight, friends or tribe members could authenticate their identities through facial or pattern recognition (tattoos, markings, outfits, or armour). At night, when sight is no longer available, sounds, watchwords, or secret passphrases would be used as a form of trusted authentication (speak friend and enter 🧙‍♂️).
 
-![](https://i.imgur.com/RzpGeFt.png)
+<figure class=" exdent active">
+   <img class="fill" src="https://i.imgur.com/RzpGeFt.png">
+</figure>
 
 Fast forward a few millennia to 1989, Tim Berners-Lee births his brainchild - the World Wide Web. Since then, we have witnessed the rise and fall of many web applications and services that offer online surfers the ability to personalise their experience through account creation and authentication.
 
@@ -38,12 +40,15 @@ When creating an online account, users will usually be asked to provide both:
 
 A decade ago, authentication experiences would often come in the format of a user inputting their email, password, and other private information that was required by a website, application, or service. Today, we often see users opt for a faster, easier approach which involves less thinking, clicking, and hassle - 3rd party (sometimes referred to as "passwordless") authentication.
 
-![](https://i.imgur.com/T8dUyms.png)
+<figure class=" exdent active">
+   <img class="fill" src="https://i.imgur.com/T8dUyms.png">
+</figure>
 
 Most Web 2.0 applications will now offer users the ability to authenticate an account (Sign Up for first-time users, Sign In for second timers) using a 3rd party service such as Google, Facebook, Apple, Twitter, Microsoft, etc. Even today, it doesn’t seem so farfetched that websites or applications actively push this form of authentication within their designs as a preferred user journey. This is demonstrated by Sign Up forms that prioritise these services within the UI’s visual hierarchy.
 
-![](https://i.imgur.com/VhJc8YC.png)
-
+<figure class=" exdent active">
+   <img class="fill" src="https://i.imgur.com/VhJc8YC.png">
+</figure>
 
 ## Why do users opt for 3rd party authentication services?
 Authentication using a 3rd party service such as Google provides benefits to users, such as:
@@ -77,7 +82,9 @@ Below, you can see a user’s journey of signing into or up for a service using 
 
 **Privacy:** Ok
 
-![](https://i.imgur.com/BiE8zcJ.gif)
+<figure class=" exdent active">
+   <img class="fill" src="https://i.imgur.com/BiE8zcJ.gif">
+</figure>
 
 ### Sign in/up with Apple
 iOS users also can create accounts for web and mobile applications using their Apple ID. Apple tries to protect user privacy from 3rd party applications by providing the bare minimum (email and password) in order to create an account on a user’s behalf. In addition, they provide users with the option of sharing or hiding their email address in applications. If shared, apps or websites can identify users by email. If hidden, however, Apple generates a random email address to provide the application or website, then the new address forwards relevant emails and information on to your Apple ID email address for increased privacy. As you can see in the example below, this option is pre-selected for users and therefore actively encouraged as a privacy best practise. Nice job, Steve.
@@ -87,12 +94,14 @@ iOS users also can create accounts for web and mobile applications using their A
 **Privacy:** Good
 
 **Mobile view**
-![](https://i.imgur.com/XREekUp.jpg)
-
+<figure class=" exdent active">
+   <img class="fill" src="https://i.imgur.com/XREekUp.jpg">
+</figure>
 
 **Web view**
-![](https://i.imgur.com/9rOB9yr.jpg)
-
+<figure class=" exdent active">
+   <img class="fill" src="https://i.imgur.com/9rOB9yr.jpg">
+</figure>
 
 ## Light(n)ing the way of online authentication ⚡️
 As we’ve seen, passwordless authentication services are quickly becoming the most common way for users to login to an application or website. These services are fast, easy to use, and require minimal effort from the end user. However, as we approach the dawn of Web 3.0 (a web layer built on decentralised applications and services), both privacy and self-custodianship are becoming increasingly important to users as they interact with a multitude of applications and web services alike.
