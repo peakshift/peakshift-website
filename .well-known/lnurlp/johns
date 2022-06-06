@@ -1,0 +1,1 @@
+{"status":"OK","tag":"payRequest","commentAllowed":255,"callback":"https://getalby.com/lnurlp/johns/callback","metadata":"[[\"text/identifier\", \"johns@getalby.com\"], [\"text/plain\", \"Sats for johns\"]]","minSendable":1000,"maxSendable":1100000000,"payerData":{"name":{"mandatory":false},"email":{"mandatory":false}}}
