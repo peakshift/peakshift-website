@@ -28,17 +28,33 @@ export default function Hero() {
       <Container wide>
         <div className="grid h-full w-full grid-cols-2 items-end overflow-hidden relative">
           <motion.div
-            initial={{ clipPath: "circle(0% at 50% 50%)" }}
-            animate={{ clipPath: "circle(100% at 50% 50%)" }}
-            transition={{
-              duration: 5,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "mirror",
+            initial={{
+              clipPath: "circle(0% at 50% 50%)",
+              rotate: 60,
+              x: "-50%",
+              y: "-50%",
+              originX: "50%",
+              originY: "50%",
             }}
-            className="absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
+            animate={{ clipPath: "circle(50% at 50% 50%)", rotate: 0 }}
+            transition={{
+              rotate: {
+                duration: 1,
+              },
+              clipPath: {
+                duration: 5,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "mirror",
+              },
+            }}
+            className="absolute w-full h-full top-1/2 left-1/2 z-0 flex flex-col justify-center items-center"
           >
-            <Image src={DottedLinesCircle} alt="" className="w-full h-full" />
+            <Image
+              src={DottedLinesCircle}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </motion.div>
           <motion.h1
             initial="hide"

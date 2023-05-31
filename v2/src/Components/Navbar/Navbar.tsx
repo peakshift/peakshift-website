@@ -35,14 +35,22 @@ const itemVariants = {
 };
 
 export default function Navbar() {
-  const { scrollY } = useScroll();
-
   return (
     <motion.nav
       className="fixed w-full top-10 left-10 z-30 bg-white border-b border-gray-100"
       initial="hide"
       animate="show"
-      transition={{ staggerChildren: 0.2, delayChildren: 3 }}
+      variants={{
+        hide: {
+          opacity: 0,
+          y: -60,
+        },
+        show: {
+          opacity: 1,
+          y: 0,
+        },
+      }}
+      transition={{ staggerChildren: 0.2, delay: 3, when: "beforeChildren" }}
     >
       <Container
         wide

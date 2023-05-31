@@ -15,7 +15,7 @@ export default function ResearchLab() {
       <Image
         src={BgImage}
         alt=""
-        className="absolute inset-0 z-0 inset-y-0 left-0 -translate-x-1/2"
+        className="absolute inset-0 z-0 inset-y-0 left-0 -translate-x-1/2 max-h-full"
       />
       <Container>
         <div className="flex justify-between gap-40 h-full w-full items-center relative">
