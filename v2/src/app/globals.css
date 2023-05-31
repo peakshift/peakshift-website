@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap&text=%26");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #dd1e3e;
+}
+
+body {
+  position: relative;
+  padding: 10px;
+}
+
+.page-container {
+  display: grid;
+  --min-x-padding: 16px;
+  --content-max-width: 1000px;
+  grid-template-columns:
+    1fr min(95vw - 2 * var(--min-x-padding), var(--content-max-width))
+    1fr;
+}
+
+.page-container.wide {
+  --content-max-width: 95vw;
+}
+
+.page-container > * {
+  grid-column: 2;
+}
+
+.lottie-hero svg path[fill="rgb(255,255,255)"] {
+  fill: var(--primary);
+}
+
+.amp {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+.small-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+@media screen and (min-width: 668px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #c8c8c8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaaaaa;
+}
+
+@media (pointer: coarse) {
+  .touch-device\:hidden {
+    display: none;
+  }
+}
