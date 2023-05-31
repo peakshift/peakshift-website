@@ -16,6 +16,9 @@ const headTextWords = {
   show: {
     opacity: 1,
     y: 0,
+    transition: {
+      duration: 0.3,
+    },
   },
 };
 
@@ -36,7 +39,7 @@ export default function Hero() {
               originX: "50%",
               originY: "50%",
             }}
-            animate={{ clipPath: "circle(50% at 50% 50%)", rotate: 0 }}
+            animate={{ clipPath: "circle(65% at 50% 50%)", rotate: 0 }}
             transition={{
               rotate: {
                 duration: 1,
@@ -44,8 +47,6 @@ export default function Hero() {
               clipPath: {
                 duration: 5,
                 ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
               },
             }}
             className="absolute w-full h-full top-1/2 left-1/2 z-0 flex flex-col justify-center items-center"
@@ -59,7 +60,11 @@ export default function Hero() {
           <motion.h1
             initial="hide"
             animate="show"
-            transition={{ duration: 2, ease: "easeOut", staggerChildren: 0.5 }}
+            transition={{
+              ease: "easeOut",
+              staggerChildren: 0.1,
+              delayChildren: 2.5,
+            }}
             className="uppercase text-[72px] leading-[1.2]"
           >
             <motion.span className="inline-block" variants={headTextWords}>
@@ -75,8 +80,11 @@ export default function Hero() {
             </motion.span>{" "}
             <br />
             <motion.span className="inline-block" variants={headTextWords}>
-              Experiences <b className="amp">&</b>
+              Experiences
             </motion.span>{" "}
+            <motion.b className="inline-block amp" variants={headTextWords}>
+              &
+            </motion.b>
             <br />
             <motion.span className="inline-block" variants={headTextWords}>
               Communities
@@ -85,7 +93,7 @@ export default function Hero() {
           <div className="w-[90vw]">
             <Lottie
               animationData={Animation}
-              loop={true}
+              loop={false}
               className="lottie-hero"
             />
           </div>
@@ -98,14 +106,19 @@ export default function Hero() {
             }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 5, type: "spring" }}
+            transition={{ delay: 3.5, type: "spring" }}
             className=""
           >
             SCROLL
           </motion.p>
-          <p className="flex-1 text-body6 font-normal ml-auto text-right uppercase">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 3.5, type: "spring" }}
+            className="flex-1 text-body6 font-normal ml-auto text-right uppercase"
+          >
             npub1shhm32q4zkunmwd0s20z7e6qlwkju7akku7ezte9feajmyhum3jsvy56zk
-          </p>
+          </motion.p>
         </div>
       </Container>
     </section>
