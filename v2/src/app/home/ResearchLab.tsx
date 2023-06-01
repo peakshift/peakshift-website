@@ -12,9 +12,9 @@ import Image from "next/image";
 import {
   useScroll,
   motion,
-  useMotionValueEvent,
   useTransform,
   MotionValue,
+  circOut,
 } from "framer-motion";
 
 export default function ResearchLab() {
@@ -22,10 +22,6 @@ export default function ResearchLab() {
 
   const { scrollYProgress } = useScroll({
     target: container,
-  });
-
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    console.log("Page scroll: ", latest);
   });
 
   return (
