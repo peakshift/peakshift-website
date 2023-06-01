@@ -7,6 +7,7 @@ import Container from "@/Components/Container/Container";
 import Animation from "@/assets/animations/3.json";
 import DottedLines from "./DottedLines";
 import ArrowDown from "@/assets/images/scroll--arrow-down.svg";
+import Image from "next/image";
 
 const headTextWords = {
   hide: {
@@ -27,7 +28,7 @@ export default function Hero() {
   const scrollPromptOpacity = useTransform(scrollY, [0, 100], [1, 0]);
 
   return (
-    <section className="min-h-[min(100vh,14400px)] flex flex-col justify-center relative py-80 isolate z-10">
+    <section className="min-h-[min(100vh,14400px)] flex flex-col justify-center relative py-16 isolate z-10">
       <div className="grid flex-grow h-full w-full grid-cols-2 items-end overflow-hidden relative">
         <motion.div
           initial={{
@@ -93,7 +94,7 @@ export default function Hero() {
         </div>
       </div>
       <Container wide>
-        <div className="flex justify-center mt-24">
+        <div className="flex justify-center mt-36">
           <div className="flex-1 mr-auto"></div>
           <motion.p
             style={{
@@ -106,7 +107,7 @@ export default function Hero() {
           >
             <span className="justify-self-center mb-10">SCROLL</span>
             <span className="justify-self-center mb-10">
-              <Image src={ArrowDown} />
+              <Image src={ArrowDown} alt="" />
             </span>
           </motion.p>
           <motion.p
