@@ -3,10 +3,6 @@ import React from "react";
 
 const button = cva(
   [
-    "font-bolder",
-    "hover:scale-105",
-    "active:scale-95",
-    "transition-transform",
     "flex",
     "items-center",
     "gap-12",

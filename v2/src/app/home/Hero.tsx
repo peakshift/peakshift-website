@@ -7,17 +7,18 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Container from "@/Components/Container/Container";
 import Animation from "@/assets/animations/3.json";
 import DottedLinesCircle from "@/assets/images/dotted-lines-circle.svg";
+import ArrowDown from "@/assets/images/scroll--arrow-down.svg";
 
 const headTextWords = {
   hide: {
     opacity: 0,
-    y: 160,
+    y: 12,
   },
   show: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.3,
+      duration: 0.1,
     },
   },
 };
@@ -61,7 +62,7 @@ export default function Hero() {
             initial="hide"
             animate="show"
             transition={{
-              ease: "easeOut",
+              ease: "easeIn",
               staggerChildren: 0.1,
               delayChildren: 2.5,
             }}
@@ -82,9 +83,9 @@ export default function Hero() {
             <motion.span className="inline-block" variants={headTextWords}>
               Experiences
             </motion.span>{" "}
-            <motion.b className="inline-block amp" variants={headTextWords}>
-              &
-            </motion.b>
+            <motion.span className="inline-block amp" variants={headTextWords}>
+              &amp;
+            </motion.span>
             <br />
             <motion.span className="inline-block" variants={headTextWords}>
               Communities
@@ -107,9 +108,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 3.5, type: "spring" }}
-            className=""
+            className="grid justify-items-stretch bg-white -mt-32"
           >
-            SCROLL
+            <span className="justify-self-center mb-10">
+              SCROLL
+            </span>
+            <span className="justify-self-center mb-10">
+              <Image src={ArrowDown} />
+            </span>
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
