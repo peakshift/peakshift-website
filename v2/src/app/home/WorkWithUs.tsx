@@ -3,6 +3,7 @@ import { condensedHeadings, serifText } from "@/assets/fonts";
 import React from "react";
 import ToolImg from "@/assets/images/research-tool-horizontal.svg";
 import Image from "next/image";
+import Footer from "./Footer";
 
 export default function WorkWithUs() {
   return (
@@ -33,6 +34,7 @@ export default function WorkWithUs() {
           </li>
         ))}
       </ul>
+      <Footer />
     </section>
   );
 }
