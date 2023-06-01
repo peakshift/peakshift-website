@@ -1,11 +1,11 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React from "react";
 import { CgFileDocument } from "react-icons/cg";
 import { FiChevronRight, FiUsers, FiEyeOff, FiSettings } from "react-icons/fi";
 import { AiOutlineScan, AiOutlineWallet, AiOutlineSwap } from "react-icons/ai";
 
 import Container from "@/Components/Container/Container";
 import { condensedHeadings, serifText } from "@/assets/fonts";
-import BgImage from "@/assets/images/research-tool.png";
+import BgImage from "@/assets/images/research-tool.svg";
 import Button from "@/Components/Button/Button";
 import Image from "next/image";
 

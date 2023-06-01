@@ -1,12 +1,11 @@
 "use client";
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import Image from "next/image";
+import React from "react";
 import Lottie from "lottie-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import Container from "@/Components/Container/Container";
 import Animation from "@/assets/animations/3.json";
-import DottedLinesCircle from "@/assets/images/dotted-lines-circle.svg";
+import DottedLines from "./DottedLines";
 
 const headTextWords = {
   hide: {
@@ -27,77 +26,72 @@ export default function Hero() {
   const scrollPromptOpacity = useTransform(scrollY, [0, 100], [1, 0]);
 
   return (
-    <section className="min-h-[min(100vh,1200px)] flex justify-center relative py-80 isolate z-10">
-      <Container wide>
-        <div className="grid h-full w-full grid-cols-2 items-end overflow-hidden relative">
-          <motion.div
-            initial={{
-              clipPath: "circle(0% at 50% 50%)",
-              rotate: 60,
-              x: "-50%",
-              y: "-50%",
-              originX: "50%",
-              originY: "50%",
-            }}
-            animate={{ clipPath: "circle(65% at 50% 50%)", rotate: 0 }}
-            transition={{
-              rotate: {
-                duration: 1,
-              },
-              clipPath: {
-                duration: 5,
-                ease: "easeInOut",
-              },
-            }}
-            className="absolute w-full h-full top-1/2 left-1/2 z-0 flex flex-col justify-center items-center"
-          >
-            <Image
-              src={DottedLinesCircle}
-              alt=""
-              className="w-full h-full object-contain"
-            />
-          </motion.div>
-          <motion.h1
-            initial="hide"
-            animate="show"
-            transition={{
-              ease: "easeOut",
-              staggerChildren: 0.1,
-              delayChildren: 2.5,
-            }}
-            className="uppercase text-[72px] leading-[1.2]"
-          >
-            <motion.span className="inline-block" variants={headTextWords}>
-              We
-            </motion.span>{" "}
-            <br />
-            <motion.span className="inline-block" variants={headTextWords}>
-              Build
-            </motion.span>{" "}
-            <br />
-            <motion.span className="inline-block" variants={headTextWords}>
-              Products
-            </motion.span>{" "}
-            <br />
-            <motion.span className="inline-block" variants={headTextWords}>
-              Experiences
-            </motion.span>{" "}
-            <motion.b className="inline-block amp" variants={headTextWords}>
-              &
-            </motion.b>
-            <br />
-            <motion.span className="inline-block" variants={headTextWords}>
-              Communities
-            </motion.span>
-          </motion.h1>
-          <div className="w-[90vw]">
+    <section className="min-h-[min(100vh,14400px)] flex flex-col justify-center relative py-80 isolate z-10">
+      <div className="grid flex-grow h-full w-full grid-cols-2 items-end overflow-hidden relative">
+        <motion.div
+          initial={{
+            x: "-50%",
+            y: "-50%",
+            originX: "50%",
+            originY: "50%",
+          }}
+          transition={{
+            rotate: {
+              duration: 1,
+            },
+            clipPath: {
+              duration: 5,
+              ease: "easeInOut",
+            },
+          }}
+          className="absolute w-full h-full top-1/2 left-1/2 z-0 flex flex-col justify-center items-center"
+        >
+          <DottedLines />
+        </motion.div>
+        <motion.h1
+          initial="hide"
+          animate="show"
+          transition={{
+            ease: "easeOut",
+            staggerChildren: 0.1,
+            delayChildren: 2.5,
+          }}
+          className="uppercase ps-16 md:ps-42 text-[72px] leading-[1.2]"
+        >
+          <motion.span className="inline-block" variants={headTextWords}>
+            We
+          </motion.span>{" "}
+          <br />
+          <motion.span className="inline-block" variants={headTextWords}>
+            Build
+          </motion.span>{" "}
+          <br />
+          <motion.span className="inline-block" variants={headTextWords}>
+            Products
+          </motion.span>{" "}
+          <br />
+          <motion.span className="inline-block" variants={headTextWords}>
+            Experiences
+          </motion.span>{" "}
+          <motion.b className="inline-block amp" variants={headTextWords}>
+            &
+          </motion.b>
+          <br />
+          <motion.span className="inline-block" variants={headTextWords}>
+            Communities
+          </motion.span>
+        </motion.h1>
+        <div className="relative">
+          <div className="absolute bottom-0 left-0">
             <Lottie
               animationData={Animation}
               loop={false}
-              className="lottie-hero"
+              className="lottie-hero  w-[100vw]"
             />
           </div>
         </div>
+      </div>
+      <Container wide>
         <div className="flex justify-center mt-24">
           <div className="flex-1 mr-auto"></div>
           <motion.p

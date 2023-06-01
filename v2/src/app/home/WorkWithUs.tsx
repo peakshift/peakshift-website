@@ -1,7 +1,7 @@
 import Container from "@/Components/Container/Container";
 import { condensedHeadings, serifText } from "@/assets/fonts";
 import React from "react";
-import ToolImg from "@/assets/images/research-tool-horizontal.png";
+import ToolImg from "@/assets/images/research-tool-horizontal.svg";
 import Image from "next/image";
 
 export default function WorkWithUs() {
@@ -18,6 +18,7 @@ export default function WorkWithUs() {
           engaging experiences <b className="amp">&</b> communities.
         </p>
       </Container>
+      <Image src={ToolImg} alt="" className="w-full" />
       <ul
         className={`mt-[120px] ${condensedHeadings.className} font-light text-[48px]`}
       >
