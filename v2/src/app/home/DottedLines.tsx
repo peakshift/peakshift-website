@@ -1,35 +1,50 @@
-import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
 
 const pathVariants = {
   hidden: {
     strokeDashoffset: 0,
   },
-  visible: ({ pathLength, order }: { pathLength: number; order: number }) => ({
-    strokeDashoffset: `${pathLength}px`,
-    transition: {
-      duration: 3,
-    },
-  }),
+  visible: ({ pathLength, order }: { pathLength: number; order: number }) =>
+    pathLength === -1
+      ? {}
+      : {
+          strokeDashoffset: `${pathLength}px`,
+          transition: {
+            duration: 3,
+          },
+        },
 };
 
 export default function DottedLines() {
-  const horizontalPathLength = calculatePathLength(
-    "M 1380 351.066 L 0.283264 351.066"
-  );
+  const [horizontalPathLength, setHorizontalPathLength] = useState(-1);
+  const [verticalPathLength, setVerticalPathLength] = useState(-1);
+  const [diagonalPath1Length, setDiagonalPath1Length] = useState(-1);
 
-  const verticalPathLength = calculatePathLength(
-    "M 689.641 700.299 L 689.641 0.832764"
-  );
+  const controls = useAnimation();
 
-  const diagonalPath1Length = calculatePathLength(
-    "M 1040.35 701.486 L 339.222 0.353555"
-  );
+  useEffect(() => {
+    setHorizontalPathLength(
+      calculatePathLength("M 1380 351.066 L 0.283264 351.066")
+    );
+    setVerticalPathLength(
+      calculatePathLength("M 689.641 700.299 L 689.641 0.832764")
+    );
+    setDiagonalPath1Length(
+      calculatePathLength("M 1040.35 701.486 L 339.222 0.353555")
+    );
+  }, []);
+
+  useEffect(() => {
+    if (horizontalPathLength !== -1) {
+      controls.start("visible");
+    }
+  }, [horizontalPathLength, controls]);
 
   return (
     <motion.svg
       initial="hidden"
-      animate="visible"
+      animate={controls}
       transition={{
         staggerChildren: 0.5,
       }}
@@ -71,7 +86,7 @@ export default function DottedLines() {
       <path
         d="M 1040.35 701.486 L 339.222 0.353555"
         stroke="black"
-        stroke-dasharray="2 2"
+        strokeDasharray="2 2"
       />
 
       <motion.path
