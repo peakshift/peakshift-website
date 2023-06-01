@@ -39,7 +39,7 @@ export default function ResearchLab() {
               {researches.slice(0, 3).map((research, i) => (
                 <li
                   key={research.title}
-                  className={`p-16 min-w-[192px] border-2 border-gray-800 border-dashed flex flex-col gap-12`}
+                  className={`p-16 min-w-[192px] border border-gray-800 border-dashed flex flex-col gap-12`}
                 >
                   <research.icon />
                   <p className="text-body3 text-gray-800 uppercase font-normal">
@@ -57,7 +57,7 @@ export default function ResearchLab() {
               {researches.slice(3).map((research, i) => (
                 <li
                   key={research.title}
-                  className={`p-16 min-w-[192px] border-2 border-gray-800 border-dashed flex flex-col gap-12`}
+                  className={`p-16 min-w-[192px] border border-gray-800 border-dashed flex flex-col gap-12`}
                 >
                   <research.icon />
                   <p className="text-body3 text-gray-800 uppercase font-normal">

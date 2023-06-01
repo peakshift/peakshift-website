@@ -26,11 +26,11 @@ const links = [
 const itemVariants = {
   hide: {
     opacity: 0,
-    y: -60,
+    x: -4,
   },
   show: {
     opacity: 1,
-    y: 0,
+    x: 0,
   },
 };
 
@@ -43,20 +43,20 @@ export default function Navbar() {
       variants={{
         hide: {
           opacity: 0,
-          y: -60,
+          x: -4,
         },
         show: {
           opacity: 1,
-          y: 0,
+          x: 0,
         },
       }}
-      transition={{ staggerChildren: 0.2, delay: 3, when: "beforeChildren" }}
+      transition={{ staggerChildren: 0.1, delay: 0, when: "beforeChildren" }}
     >
       <Container
         wide
         className="py-16 flex flex-wrap justify-between items-center"
       >
-        <ul className=" flex text-body6 md:text-body4 gap-8 ml-8">
+        <ul className="flex text-body6 md:text-body4 gap-8">
           {links.map((link) => (
             <motion.li
               key={link.href}
@@ -64,11 +64,11 @@ export default function Navbar() {
               variants={itemVariants}
             >
               <NavLink
-                className={`md:pl-20 md:pr-58 block font-normal uppercase hover:text-primary `}
+                className={`md:pr-20 block font-normal uppercase hover:text-primary`}
                 activeClassName="text-primary"
                 href={link.href}
               >
-                / {link.text}
+                <span className="text-gray-300">/</span> {link.text}
               </NavLink>
             </motion.li>
           ))}
