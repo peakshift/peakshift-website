@@ -27,7 +27,9 @@ export default function ResearchLab() {
         <Image
           src={BgImage}
           alt=""
-          className="absolute top-0 max-md:right-0 md:left-0 z-0 max-md:translate-x-1/2 md:-translate-x-1/2 md:h-full max-md:opacity-60"
+          className="absolute z-0 top-0 
+          max-md:right-0 max-md:translate-x-1/2 max-md:opacity-60
+          md:left-0 md:-translate-x-1/2 md:h-full"
         />
         <Container className="relative">
           <div className="flex max-md:flex-wrap justify-between gap-40 min-h-[100vh] w-full items-center ">
