@@ -29,7 +29,7 @@ export default function Hero() {
 
   return (
     <section className="min-h-[min(100vh,14400px)] flex flex-col justify-center relative py-16 isolate z-10">
-      <div className="grid flex-grow h-full w-full grid-cols-2 items-end overflow-hidden relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 flex-grow h-full w-full  items-end overflow-hidden relative">
         <motion.div
           initial={{
             x: "-50%",
@@ -46,7 +46,7 @@ export default function Hero() {
               ease: "easeInOut",
             },
           }}
-          className="absolute w-full h-full top-1/2 left-1/2 z-0 flex flex-col justify-center items-center"
+          className="hidden md:flex absolute w-full h-full top-1/2 left-1/2 z-0 flex-col justify-center items-center"
         >
           <DottedLines />
         </motion.div>
@@ -58,7 +58,7 @@ export default function Hero() {
             staggerChildren: 0.1,
             delayChildren: 2.5,
           }}
-          className="uppercase ps-16 md:ps-42 text-[72px] leading-[1.2]"
+          className="uppercase ps-16 md:ps-42 text-[40px] md:text-[72px] leading-[1.2]"
         >
           <motion.span className="inline-block" variants={headTextWords}>
             We
@@ -84,18 +84,18 @@ export default function Hero() {
           </motion.span>
         </motion.h1>
         <div className="relative">
-          <div className="absolute bottom-0 left-0">
+          <div className="top-0 left-0">
             <Lottie
               animationData={Animation}
               loop={false}
-              className="lottie-hero  w-[100vw]"
+              className="lottie-hero w-[190vw] md:w-screen"
             />
           </div>
         </div>
       </div>
       <Container wide>
-        <div className="flex justify-center mt-36">
-          <div className="flex-1 mr-auto"></div>
+        <div className="flex max-md:flex-row-reverse justify-between mt-36 overflow-hidden items-center gap-24 pb-8">
+          <div className="hidden md:block flex-1 mr-auto"></div>
           <motion.p
             style={{
               opacity: scrollPromptOpacity,
@@ -103,7 +103,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 3.5, type: "spring" }}
-            className="grid justify-items-stretch bg-white -mt-32"
+            className="flex flex-col items-center bg-white  shrink-0"
           >
             <span className="justify-self-center mb-10">SCROLL</span>
             <span className="justify-self-center mb-10">
@@ -114,7 +114,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 3.5, type: "spring" }}
-            className="flex-1 text-body6 font-normal ml-auto text-right uppercase"
+            className="flex-1 text-body6 font-normal md:ml-auto md:text-right uppercase break-words min-w-0 max-w-[50%]"
           >
             npub1shhm32q4zkunmwd0s20z7e6qlwkju7akku7ezte9feajmyhum3jsvy56zk
           </motion.p>

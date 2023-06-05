@@ -20,33 +20,35 @@ export default function ResearchLab() {
 
   return (
     <section
-      className="min-h-[min(500vh,6000px)] relative py-80 isolate z-10"
+      className="md:min-h-[min(500vh,6000px)] relative py-80 isolate z-10"
       ref={container}
     >
-      <div className="sticky top-0">
+      <div className="relative md:sticky top-0 overflow-hidden">
         <Image
           src={BgImage}
           alt=""
-          className="absolute inset-y-0 left-0 z-0 -translate-x-1/2 h-full"
+          className="absolute top-0 max-md:right-0 md:left-0 z-0 max-md:translate-x-1/2 md:-translate-x-1/2 md:h-full max-md:opacity-60"
         />
         <Container className="relative">
-          <div className="flex justify-between gap-40 min-h-[100vh] w-full items-center ">
+          <div className="flex max-md:flex-wrap justify-between gap-40 min-h-[100vh] w-full items-center ">
             <div className="max-w-[480px]">
               <h2
-                className={`${condensedHeadings.className} text-primary text-[48px] font-light`}
+                className={`${condensedHeadings.className} text-primary text-h2 md:text-[48px] font-light`}
               >
                 RESEARCH LAB
               </h2>
-              <p className={`${serifText.className} italic text-body1`}>
+              <p
+                className={`${serifText.className} italic text-body2 md:text-body1`}
+              >
                 We mix technical knowledge with human centred design in order to
                 discover design patterns for bleeding edge technologies. in
                 order to make them more accessible to the mass market.
               </p>
-              <Button className="mt-40">
+              <Button className="mt-40 max-md:w-full">
                 <CgFileDocument /> Read our research <FiChevronRight />
               </Button>
             </div>
-            <div className="grid grid-cols-2 gap-32">
+            <div className="grid md:grid-cols-2 gap-32">
               <ul className="flex flex-col gap-32">
                 {researches.slice(0, 3).map((research, i) => (
                   <ResearchCard
@@ -57,7 +59,7 @@ export default function ResearchLab() {
                   />
                 ))}
               </ul>
-              <ul className="flex flex-col gap-32 mt-64">
+              <ul className="flex flex-col gap-32 md:mt-64">
                 {researches.slice(3).map((research, i) => (
                   <ResearchCard
                     key={research.title}
@@ -101,7 +103,7 @@ function ResearchCard({
       initial={{ opacity: 0, y: 200 }}
       style={{ opacity, y }}
       key={research.title}
-      className={`p-16 min-w-[192px] border border-gray-800 border-dashed flex flex-col gap-12`}
+      className={`p-16 min-w-[192px] border border-gray-800 bg-white border-dashed flex flex-col gap-12`}
     >
       <research.icon />
       <p className="text-body3 text-gray-800 uppercase font-normal">

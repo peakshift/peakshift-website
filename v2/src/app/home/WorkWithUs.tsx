@@ -8,12 +8,17 @@ import Footer from "./Footer";
 export default function WorkWithUs() {
   return (
     <section className="bg-primary text-white relative">
-      <p className="uppercase text-body3 absolute top-36 right-36 origin-bottom-right -rotate-90">
-        Work with us
-      </p>
+      <div className="flex justify-end py-40">
+        <p
+          className={`text-body1 relative flex items-center gap-16 uppercase ${condensedHeadings.className}`}
+        >
+          Work with us
+          <span className="bg-white h-2 w-64 md:w-[100px]"></span>
+        </p>
+      </div>
       <Container>
         <p
-          className={`text-h1 ${serifText.className} italic mt-[120px] lowercase max-w-[30ch]`}
+          className={`text-body1 md:text-h1 ${serifText.className} italic mt-[120px] lowercase max-w-[30ch]`}
         >
           HELPING founders <b className="amp">&</b> STARTUP teams launch
           engaging experiences <b className="amp">&</b> communities.
@@ -21,13 +26,13 @@ export default function WorkWithUs() {
       </Container>
       <Image src={ToolImg} alt="" className="w-full" />
       <ul
-        className={`mt-[120px] ${condensedHeadings.className} font-light text-[48px]`}
+        className={`mt-36 md:mt-[120px] ${condensedHeadings.className} font-light text-body2 md:text-[48px]`}
       >
         {services.map((service, i) => (
           <li
             key={service}
-            className={`flex items-center gap-12 border-b py-36 border-dashed border-white last-of-type:border-0 ${
-              i % 2 === 0 ? "pl-16" : "pl-48"
+            className={`flex items-center gap-12 border-b py-24 md:py-36 border-dashed border-white last-of-type:border-0 ${
+              i % 2 === 0 ? "pl-16" : "pl-32 md:pl-48"
             }`}
           >
             <p>{service}</p>
