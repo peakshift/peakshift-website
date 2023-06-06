@@ -20,37 +20,37 @@ export default function ResearchLab() {
 
   return (
     <section
-      className="md:min-h-[min(500vh,6000px)] relative py-80 isolate z-10"
+      className="lg:min-h-[min(500vh,6000px)] relative py-80 isolate z-10"
       ref={container}
     >
-      <div className="relative md:sticky top-0 overflow-hidden">
+      <div className="relative lg:sticky top-0 overflow-hidden">
         <Image
           src={BgImage}
           alt=""
           className="absolute z-0 top-0 
-          max-md:right-0 max-md:translate-x-1/2 max-md:opacity-60
-          md:left-0 md:-translate-x-1/2 md:h-full"
+          max-lg:right-0 max-lg:translate-x-1/2 max-lg:opacity-60
+          lg:left-0 lg:-translate-x-1/2 lg:h-full"
         />
         <Container className="relative">
-          <div className="flex max-md:flex-wrap justify-between gap-40 min-h-[100vh] w-full items-center ">
+          <div className="flex max-lg:flex-wrap justify-between gap-40 min-h-[100vh] w-full items-center ">
             <div className="max-w-[480px]">
               <h2
-                className={`${condensedHeadings.className} text-primary text-h2 md:text-[48px] font-light`}
+                className={`${condensedHeadings.className} text-primary text-h2 lg:text-[48px] font-light`}
               >
                 RESEARCH LAB
               </h2>
               <p
-                className={`${serifText.className} italic text-body2 md:text-body1`}
+                className={`${serifText.className} italic text-body2 lg:text-body1`}
               >
                 We mix technical knowledge with human centred design in order to
                 discover design patterns for bleeding edge technologies. in
                 order to make them more accessible to the mass market.
               </p>
-              <Button className="mt-40 max-md:w-full">
+              <Button className="mt-40 max-lg:w-full">
                 <CgFileDocument /> Read our research <FiChevronRight />
               </Button>
             </div>
-            <div className="grid md:grid-cols-2 gap-32">
+            <div className="grid lg:grid-cols-2 lg:pt-64 gap-32">
               <ul className="flex flex-col gap-32">
                 {researches.slice(0, 3).map((research, i) => (
                   <ResearchCard
@@ -61,7 +61,7 @@ export default function ResearchLab() {
                   />
                 ))}
               </ul>
-              <ul className="flex flex-col gap-32 md:mt-64">
+              <ul className="flex flex-col gap-32 lg:mt-64">
                 {researches.slice(3).map((research, i) => (
                   <ResearchCard
                     key={research.title}
