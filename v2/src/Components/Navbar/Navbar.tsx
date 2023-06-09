@@ -9,20 +9,20 @@ import NavLink from "../NavLink/NavLink";
 
 const links = [
   {
-    text: "Ventures",
-    href: "/ventures",
+    text: "Twitter",
+    href: "https://twitter.com/peakshift.com",
   },
   {
-    text: "Consulting",
-    href: "/consulting",
+    text: "BOLT.FUN",
+    href: "https://bolt.fun",
   },
   {
-    text: "Journal",
-    href: "/journal",
+    text: "Contact",
+    href: "mailto:team@peakshift.com",
   },
   {
-    text: "Hire Us",
-    href: "/hire-us",
+    text: "Book Consultation",
+    href: "https://calendly.com/johnsbeharry",
   },
 ];
 
@@ -103,6 +103,8 @@ export default function Navbar() {
                   className={`md:pr-20 block font-normal uppercase hover:text-primary`}
                   activeClassName="text-primary"
                   href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="text-gray-300">/</span> {link.text}
                 </NavLink>

@@ -7,17 +7,7 @@ import Container from "@/Components/Container/Container";
 import { condensedHeadings, serifText } from "@/assets/fonts";
 import PapersImage from "@/assets/images/footer-papers.png";
 
-const sayHiVariants = [
-  "Say Hi",
-  "مرحباً",
-  "Здраво",
-  "Zdravo",
-  "Hola",
-  "你好",
-  "Olá",
-  "Bonjour",
-  "Ciao",
-];
+const sayHiVariants = ["Say Hi", "مرحباً", "Здраво", "Zdravo", "Hola"];
 
 export default function Footer() {
   const [sayHiTextIndex, setSayHiTextIndex] = useState(0);

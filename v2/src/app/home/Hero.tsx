@@ -105,10 +105,10 @@ export default function Hero() {
             transition={{ delay: 3.5, type: "spring" }}
             className="flex flex-col items-center bg-white  shrink-0"
           >
-            <span className="justify-self-center mb-10">SCROLL</span>
-            <span className="justify-self-center mb-10">
+            {/* <span className="justify-self-center mb-10">SCROLL</span> */}
+            {/* <span className="justify-self-center mb-10">
               <Image src={ArrowDown} alt="" />
-            </span>
+            </span> */}
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

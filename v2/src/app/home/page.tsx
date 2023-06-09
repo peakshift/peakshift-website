@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <ResearchLab />
-      <WorkWithUs />
+      {/* <ResearchLab />
+      <WorkWithUs /> */}
     </main>
   );
 }
