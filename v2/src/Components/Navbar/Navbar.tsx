@@ -10,7 +10,7 @@ import NavLink from "../NavLink/NavLink";
 const links = [
   {
     text: "Twitter",
-    href: "https://twitter.com/peakshift.com",
+    href: "https://twitter.com/peakshift",
   },
   {
     text: "BOLT.FUN",
