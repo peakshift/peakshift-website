@@ -17,6 +17,7 @@ import MerchImage from "./assets/merch.png";
 import { condensedHeadings, monoText, serifText } from "@/assets/fonts";
 import ColorsPalette from "../Components/ColorsPalette";
 import { Metadata } from "next";
+import ProjectsSelect from "@/Components/ProjectsSelect/ProjectsSelect";
 
 export const metadata: Metadata = {
   title: "Adopting Bitcoin",
@@ -308,10 +309,11 @@ export default function AdoptingBitcoinPage() {
         <section className="py-80">
           {" "}
           <h2
-            className={`${condensedHeadings.className} text-h3 md:text-[48px] uppercase`}
+            className={`${condensedHeadings.className} text-h3 md:text-[48px] uppercase mb-24`}
           >
             OTHER PROJECTS
           </h2>
+          <ProjectsSelect />
         </section>
       </Container>
     </>
