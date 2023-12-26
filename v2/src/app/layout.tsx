@@ -19,9 +19,6 @@ export default function RootLayout({
       <body className={sansText.className}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
-        <Frame />
-        <div id="spot-light"></div>
       </body>
     </html>
   );

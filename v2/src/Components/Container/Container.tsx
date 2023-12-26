@@ -3,22 +3,16 @@ import React from "react";
 interface Props {
   children: JSX.Element | JSX.Element[];
   wide?: boolean;
-  containerClassName?: string;
   className?: string;
 }
 
-export default function Container({
-  children,
-  wide,
-  className,
-  containerClassName,
-}: Props) {
+export default function Container({ children, wide, className }: Props) {
   return (
     <div
       className={`page-container 
-      ${wide && "wide"} ${containerClassName}`}
+      ${wide && "wide"} ${className}`}
     >
-      <div className={className}>{children}</div>
+      {children}
     </div>
   );
 }

@@ -28,7 +28,7 @@ export default function Hero() {
   const scrollPromptOpacity = useTransform(scrollY, [0, 100], [1, 0]);
 
   return (
-    <section className="min-h-[min(100vh,14400px)] flex flex-col justify-center relative py-16 isolate z-10">
+    <section className="min-h-[min(95vh,1440px)] flex flex-col justify-center relative py-16 isolate z-10">
       <div className="grid grid-cols-1 md:grid-cols-2 flex-grow h-full w-full  items-end overflow-hidden relative">
         <motion.div
           initial={{

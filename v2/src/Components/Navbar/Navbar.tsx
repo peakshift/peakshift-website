@@ -73,7 +73,7 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
-        className="fixed w-full top-10 left-10 z-30 bg-white border-b border-gray-100"
+        className="sticky w-full top-10 left-10 z-30 bg-inherit border-b-2 md:border-b-0 border-gray-300"
         initial="hide"
         animate="show"
         variants={{
@@ -88,42 +88,41 @@ export default function Navbar() {
         }}
         transition={{ staggerChildren: 0.1, delay: 0, when: "beforeChildren" }}
       >
-        <Container
-          wide
-          className="py-16 flex flex-wrap justify-between items-center"
-        >
-          <ul className="hidden md:flex text-body6 md:text-body4 gap-8">
-            {links.map((link) => (
-              <motion.li
-                key={link.href}
-                className="md:border-l border-gray-100 border-opacity-10"
-                variants={itemVariants}
-              >
-                <NavLink
-                  className={`md:pr-20 block font-normal uppercase hover:text-primary`}
-                  activeClassName="text-primary"
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+        <Container wide>
+          <div className="py-16 flex flex-wrap justify-between items-center">
+            <ul className="hidden md:flex text-body6 md:text-body4 gap-8">
+              {links.map((link) => (
+                <motion.li
+                  key={link.href}
+                  className="md:border-l border-gray-100 border-opacity-10"
+                  variants={itemVariants}
                 >
-                  <span className="text-gray-300">/</span> {link.text}
-                </NavLink>
-              </motion.li>
-            ))}
-          </ul>
-          <button
-            className="md:hidden min-w-40 text-body1"
-            onClick={toggleNav}
-            aria-label="Open Side Nav Menu"
-          >
-            / <span className="text-body4">menu</span>
-          </button>
-          <motion.p
-            variants={itemVariants}
-            className="text-[10px] md:text-body6 font-normal whitespace-break-spaces max-md:basis-1/2"
-          >
-            PGP A815 2601 F001 645B 5269 2258 6004 5CFE 793B 59AD
-          </motion.p>
+                  <NavLink
+                    className={`md:pr-20 block font-normal uppercase hover:text-primary`}
+                    activeClassName="text-primary"
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="">/</span> {link.text}
+                  </NavLink>
+                </motion.li>
+              ))}
+            </ul>
+            <button
+              className="md:hidden min-w-40 text-body1"
+              onClick={toggleNav}
+              aria-label="Open Side Nav Menu"
+            >
+              / <span className="text-body4">menu</span>
+            </button>
+            <motion.p
+              variants={itemVariants}
+              className="text-[10px] md:text-body6 font-normal whitespace-break-spaces max-md:basis-1/2"
+            >
+              PGP A815 2601 F001 645B 5269 2258 6004 5CFE 793B 59AD
+            </motion.p>
+          </div>
         </Container>
       </motion.nav>
 
@@ -140,7 +139,7 @@ export default function Navbar() {
           variants={sideNavVariants}
           initial={isOpen ? "show" : "hide"}
           animate={isOpen ? "show" : "hide"}
-          className="fixed top-0 inset-x-0 bg-white p-32 border-b border-gray-200 z-40"
+          className="fixed top-0 inset-x-0 bg-[var(--page-bg-color)] p-32 border-b border-gray-200 z-40"
         >
           <ul className="flex flex-col gap-16 text-body4">
             {links.map((link) => (
@@ -154,7 +153,7 @@ export default function Navbar() {
                   activeClassName="text-primary"
                   href={link.href}
                 >
-                  <span className="text-gray-300" aria-hidden>
+                  <span className="" aria-hidden>
                     /
                   </span>{" "}
                   {link.text}

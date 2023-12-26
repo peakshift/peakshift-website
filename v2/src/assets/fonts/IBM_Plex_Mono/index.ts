@@ -1,68 +1,68 @@
 import localFont from "next/font/local";
 
-const IBMPlexSerifFont = localFont({
+const IBMPlexMonoFont = localFont({
   src: [
     {
-      path: "./IBMPlexSerif-Light.ttf",
+      path: "./IBMPlexMono-Light.ttf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "./IBMPlexSerif-LightItalic.ttf",
+      path: "./IBMPlexMono-LightItalic.ttf",
       weight: "300",
       style: "italic",
     },
     {
-      path: "./IBMPlexSerif-Regular.ttf",
+      path: "./IBMPlexMono-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./IBMPlexSerif-Italic.ttf",
+      path: "./IBMPlexMono-Italic.ttf",
       weight: "400",
       style: "italic",
     },
     // {
-    //   path: "./IBMPlexSerif-Medium.ttf",
+    //   path: "./IBMPlexMono-Medium.ttf",
     //   weight: "500",
     //   style: "normal",
     // },
     // {
-    //   path: "./IBMPlexSerif-MediumItalic.ttf",
+    //   path: "./IBMPlexMono-MediumItalic.ttf",
     //   weight: "500",
     //   style: "italic",
     // },
     // {
-    //   path: "./IBMPlexSerif-SemiBold.ttf",
+    //   path: "./IBMPlexMono-SemiBold.ttf",
     //   weight: "600",
     //   style: "normal",
     // },
     // {
-    //   path: "./IBMPlexSerif-SemiBoldItalic.ttf",
+    //   path: "./IBMPlexMono-SemiBoldItalic.ttf",
     //   weight: "600",
     //   style: "italic",
     // },
     // {
-    //   path: "./IBMPlexSerif-Bold.ttf",
+    //   path: "./IBMPlexMono-Bold.ttf",
     //   weight: "700",
     //   style: "normal",
     // },
     // {
-    //   path: "./IBMPlexSerif-BoldItalic.ttf",
+    //   path: "./IBMPlexMono-BoldItalic.ttf",
     //   weight: "700",
     //   style: "italic",
     // },
     // {
-    //   path: "./IBMPlexSerif-ExtraBold.ttf",
+    //   path: "./IBMPlexMono-ExtraBold.ttf",
     //   weight: "700",
     //   style: "normal",
     // },
     // {
-    //   path: "./IBMPlexSerif-ExtraBoldItalic.ttf",
+    //   path: "./IBMPlexMono-ExtraBoldItalic.ttf",
     //   weight: "700",
     //   style: "italic",
     // },
   ],
 });
 
-export default IBMPlexSerifFont;
+export default IBMPlexMonoFont;

@@ -4,8 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --page-bg-color {
+  syntax: "<color>";
+  initial-value: #fff;
+  inherits: false;
+}
+
 :root {
   --primary: #dd1e3e;
+  --page-bg-color: #fff;
 }
 
 html {
@@ -18,15 +25,22 @@ html {
 body {
   position: relative;
   padding: 10px;
+  background-color: var(--page-bg-color);
+  transition: background-color 0.5s ease-in-out;
 }
 
 .page-container {
   display: grid;
   --min-x-padding: 16px;
-  --content-max-width: 1000px;
+  --content-max-width: 1200px;
   grid-template-columns:
     1fr min(95vw - 2 * var(--min-x-padding), var(--content-max-width))
     1fr;
+}
+
+.page-container > .full-bleed {
+  grid-column: 1 / -1;
+  width: 100%;
 }
 
 .page-container.wide {
