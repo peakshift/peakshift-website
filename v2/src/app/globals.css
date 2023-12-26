@@ -7,12 +7,19 @@
 @property --page-bg-color {
   syntax: "<color>";
   initial-value: #fff;
-  inherits: false;
+  inherits: true;
+}
+
+@property --final-frame-color {
+  syntax: "<color>";
+  initial-value: #000;
+  inherits: true;
 }
 
 :root {
   --primary: #dd1e3e;
   --page-bg-color: #fff;
+  --final-frame-color: var(--frame-color, var(--primary));
 }
 
 html {

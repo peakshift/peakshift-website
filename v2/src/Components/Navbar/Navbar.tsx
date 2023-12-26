@@ -73,7 +73,7 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
-        className="sticky w-full top-10 left-10 z-30 bg-inherit border-b-2 md:border-b-0 border-gray-300"
+        className="sticky w-full top-10 left-10 z-30 bg-inherit border-b-2 md:border-b-0 border-gray-500 border-opacity-20"
         initial="hide"
         animate="show"
         variants={{
@@ -137,6 +137,9 @@ export default function Navbar() {
       <FocusLock disabled={!isOpen}>
         <motion.nav
           variants={sideNavVariants}
+          transition={{
+            ease: "easeInOut",
+          }}
           initial={isOpen ? "show" : "hide"}
           animate={isOpen ? "show" : "hide"}
           className="fixed top-0 inset-x-0 bg-[var(--page-bg-color)] p-32 border-b border-gray-200 z-40"

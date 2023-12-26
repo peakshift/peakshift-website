@@ -16,11 +16,21 @@ import MerchImage from "./assets/merch.png";
 
 import { condensedHeadings, monoText, serifText } from "@/assets/fonts";
 import ColorsPalette from "../Components/ColorsPalette";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Adopting Bitcoin",
+  description: "Designing the largest Bitcoin conference in El Salvador",
+};
 
 export default function AdoptingBitcoinPage() {
   return (
     <>
-      <SetPageColor color={projectData.pageColor} />
+      <SetPageColor
+        backgroundColor={projectData.pageColor}
+        frameColor={projectData.pageColor}
+        textColor="#000"
+      />
       <Container className="overflow-hidden">
         <section
           id="project-header"
@@ -61,7 +71,7 @@ export default function AdoptingBitcoinPage() {
           </p>
           <TicketsRow />
         </section>
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-x-100 py-80">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-x-100 gap-y-24 py-80">
           <div>
             <Image
               src={ALightningSummitinElSalvadorImage}

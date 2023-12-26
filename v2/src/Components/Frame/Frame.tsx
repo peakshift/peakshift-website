@@ -1,7 +1,6 @@
 import React from "react";
+import styles from "./styles.module.css";
 
 export default function Frame() {
-  return (
-    <div className="fixed border-[10px] border-primary inset-0 z-30 pointer-events-none"></div>
-  );
+  return <div className={styles.frame}></div>;
 }

@@ -11,27 +11,34 @@ const MAX_TICKET_WIDTH = 400;
 export default function TicketsRow() {
   const [mounted, setMounted] = useState(false);
 
-  const { current: shuffledTickets } = useRef(
+  const [shuffledTickets] = useState(
     shuffleArray([Ticket1Image, Ticket2Image, Ticket3Image])
   );
+  const [initialPosition] = useState(Math.random() > 0.5 ? "left" : "right");
+  const [duration] = useState(Math.random() * 10 + 30);
 
-  const { current: initialPosition } = useRef(
-    Math.random() > 0.5 ? "left" : "right"
-  );
-
-  const { current: duration } = useRef(Math.random() * 10 + 30);
+  const [numTickets, setNumTickets] = useState(0);
+  const [ticketWidth, setTicketWidth] = useState(0);
 
   useEffect(() => {
     setMounted(true);
+
+    const handleResize = () => {
+      const windowWidth = window.innerWidth;
+      const ticketWidth = Math.min(MAX_TICKET_WIDTH, windowWidth / 4);
+      const numTickets = Math.floor((windowWidth * 2) / ticketWidth);
+      setNumTickets(numTickets);
+      setTicketWidth(ticketWidth);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   if (!mounted) return null;
-
-  const windowWidth = window.innerWidth;
-
-  const ticketWidth = Math.min(MAX_TICKET_WIDTH, windowWidth / 4);
-
-  const numTickets = Math.floor((windowWidth * 2) / ticketWidth);
 
   return (
     <div className="-rotate-12">
