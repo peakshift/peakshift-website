@@ -29,7 +29,7 @@ export default function AdoptingBitcoinPage() {
     <>
       <SetPageColor
         backgroundColor={projectData.pageColor}
-        frameColor={projectData.pageColor}
+        frameColor={projectData.frameColor}
         textColor="#000"
       />
       <Container className="overflow-hidden">
@@ -61,9 +61,9 @@ export default function AdoptingBitcoinPage() {
             <span>client - {projectData.client}</span>
           </p>
         </section>
-        <section className="py-100 full-bleed">
+        <section className="pt-64 pb-100 full-bleed">
           <TicketsRow />
-          <p className="uppercase text-body6 md:text-body4 lg:text-h1 -rotate-12 text-center my-36 font-bold flex items-center whitespace-nowrap gap-16 justify-center">
+          <p className="uppercase text-body6 md:text-body4 lg:text-h1 -rotate-[4deg] text-center my-36 font-bold flex items-center whitespace-nowrap gap-16 justify-center">
             designing the largest bitcoin conference{" "}
             <span>
               <MdBolt />
@@ -322,6 +322,7 @@ export default function AdoptingBitcoinPage() {
 
 const projectData = {
   pageColor: "#EEDB5F",
+  frameColor: "#000",
   tags: ["branding", "identity", "website"],
   client: "Galoy INC",
   year: "2023",

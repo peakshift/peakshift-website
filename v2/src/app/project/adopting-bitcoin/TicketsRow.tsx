@@ -41,7 +41,7 @@ export default function TicketsRow() {
   if (!mounted) return null;
 
   return (
-    <div className="-rotate-12">
+    <div className="-rotate-[4deg]">
       <motion.div
         initial={{ x: initialPosition === "left" ? "0" : "-48%" }}
         animate={{ x: initialPosition === "left" ? "-48%" : "0" }}
