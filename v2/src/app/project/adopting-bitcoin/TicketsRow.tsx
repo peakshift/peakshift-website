@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Ticket1Image from "./assets/ticket1.svg";
 import Ticket2Image from "./assets/ticket2.svg";
 import Ticket3Image from "./assets/ticket3.svg";
@@ -8,14 +8,19 @@ import { motion } from "framer-motion";
 
 const MAX_TICKET_WIDTH = 400;
 
-export default function TicketsRow() {
+interface Props {
+  direction?: "left" | "right";
+  animated?: boolean;
+}
+
+export default function TicketsRow({ direction, animated }: Props) {
   const [mounted, setMounted] = useState(false);
 
   const [shuffledTickets] = useState(
     shuffleArray([Ticket1Image, Ticket2Image, Ticket3Image])
   );
-  const [initialPosition] = useState(Math.random() > 0.5 ? "left" : "right");
-  const [duration] = useState(Math.random() * 10 + 30);
+  const [initialPosition] = useState(direction ?? "left");
+  const [duration] = useState(30);
 
   const [numTickets, setNumTickets] = useState(0);
   const [ticketWidth, setTicketWidth] = useState(0);
@@ -44,7 +49,11 @@ export default function TicketsRow() {
     <div className="-rotate-[4deg]">
       <motion.div
         initial={{ x: initialPosition === "left" ? "0" : "-48%" }}
-        animate={{ x: initialPosition === "left" ? "-48%" : "0" }}
+        animate={
+          animated
+            ? { x: initialPosition === "left" ? "-48%" : "0" }
+            : undefined
+        }
         transition={{
           repeat: Infinity,
           repeatType: "mirror",

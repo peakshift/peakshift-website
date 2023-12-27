@@ -28,9 +28,11 @@ export default function AdoptingBitcoinPage() {
   return (
     <>
       <SetPageColor
-        backgroundColor={projectData.pageColor}
-        frameColor={projectData.frameColor}
+        pageBackgroundColor={projectData.colors.pageColor}
+        frameColor={projectData.colors.frameColor}
         textColor="#000"
+        footerBackgroundColor={projectData.colors.footerBackgroundColor}
+        footerTextColor={projectData.colors.footerTextColor}
       />
       <Container className="overflow-hidden">
         <section
@@ -62,7 +64,7 @@ export default function AdoptingBitcoinPage() {
           </p>
         </section>
         <section className="pt-64 pb-100 full-bleed">
-          <TicketsRow />
+          <TicketsRow direction="left" animated />
           <p className="uppercase text-body6 md:text-body4 lg:text-h1 -rotate-[4deg] text-center my-36 font-bold flex items-center whitespace-nowrap gap-16 justify-center">
             designing the largest bitcoin conference{" "}
             <span>
@@ -70,7 +72,7 @@ export default function AdoptingBitcoinPage() {
             </span>{" "}
             el salvador
           </p>
-          <TicketsRow />
+          <TicketsRow direction="right" animated />
         </section>
         <section className="grid grid-cols-1 md:grid-cols-2 gap-x-100 gap-y-24 py-80">
           <div>
@@ -321,8 +323,12 @@ export default function AdoptingBitcoinPage() {
 }
 
 const projectData = {
-  pageColor: "#EEDB5F",
-  frameColor: "#000",
+  colors: {
+    pageColor: "#EEDB5F",
+    frameColor: "#000",
+    footerBackgroundColor: "#EEDB5F",
+    footerTextColor: "#000",
+  },
   tags: ["branding", "identity", "website"],
   client: "Galoy INC",
   year: "2023",

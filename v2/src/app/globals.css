@@ -10,16 +10,36 @@
   inherits: true;
 }
 
+@property --page-text-color {
+  syntax: "<color>";
+  initial-value: #000;
+  inherits: true;
+}
+
 @property --final-frame-color {
   syntax: "<color>";
   initial-value: #000;
   inherits: true;
 }
 
+@property --footer-bg-color {
+  syntax: "<color>";
+  initial-value: #000;
+  inherits: true;
+}
+
+@property --footer-text-color {
+  syntax: "<color>";
+  initial-value: #fff;
+  inherits: true;
+}
+
 :root {
   --primary: #dd1e3e;
-  --page-bg-color: #fff;
   --final-frame-color: var(--frame-color, var(--primary));
+
+  --footer-bg-color: #dd1e3e;
+  --footer-text-color: #fff;
 }
 
 html {

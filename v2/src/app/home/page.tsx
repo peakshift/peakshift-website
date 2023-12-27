@@ -5,11 +5,13 @@ import WorkWithUs from "./WorkWithUs";
 
 export default function Home() {
   return (
-    <main className="">
-      <Hero />
-      {/* <Projects /> */}
-      <ResearchLab />
-      <WorkWithUs />
-    </main>
+    <>
+      <main className="">
+        <Hero />
+        {/* <Projects /> */}
+        <ResearchLab />
+        <WorkWithUs />
+      </main>
+    </>
   );
 }
