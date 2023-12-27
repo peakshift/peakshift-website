@@ -29,7 +29,7 @@ export default function Footer() {
           className={`text-body1 relative flex items-center gap-16 uppercase ${condensedHeadings.className}`}
         >
           Talk to Us
-          <span className="bg-white h-2 w-64 md:w-[100px]"></span>
+          <span className="bg-[var(--footer-text-color)] h-2 w-64 md:w-[100px]"></span>
         </p>
       </div>
       <Container>

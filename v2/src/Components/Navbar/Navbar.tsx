@@ -110,11 +110,11 @@ export default function Navbar() {
               ))}
             </ul>
             <button
-              className="md:hidden min-w-40 text-body1"
+              className="md:hidden min-w-[40px] text-body1"
               onClick={toggleNav}
               aria-label="Open Side Nav Menu"
             >
-              / <span className="text-body4">menu</span>
+              / <span className="text-body4"></span>
             </button>
             <motion.p
               variants={itemVariants}

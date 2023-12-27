@@ -51,7 +51,7 @@ export default function AdoptingBitcoinPage() {
               </li>
             ))}
           </ul>
-          <p className="flex text-body6 md:text-body2 font-medium">
+          <p className="flex text-body5 md:text-body2 font-medium">
             <span
               className="origin-top-left"
               style={{
@@ -82,7 +82,7 @@ export default function AdoptingBitcoinPage() {
             />
           </div>
           <div>
-            <p className={`${serifText.className} text-body1`}>
+            <p className={`${serifText.className} text-body4 md:text-body1`}>
               In 2021, El Salvador sparked a revolution by becoming the first
               country to adopt Bitcoin as a legal tender. Galoy, now known as
               Blink, played a crucial role. Coinciding with the enactment of the
@@ -117,7 +117,7 @@ export default function AdoptingBitcoinPage() {
             FREEDOM MONEY
           </h2>
           <div
-            className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-48`}
+            className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-24 md:mt-48`}
           >
             <p className="font-light italic text-body4 md:text-h1 leading-[1]">
               Our process
@@ -179,7 +179,7 @@ export default function AdoptingBitcoinPage() {
             LOGO DESIGN
           </h2>
           <div
-            className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-48`}
+            className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-24 md:mt-48`}
           >
             <p className="font-light italic text-body4 md:text-h1 leading-[1]">
               Exstensibility and future
@@ -234,7 +234,7 @@ export default function AdoptingBitcoinPage() {
             SOCIAL MEDIA TEMPLATES
           </h2>
           <div
-            className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-48`}
+            className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-24 md:mt-48`}
           >
             <p className="font-light italic text-body4 md:text-h1 leading-[1]">
               Designing for presence{" "}
@@ -272,7 +272,7 @@ export default function AdoptingBitcoinPage() {
             Ticketing system and graphics
           </h2>
           <div
-            className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-48`}
+            className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-24 md:mt-48`}
           >
             <p className="font-light italic text-body4 md:text-h1 leading-[1]">
               Aesthetics + functionality

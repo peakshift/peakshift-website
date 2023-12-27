@@ -20,7 +20,7 @@ export default function ProjectsSelect() {
               }),
             }}
           >
-            <div className="flex justify-between gap-36 text-body1 font-medium">
+            <div className="flex justify-between gap-36 text-body5 md:text-body1 font-medium">
               <div>
                 <p>{option.tagline} </p>
                 <p className={`${serifText.className}`}>{option.title}</p>
