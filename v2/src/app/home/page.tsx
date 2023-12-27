@@ -6,7 +6,7 @@ import WorkWithUs from "./WorkWithUs";
 export default function Home() {
   return (
     <>
-      <main className="overflow-hidden">
+      <main className="">
         <Hero />
         <Projects />
         <ResearchLab />
