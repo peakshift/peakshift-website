@@ -13,6 +13,7 @@ import AdoptingBitcoinWireframe from "./assets/adopting-bitcoin-wireframe.svg";
 import AdoptingBitcoinPosterImage from "./assets/adopting-bitcoin-poster.jpg";
 import ScatteredCardsImage from "./assets/scattered-cards.png";
 import MerchImage from "./assets/merch.png";
+import "./page.styles.css";
 
 import { condensedHeadings, monoText, serifText } from "@/assets/fonts";
 import ColorsPalette from "../Components/ColorsPalette";
@@ -27,14 +28,7 @@ export const metadata: Metadata = {
 export default function AdoptingBitcoinPage() {
   return (
     <>
-      <SetPageColor
-        pageBackgroundColor={projectData.colors.pageColor}
-        frameColor={projectData.colors.frameColor}
-        textColor="#000"
-        footerBackgroundColor={projectData.colors.footerBackgroundColor}
-        footerTextColor={projectData.colors.footerTextColor}
-      />
-      <Container className="overflow-hidden">
+      <Container id="adopting-bitcoin-page" className="overflow-hidden">
         <section
           id="project-header"
           className={`${monoText.className} uppercase flex flex-col gap-36 py-80`}
@@ -315,7 +309,7 @@ export default function AdoptingBitcoinPage() {
           >
             OTHER PROJECTS
           </h2>
-          <ProjectsSelect />
+          <ProjectsSelect excludeProjects={["adopting-bitcoin"]} />
         </section>
       </Container>
     </>
@@ -323,12 +317,6 @@ export default function AdoptingBitcoinPage() {
 }
 
 const projectData = {
-  colors: {
-    pageColor: "#EEDB5F",
-    frameColor: "#000",
-    footerBackgroundColor: "#EEDB5F",
-    footerTextColor: "#000",
-  },
   tags: ["branding", "identity", "website"],
   client: "Galoy INC",
   year: "2023",

@@ -9,20 +9,28 @@ import NavLink from "../NavLink/NavLink";
 
 const links = [
   {
+    text: "Projects",
+    href: "/#projects",
+  },
+  {
     text: "Twitter",
     href: "https://twitter.com/peakshift",
+    isExternal: true,
   },
   {
     text: "BOLT.FUN",
     href: "https://bolt.fun",
+    isExternal: true,
   },
   {
     text: "Contact",
     href: "mailto:team@peakshift.com",
+    isExternal: true,
   },
   {
     text: "Book Consultation",
     href: "https://calendly.com/johnsbeharry",
+    isExternal: true,
   },
 ];
 
@@ -101,8 +109,7 @@ export default function Navbar() {
                     className={`md:pr-20 block font-normal uppercase hover:text-primary`}
                     activeClassName="text-primary"
                     href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    isExternal={link.isExternal}
                   >
                     <span className="">/</span> {link.text}
                   </NavLink>
@@ -155,6 +162,8 @@ export default function Navbar() {
                   className={`md:pr-20 block font-normal uppercase hover:text-primary`}
                   activeClassName="text-primary"
                   href={link.href}
+                  isExternal={link.isExternal}
+                  onClick={toggleNav}
                 >
                   <span className="" aria-hidden>
                     /

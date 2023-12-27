@@ -6,9 +6,9 @@ import WorkWithUs from "./WorkWithUs";
 export default function Home() {
   return (
     <>
-      <main className="">
+      <main className="overflow-hidden">
         <Hero />
-        {/* <Projects /> */}
+        <Projects />
         <ResearchLab />
         <WorkWithUs />
       </main>

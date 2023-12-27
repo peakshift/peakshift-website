@@ -8,10 +8,12 @@ type LinkProps = ComponentProps<typeof Link>;
 
 type Props = LinkProps & {
   activeClassName?: string | undefined;
+  isExternal?: boolean;
 };
 
 export default function NavLink({
   className,
+  isExternal,
   activeClassName,
   children,
   ...props
@@ -23,7 +25,11 @@ export default function NavLink({
   }`;
 
   return (
-    <Link {...props} className={finalClasses}>
+    <Link
+      {...props}
+      className={finalClasses}
+      {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
+    >
       {children}
     </Link>
   );

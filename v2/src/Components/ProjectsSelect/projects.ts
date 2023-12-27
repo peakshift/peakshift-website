@@ -1,6 +1,8 @@
 import { StaticImageData } from "next/image";
 
 import AdoptingBitcoinImage from "@/assets/images/projects/adopting-bitcoin.jpg";
+import AI4ALLImage from "@/assets/images/projects/ai4all.jpg";
+import BoltFunImage from "@/assets/images/projects/bolt-fun.jpg";
 
 type Project = {
   title: string;
@@ -10,6 +12,7 @@ type Project = {
   image: StaticImageData;
   backgroundColor?: string;
   backgroundImage?: string;
+  externalLink?: string;
 };
 
 export const projects: Project[] = [
@@ -20,5 +23,23 @@ export const projects: Project[] = [
     tags: ["experience", "brand"],
     backgroundColor: "#EADC72",
     image: AdoptingBitcoinImage,
+  },
+  {
+    title: "AI4ALL",
+    slug: "ai4all",
+    tagline: "DEMOCRATISING ACCESS TO AI",
+    tags: ["experience", "brand"],
+    backgroundColor: "#FF6B00",
+    image: AI4ALLImage,
+    externalLink: "https://bolt.fun/tournaments/ai4all",
+  },
+  {
+    title: "BOLT.FUN",
+    slug: "bolt-fun",
+    tagline: "BUILDING A VIRTUAL INCUBATOR HELPING FOUNDERS GO FROM 0-1",
+    tags: ["experience", "community"],
+    backgroundColor: "#AF59FE",
+    image: BoltFunImage,
+    externalLink: "https://bolt.fun",
   },
 ];

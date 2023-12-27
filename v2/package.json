@@ -14,6 +14,7 @@
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "class-variance-authority": "^0.6.0",
+    "embla-carousel-react": "^8.0.0-rc17",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
     "framer-motion": "^10.12.12",

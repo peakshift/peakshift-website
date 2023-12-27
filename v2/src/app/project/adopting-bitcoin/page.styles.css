@@ -1,0 +1,7 @@
+body:has(#adopting-bitcoin-page) {
+  --page-bg-color: #eedb5f;
+  --text-color: #000;
+  --frame-color: #000;
+  --footer-bg-color: #eedb5f;
+  --footer-text-color: #000;
+}
