@@ -10,7 +10,8 @@ type Project = {
   tagline: string;
   tags: string[];
   image: StaticImageData;
-  backgroundColor?: string;
+  backgroundColor: string;
+  frameColor: string;
   backgroundImage?: string;
   externalLink?: string;
 };
@@ -22,6 +23,7 @@ export const projects: Project[] = [
     tagline: "branding freedom money",
     tags: ["experience", "brand"],
     backgroundColor: "#EADC72",
+    frameColor: "#000",
     image: AdoptingBitcoinImage,
   },
   {
@@ -30,6 +32,7 @@ export const projects: Project[] = [
     tagline: "DEMOCRATISING ACCESS TO AI",
     tags: ["experience", "brand"],
     backgroundColor: "#FF6B00",
+    frameColor: "#FF6B00",
     image: AI4ALLImage,
     externalLink: "https://bolt.fun/tournaments/ai4all",
   },
@@ -39,6 +42,7 @@ export const projects: Project[] = [
     tagline: "BUILDING A VIRTUAL INCUBATOR HELPING FOUNDERS GO FROM 0-1",
     tags: ["experience", "community"],
     backgroundColor: "#AF59FE",
+    frameColor: "#AF59FF",
     image: BoltFunImage,
     externalLink: "https://bolt.fun",
   },

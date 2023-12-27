@@ -19,6 +19,7 @@ import { condensedHeadings, monoText, serifText } from "@/assets/fonts";
 import ColorsPalette from "../Components/ColorsPalette";
 import { Metadata } from "next";
 import ProjectsSelect from "@/Components/ProjectsSelect/ProjectsSelect";
+import FadeIn from "../Components/FadeIn";
 
 export const metadata: Metadata = {
   title: "Adopting Bitcoin",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
 
 export default function AdoptingBitcoinPage() {
   return (
-    <>
+    <FadeIn>
       <Container id="adopting-bitcoin-page" className="overflow-hidden">
         <section
           id="project-header"
@@ -312,7 +313,7 @@ export default function AdoptingBitcoinPage() {
           <ProjectsSelect excludeProjects={["adopting-bitcoin"]} />
         </section>
       </Container>
-    </>
+    </FadeIn>
   );
 }
 
