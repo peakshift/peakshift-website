@@ -47,14 +47,18 @@ const itemVariants = {
 
 const sideNavVariants = {
   hide: {
-    x: "-120%",
+    clipPath: "circle(1% at 9% 12%)",
     transitionEnd: {
       display: "none",
     },
   },
   show: {
     display: "block",
-    x: 0,
+    clipPath: "circle(150% at 9% 12%)",
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
   },
 };
 
@@ -117,7 +121,7 @@ export default function Navbar() {
               ))}
             </ul>
             <button
-              className="md:hidden min-w-[40px] text-body1"
+              className="md:hidden min-w-[40px] aspect-square text-body1 flex flex-col justify-center items-center active:scale-75 transition-transform"
               onClick={toggleNav}
               aria-label="Open Side Nav Menu"
             >
@@ -146,11 +150,21 @@ export default function Navbar() {
           variants={sideNavVariants}
           transition={{
             ease: "easeInOut",
+            duration: 0.5,
           }}
           initial={isOpen ? "show" : "hide"}
           animate={isOpen ? "show" : "hide"}
-          className="fixed top-0 inset-x-0 bg-[var(--page-bg-color)] p-32 border-b border-gray-200 z-40"
+          className="fixed top-[10px] inset-x-[10px] bg-[var(--page-bg-color)] p-16 pb-42 border-b border-gray-200 z-40"
         >
+          <div className="flex mb-32">
+            <button
+              className="min-w-[40px] aspect-square text-body1 flex flex-col justify-center items-center active:scale-75 transition-transform"
+              onClick={toggleNav}
+              aria-label="Close Side Nav Menu"
+            >
+              <TfiClose className="text-body1" />
+            </button>
+          </div>
           <ul className="flex flex-col gap-16 text-body4">
             {links.map((link) => (
               <motion.li
@@ -173,16 +187,6 @@ export default function Navbar() {
               </motion.li>
             ))}
           </ul>
-          <div className="flex justify-center mt-42">
-            <button
-              className="text-center flex flex-col gap-8 items-center"
-              onClick={toggleNav}
-              aria-label="Close Side Nav Menu"
-            >
-              <TfiClose className="text-body1" />
-              <span>CLOSE</span>
-            </button>
-          </div>
         </motion.nav>
       </FocusLock>
     </>
