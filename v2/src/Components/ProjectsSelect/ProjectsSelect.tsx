@@ -48,7 +48,7 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
               layout
               layoutId={`project-${option.slug}`}
               key={idx}
-              className="shrink-0 grow-0 basis-[min(80%,600px)]"
+              className="shrink-0 grow-0 basis-[80%] md:basis-[min(40%,500px)] 2xl:basis-[min(40%,600px)]"
             >
               <button
                 className={`p-24 w-full flex flex-col items-stretch uppercase border-2 max-w-[600px] h-full text-left`}
@@ -75,11 +75,12 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
                     ))}
                   </div>
                 </div>
-                <div className="mt-auto mx-auto">
+                <div className="mt-auto mx-auto lg:max-w-[80%]">
                   <Image
                     src={option.image}
                     alt=""
-                    className="max-w-[450px] w-full my-42 shadow-2xl"
+                    className="w-full my-42 shadow-2xl"
+                    placeholder="blur"
                   />
                 </div>
               </button>
