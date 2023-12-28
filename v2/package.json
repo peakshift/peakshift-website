@@ -27,6 +27,7 @@
     "react-dom": "18.2.0",
     "react-focus-lock": "^2.9.4",
     "react-icons": "^4.8.0",
+    "sharp": "^0.33.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
   }
