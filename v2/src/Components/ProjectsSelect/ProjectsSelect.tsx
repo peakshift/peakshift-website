@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { projects } from "./projects";
 import { serifText } from "@/assets/fonts";
 import Image from "next/image";
@@ -13,30 +13,14 @@ interface Props {
 }
 
 export default function ProjectsSelect({ excludeProjects }: Props) {
-  const [emblaRef, empblaApi] = useEmblaCarousel();
+  const [emblaRef] = useEmblaCarousel();
   const router = useRouter();
+  const projectsContainerRef = useRef<HTMLUListElement>(null);
+  const isOnScreen = useOnScreen(projectsContainerRef);
 
   const [openProject, setOpenProject] = useState<
     (typeof projects)[number] | null
   >(null);
-  const [slidesInView, setSlidesInView] = useState<number[]>([]);
-
-  useEffect(() => {
-    if (!empblaApi) return;
-
-    const updateNextSlidePriority = () => {
-      const slidesInView = empblaApi.slidesInView();
-      setSlidesInView(slidesInView);
-    };
-
-    empblaApi.on("init", updateNextSlidePriority);
-    empblaApi.on("slidesInView", updateNextSlidePriority);
-
-    return () => {
-      empblaApi.off("init", updateNextSlidePriority);
-      empblaApi.off("slidesInView", updateNextSlidePriority);
-    };
-  }, [empblaApi]);
 
   const options = projects.filter(
     (project) => !excludeProjects?.includes(project.slug)
@@ -59,7 +43,7 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
   return (
     <LayoutGroup>
       <div className="" ref={emblaRef}>
-        <ul className="flex gap-24">
+        <ul className="flex gap-24" ref={projectsContainerRef}>
           {options.map((option, idx) => (
             <motion.li
               layout
@@ -103,6 +87,7 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
                     alt=""
                     className="w-full my-42 shadow-2xl"
                     placeholder="blur"
+                    priority={isOnScreen}
                   />
                 </div>
               </button>
@@ -125,4 +110,30 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
       </Portal>
     </LayoutGroup>
   );
+}
+
+function useOnScreen(
+  ref: React.MutableRefObject<Element | null>,
+  rootMargin = "0px"
+) {
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    const elementToObserve = ref?.current;
+
+    if (!elementToObserve) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { rootMargin }
+    );
+    observer.observe(elementToObserve);
+
+    return () => {
+      if (!elementToObserve) return;
+
+      observer.unobserve(elementToObserve);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rootMargin]);
+  return isVisible;
 }
