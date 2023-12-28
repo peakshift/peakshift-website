@@ -6,7 +6,7 @@ import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import { useRouter } from "next/navigation";
 import Portal from "../Portal/Portal";
-import { motion } from "framer-motion";
+import { LayoutGroup, motion } from "framer-motion";
 
 interface Props {
   excludeProjects?: string[];
@@ -57,14 +57,18 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
     }, 400);
   };
   return (
-    <>
+    <LayoutGroup>
       <div className="" ref={emblaRef}>
         <ul className="flex gap-24">
           {options.map((option, idx) => (
             <motion.li
-              initial={false}
               layout
               layoutId={`project-${option.slug}`}
+              transition={{
+                layout: {
+                  duration: 0,
+                },
+              }}
               key={idx}
               className="shrink-0 grow-0 basis-[80%] md:basis-[min(40%,500px)] 2xl:basis-[min(40%,600px)]"
             >
@@ -111,8 +115,8 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
         {openProject && (
           <motion.div
             className="fixed inset-0 border-[10px] z-50"
-            layoutId={`project-${openProject.slug}`}
             layout
+            layoutId={`project-${openProject.slug}`}
             style={{
               backgroundColor: openProject.backgroundColor,
               borderColor: openProject.frameColor,
@@ -120,6 +124,6 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
           ></motion.div>
         )}
       </Portal>
-    </>
+    </LayoutGroup>
   );
 }
