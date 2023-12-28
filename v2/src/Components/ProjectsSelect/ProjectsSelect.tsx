@@ -103,7 +103,6 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
                     alt=""
                     className="w-full my-42 shadow-2xl"
                     placeholder="blur"
-                    priority={slidesInView.includes(idx)}
                   />
                 </div>
               </button>
