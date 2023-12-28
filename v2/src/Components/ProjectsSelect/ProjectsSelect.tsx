@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { projects } from "./projects";
 import { serifText } from "@/assets/fonts";
 import Image from "next/image";
@@ -13,12 +13,30 @@ interface Props {
 }
 
 export default function ProjectsSelect({ excludeProjects }: Props) {
-  const [emblaRef] = useEmblaCarousel();
+  const [emblaRef, empblaApi] = useEmblaCarousel();
   const router = useRouter();
 
   const [openProject, setOpenProject] = useState<
     (typeof projects)[number] | null
   >(null);
+  const [slidesInView, setSlidesInView] = useState<number[]>([]);
+
+  useEffect(() => {
+    if (!empblaApi) return;
+
+    const updateNextSlidePriority = () => {
+      const slidesInView = empblaApi.slidesInView();
+      setSlidesInView(slidesInView);
+    };
+
+    empblaApi.on("init", updateNextSlidePriority);
+    empblaApi.on("slidesInView", updateNextSlidePriority);
+
+    return () => {
+      empblaApi.off("init", updateNextSlidePriority);
+      empblaApi.off("slidesInView", updateNextSlidePriority);
+    };
+  }, [empblaApi]);
 
   const options = projects.filter(
     (project) => !excludeProjects?.includes(project.slug)
@@ -81,6 +99,7 @@ export default function ProjectsSelect({ excludeProjects }: Props) {
                     alt=""
                     className="w-full my-42 shadow-2xl"
                     placeholder="blur"
+                    priority={slidesInView.includes(idx)}
                   />
                 </div>
               </button>
