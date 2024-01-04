@@ -112,7 +112,7 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <p className="text-body3 mb-40">PGB</p>
+              <p className="text-body3 mb-40">PGP</p>
               <p className="text-body3">
                 A815 2601 F001 645B 5269 2258 6004 5CFE 793B 59AD
               </p>
