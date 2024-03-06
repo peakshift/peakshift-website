@@ -127,7 +127,7 @@ export default function Footer() {
           <p
             className={`${serifText.className} hidden md:block italic text-body5 text-right self-center`}
           >
-            All Rights Reserved.Copyright © Peak Shift Ltd. 2012 - 2020
+            All Rights Reserved. Copyright &copy; Peak Shift Ltd. 2012 - 2024
           </p>
         </div>
       </Container>
