@@ -33,7 +33,7 @@ export default function ResearchLab() {
         />
         <Container className="relative">
           <div className="flex max-lg:flex-wrap justify-between gap-40 min-h-[100vh] w-full items-center ">
-            <div className="max-w-[480px] backdrop-blur-sm p-16 rounded-12">
+            <div className="max-w-[480px] p-16 rounded-12">
               <h2
                 className={`${condensedHeadings.className} text-primary text-h2 lg:text-[48px] font-light`}
               >
