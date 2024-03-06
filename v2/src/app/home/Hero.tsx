@@ -55,7 +55,7 @@ export default function Hero() {
           animate="show"
           transition={{
             ease: "easeIn",
-            staggerChildren: 0.1,
+            staggerChildren: 0.6,
             delayChildren: 2.5,
           }}
           className="uppercase ps-16 md:ps-42 text-[40px] md:text-[72px] leading-[1.2]"
@@ -65,7 +65,7 @@ export default function Hero() {
           </motion.span>{" "}
           <br />
           <motion.span className="inline-block" variants={headTextWords}>
-            Build
+            Launch
           </motion.span>{" "}
           <br />
           <motion.span className="inline-block" variants={headTextWords}>
@@ -105,10 +105,10 @@ export default function Hero() {
             transition={{ delay: 3.5, type: "spring" }}
             className="flex flex-col items-center bg-white  shrink-0"
           >
-            {/* <span className="justify-self-center mb-10">SCROLL</span> */}
-            {/* <span className="justify-self-center mb-10">
+            <span className="justify-self-center mb-10">SCROLL</span>
+            <span className="justify-self-center mb-10">
               <Image src={ArrowDown} alt="" />
-            </span> */}
+            </span>
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
