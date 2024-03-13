@@ -1,0 +1,54 @@
+<svg width="904" height="527" viewBox="0 0 904 527" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="track-and-field">
+<g id="tracks">
+<rect id="Rectangle 70" x="7.17275" y="20.2836" width="875.269" height="485.827" rx="242.913" stroke="black" stroke-width="0.82303"/>
+<rect id="Rectangle 72" x="36.0885" y="44.893" width="818.053" height="436.608" rx="218.304" stroke="black" stroke-width="0.82303"/>
+<rect id="Rectangle 73" x="50.8541" y="57.8126" width="787.906" height="412.614" rx="206.307" stroke="black" stroke-width="0.82303"/>
+<rect id="Rectangle 74" x="65.0045" y="68.8873" width="758.99" height="388.62" rx="194.31" stroke="black" stroke-width="0.82303"/>
+<rect id="Rectangle 75" x="79.1549" y="81.1915" width="728.844" height="364.626" rx="182.313" stroke="black" stroke-width="0.82303"/>
+<rect id="Rectangle 76" x="93.9205" y="93.4965" width="698.082" height="339.401" rx="169.701" stroke="black" stroke-width="0.82303"/>
+<rect id="Rectangle 77" x="108.686" y="105.801" width="666.705" height="316.022" rx="158.011" stroke="black" stroke-width="0.82303"/>
+<rect id="Rectangle 78" x="122.221" y="117.491" width="637.789" height="291.413" rx="145.706" stroke="black" stroke-width="0.82303"/>
+<rect id="Rectangle 71" x="21.3231" y="33.2033" width="848.199" height="461.832" rx="230.916" stroke="black" stroke-width="0.82303"/>
+</g>
+<g id="track-extension">
+<line id="Line 26" x1="6.76123" y1="506.11" x2="290.999" y2="506.11" stroke="black" stroke-width="0.82303"/>
+<line id="Line 27" x1="6.76123" y1="495.036" x2="290.999" y2="495.036" stroke="black" stroke-width="0.82303"/>
+<line id="Line 28" x1="6.76123" y1="481.501" x2="290.999" y2="481.501" stroke="black" stroke-width="0.82303"/>
+<line id="Line 29" x1="6.76123" y1="470.426" x2="290.999" y2="470.426" stroke="black" stroke-width="0.82303"/>
+<line id="Line 30" x1="6.76123" y1="457.507" x2="290.999" y2="457.507" stroke="black" stroke-width="0.82303"/>
+<line id="Line 31" x1="6.76123" y1="445.817" x2="290.999" y2="445.817" stroke="black" stroke-width="0.82303"/>
+<line id="Line 32" x1="6.76123" y1="432.897" x2="290.999" y2="432.897" stroke="black" stroke-width="0.82303"/>
+<line id="Line 33" x1="6.76123" y1="421.823" x2="290.999" y2="421.823" stroke="black" stroke-width="0.82303"/>
+<line id="Line 34" x1="6.76123" y1="408.903" x2="290.999" y2="408.903" stroke="black" stroke-width="0.82303"/>
+<line id="vert" x1="7.17275" y1="409.315" x2="7.17274" y2="506.522" stroke="black" stroke-width="0.82303"/>
+</g>
+<g id="sections">
+<line id="Line 36" x1="291.41" y1="409.315" x2="291.41" y2="506.522" stroke="black" stroke-width="0.82303"/>
+<line id="Line 37" x1="613.793" y1="409.315" x2="613.793" y2="506.522" stroke="black" stroke-width="0.82303"/>
+<line id="Line 38" x1="613.793" y1="19.8721" x2="613.793" y2="117.079" stroke="black" stroke-width="0.82303"/>
+<line id="Line 39" x1="291.41" y1="19.8721" x2="291.41" y2="117.079" stroke="black" stroke-width="0.82303"/>
+</g>
+<g id="starting-block">
+<line id="Line 40" x1="259.418" y1="93.7002" x2="259.418" y2="106.005" stroke="black" stroke-width="0.82303"/>
+<line id="Line 41" x1="235.424" y1="83.241" x2="235.424" y2="95.5456" stroke="black" stroke-width="0.82303"/>
+<line id="Line 42" x1="210.815" y1="74.6277" x2="210.815" y2="88.1628" stroke="black" stroke-width="0.82303"/>
+<line id="Line 43" x1="180.668" y1="72.167" x2="180.668" y2="85.7021" stroke="black" stroke-width="0.82303"/>
+<line id="Line 44" x1="146.831" y1="73.3975" x2="146.831" y2="90.0088" stroke="black" stroke-width="0.82303"/>
+<line id="Line 45" x1="114.839" y1="78.3191" x2="114.839" y2="94.9304" stroke="black" stroke-width="0.82303"/>
+<line id="Line 46" x1="84.0768" y1="85.7017" x2="84.0768" y2="106.004" stroke="black" stroke-width="0.82303"/>
+</g>
+<g id="border">
+<line id="Line 47" x1="0.588485" y1="200.115" x2="0.588494" y2="3.41141" stroke="black" stroke-width="0.82303"/>
+<path id="Line 49" d="M6.76123 3L10.8764 5.37588V0.624118L6.76123 3ZM882.465 3L878.35 0.624118V5.37588L882.465 3ZM10.4649 3.41151L878.761 3.41151V2.58849L10.4649 2.58849V3.41151Z" fill="black"/>
+<path id="Line 52" d="M901.395 19.8721L899.012 23.9833L903.764 23.9911L901.395 19.8721ZM900.572 524.389L902.954 520.277L898.202 520.27L900.572 524.389ZM900.977 23.575L900.166 520.684L900.989 520.686L901.8 23.5764L900.977 23.575Z" fill="black"/>
+<path id="Line 50" d="M58.6121 524.389L62.7272 526.765L62.7272 522.013L58.6121 524.389ZM613.334 524.389L609.219 522.013L609.219 526.765L613.334 524.389ZM62.3157 524.801L609.63 524.801L609.63 523.978L62.3157 523.978L62.3157 524.801Z" fill="black"/>
+<path id="Line 54" d="M6.76123 524.389L10.8764 526.765V522.013L6.76123 524.389ZM50.3818 524.389L46.2667 522.013V526.765L50.3818 524.389ZM10.4649 524.801H46.6782V523.978H10.4649V524.801Z" fill="black"/>
+<line id="Line 51" x1="625.679" y1="523.978" x2="882.465" y2="523.978" stroke="black" stroke-width="0.82303"/>
+</g>
+<g id="inner-line">
+<line id="Line 48" x1="889.461" y1="200.115" x2="889.461" y2="3.41141" stroke="black" stroke-width="0.82303"/>
+<line id="Line 53" x1="704.69" y1="14.5223" x2="901.395" y2="14.5223" stroke="black" stroke-width="0.82303"/>
+</g>
+</g>
+</svg>
