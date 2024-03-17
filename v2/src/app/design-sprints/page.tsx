@@ -86,6 +86,62 @@ export default function DesignSprints() {
           </p>
         </div>
       </section>
+<section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+  <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+  <div className="mx-auto max-w-2xl lg:max-w-4xl">
+    <Image
+      className="mx-auto h-12"
+      src={TrackAndFieldImage}
+      alt=""
+    />
+    <figure className="mt-10">
+      <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+        <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+      </blockquote>
+      <figcaption className="mt-10">
+        <Image
+          className="mx-auto h-10 w-10 rounded-full"
+          alt=""
+          src={TrackAndFieldImage}
+        />
+        <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+          <div className="font-semibold text-gray-900">Judith Black</div>
+          <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
+            <circle cx="1" cy="1" r="1" />
+          </svg>
+          <div className="text-gray-600">CEO of Workcation</div>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+      <section className="pt-80 mb-100">
+          <h2
+            className={`${condensedHeadings.className} text-h3 md:text-[48px] uppercase`}
+          >
+            Ticketing system and graphics
+          </h2>
+          <div
+            className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-24 md:mt-48`}
+          >
+            <p className="font-light italic text-body4 md:text-h1 leading-[1]">
+              Aesthetics + functionality
+            </p>
+            <p className="text-body4 md:text-body1">
+              Our comprehensive brand design strategy extended to not only the
+              graphics, but the client’s Pretix ticketing system. We designed a
+              ticketing system that seamlessly blends crisp design and
+              functionality in one.
+              <br />
+              <br />
+              The result is a cohesive and immersive experience for
+              participants, streamlining the registration process that goes
+              beyond the eye-catching visuals.
+            </p>
+          </div>
+      </section>
       <section className="pt-80">
         <div
           className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-24 md:mt-48`}
