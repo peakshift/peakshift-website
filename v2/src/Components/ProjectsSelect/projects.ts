@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 
+import HUB21Image from "@/assets/images/projects/hub21.jpg";
 import AdoptingBitcoinImage from "@/assets/images/projects/adopting-bitcoin.jpg";
 import AI4ALLImage from "@/assets/images/projects/ai4all.jpg";
 import BoltFunImage from "@/assets/images/projects/bolt-fun.jpg";
@@ -17,6 +18,15 @@ type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    title: "HUB21 hackerspace in Belgrade",
+    slug: "hub21",
+    tagline: "innovation space",
+    tags: ["interior design", "brand", "vibes"],
+    backgroundColor: "#E8FA48",
+    frameColor: "#000",
+    image: HUB21Image,
+  },
   {
     title: "Adopting bitcoin el salvador 2023",
     slug: "adopting-bitcoin",
