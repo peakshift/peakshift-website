@@ -55,7 +55,7 @@ export default function AdoptingBitcoinPage() {
             >
               {projectData.year}
             </span>{" "}
-            <span>client - {projectData.client}</span>
+            <span>Client &mdash; {projectData.client}</span>
           </p>
         </section>
         <section className="pt-64 pb-100 full-bleed">
@@ -76,24 +76,24 @@ export default function AdoptingBitcoinPage() {
               alt="A Lightning Summit in El Salvador"
             />
           </div>
-          <div>
-            <p className={`${serifText.className} text-body4 md:text-body1`}>
+          <div className={`${serifText.className} text-body4 md:text-body1`}>
+            <p>
               In 2021, El Salvador sparked a revolution by becoming the first
               country to adopt Bitcoin as a legal tender. Galoy, now known as
               Blink, played a crucial role. Coinciding with the enactment of the
               Bitcoin Law in September 2021, the inaugural Adopting Bitcoin
               conference emerged as the platform.
-              <br />
-              <br />
+            </p>
+            <p>
               The Adopting Bitcoin 2021 conference was used to introduce, teach,
               and to expand on the prospects of Bitcoin. However, despite its
               success, navigating the complexities of Bitcoin acceptance still
               proved challenging for merchants and businesses. These challenges
-              were exacerbated by the time disparity between the law’s
+              were exacerbated by the time disparity between the law's
               announcement and its enforcement. It took months for the law to
               come into effect.
-              <br />
-              <br />
+            </p>
+            <p>
               Peak Shift continues the work of unraveling the complexities of
               Bitcoin to a broader audience through crafting user-friendly UX
               designs.
@@ -114,22 +114,24 @@ export default function AdoptingBitcoinPage() {
           <div
             className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-24 md:mt-48`}
           >
-            <p className="font-light italic text-body4 md:text-h1 leading-[1]">
+            <h3 className="font-light italic text-body4 md:text-h1 leading-[1]">
               Our process
-            </p>
-            <p className="text-body4 md:text-body1">
-              Peak Shift believes that designing smooth experiences is the key
-              to Bitcoin&apos;s adoption. We are continuing the work started by
-              Galoy, by focusing on enhancing the user experience needed to
-              bring wider acceptance of Bitcoin.
-              <br />
-              <br />
-              We are streamlining UX design that aims at giving merchants
-              smoother, naturally flowing experiences tailored to their specific
-              needs. Besides fluid experiences, our designs leave a lasting
-              impression, and always adhere to the long-term goals and visions
-              of our clients.
-            </p>
+            </h3>
+            <div>
+              <p className="text-body4 md:text-body1 mb-20">
+                Peak Shift believes that designing smooth experiences is the key
+                to Bitcoin&apos;s adoption. We are continuing the work started by
+                Galoy, by focusing on enhancing the user experience needed to
+                bring wider acceptance of Bitcoin.
+              </p>
+              <p className="text-body4 md:text-body1">
+                We are streamlining UX design that aims at giving merchants
+                smoother, naturally flowing experiences tailored to their specific
+                needs. Besides fluid experiences, our designs leave a lasting
+                impression, and always adhere to the long-term goals and visions
+                of our clients.
+              </p>
+            </div>
           </div>
         </section>
         <section className="md:py-80 full-bleed flex flex-col justify-center items-center">
