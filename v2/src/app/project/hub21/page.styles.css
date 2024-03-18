@@ -1,0 +1,7 @@
+body:has(#hub21-page) {
+  --page-bg-color: #E8FA48;
+  --text-color: #000;
+  --frame-color: #000;
+  --footer-bg-color: #E8FA48;
+  --footer-text-color: #000;
+}
