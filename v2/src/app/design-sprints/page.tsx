@@ -1,6 +1,11 @@
 import Container from "@/Components/Container/Container";
 import { condensedHeadings, monoText, serifText } from "@/assets/fonts";
+import Button from "@/Components/Button/Button";
+import { FiChevronRight } from "react-icons/fi";
+import { CgFileDocument } from "react-icons/cg";
 import TrackAndFieldImage from "./assets/track-and-field.svg";
+import ClientLogos from "./assets/logos.png";
+import QuoteBumi from "./assets/bumi.jpg";
 import Image from "next/image";
 
 const sprintSchedule = [
@@ -61,7 +66,7 @@ export default function DesignSprints() {
         <h1
           className={`${serifText.className} text-primary text-6xl text-center font-serif italic`}
         >
-          — Define problems <span className="inline-block amp">&amp;</span> test
+          — Align on vision <span className="inline-block amp">&amp;</span> test
           solutions before touching a line of code
         </h1>
         <Image
@@ -77,7 +82,7 @@ export default function DesignSprints() {
           <h3 className="font-light italic text-body4 md:text-h1 leading-[1]">
             What is a Design Sprint?
           </h3>
-          <p className="text-body4 md:text-body1">
+          <p className="text-body4 md:text-body1 font-light">
             Our flavour of Google Ventures’ Design Sprint. This 8-day workshop
             uses design thinking to produce a realistic prototype that allows us
             to gain insight as an outside contractor, define behavioural
@@ -87,33 +92,54 @@ export default function DesignSprints() {
         </div>
       </section>
 <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-  <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
-  <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
   <div className="mx-auto max-w-2xl lg:max-w-4xl">
-    <Image
-      className="mx-auto h-12"
-      src={TrackAndFieldImage}
-      alt=""
-    />
     <figure className="mt-10">
-      <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-        <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+      <blockquote className="text-center mb-24">
+        <h4 className="uppercase text-2xl font-light">Alby</h4>
+        <p className={`${serifText.className} text-3xl italic font-light leading-10 text-gray-900 sm:text-3xl sm:leading-10`}>The design sprint organised and lead by PEAK SHIFT was instrumental in building what now became Alby. It helped us to define the initial product scope, understand user needs and turn vague ideas into actionable product goals plus an initial design prototype</p>
       </blockquote>
       <figcaption className="mt-10">
         <Image
-          className="mx-auto h-10 w-10 rounded-full"
-          alt=""
-          src={TrackAndFieldImage}
+          className="mx-auto h-80 w-80 border border-dotted border-black block p-0.5 mb-12"
+          src={QuoteBumi}
+          alt="Photo of Bumi"
         />
-        <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-          <div className="font-semibold text-gray-900">Judith Black</div>
+        <div className="mt-4 flex items-center justify-center space-x-3 text-xl">
+          <div className="text-gray-900 uppercase">Michael Bumann</div>
           <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
             <circle cx="1" cy="1" r="1" />
           </svg>
-          <div className="text-gray-600">CEO of Workcation</div>
+          <div className="text-gray-600 uppercase font-light">Founder & CTO</div>
         </div>
       </figcaption>
     </figure>
+  </div>
+</section>
+<section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div className="mx-auto max-w-2xl lg:max-w-4xl">
+    <div className="text-center mb-24">
+      <h4 className={`${serifText.className} text-6xl font-light leading-loose italic text-primary`}>Get your vision out fast</h4>
+      <p className={`text- uppercase font-light leading-8 text-gray-900 sm:text-2xl sm:leading-9`}>
+        We have worked with founders and startups at early stages helping them prepare for fundraising, setup project and product management procedures, align executives and product teams, and helped tech and design teams ship better quality work faster
+      </p>
+      <p className="flex justify-center">
+        <Image src={ClientLogos} alt="" height={120} />
+      </p>
+      <p className="flex justify-center">
+        <Button className="mt-40 max-lg:w-full">
+          Launch with the best <FiChevronRight />
+        </Button>
+      </p>
+    </div>
+  </div>
+</section>
+<section className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div className="mx-auto max-w-2xl lg:max-w-4xl">
+    <div className="columns-2">
+      <ol>
+        <li></li>
+      </ol>
+    </div>
   </div>
 </section>
 
