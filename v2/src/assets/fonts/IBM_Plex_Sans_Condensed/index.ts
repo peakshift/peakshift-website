@@ -3,6 +3,11 @@ import localFont from "next/font/local";
 const IBMPlexSansCondensedFont = localFont({
   src: [
     {
+      path: "./IBMPlexSansCondensed-Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+    {
       path: "./IBMPlexSansCondensed-Light.ttf",
       weight: "300",
       style: "normal",

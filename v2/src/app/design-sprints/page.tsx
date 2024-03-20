@@ -11,6 +11,7 @@ import Image from "next/image";
 import DiagramImage from "./assets/diagram.svg";
 import LongTermGoalsImage from "./assets/long-term-goals.svg";
 import PatentImage from "./assets/patent.svg";
+import RedefineSprintImage from "./assets/redefine-sprints.svg";
 
 const sprintSchedule = [
   {
@@ -379,7 +380,7 @@ export default function DesignSprints() {
   return (
     <Container id="design-sprints" className="overflow-hidden">
       <header
-        className={`min-h-[min(95vh,1440px)] flex flex-col justify-center relative py-16 isolate z-10`}
+        className={`min-h-[min(85vh,1440px)] flex flex-col justify-center relative py-16 isolate z-10`}
       >
         <h1
           className={`${serifText.className} text-primary text-6xl text-center font-serif italic`}
@@ -388,8 +389,8 @@ export default function DesignSprints() {
           solutions before touching a line of code
         </h1>
         <p className="flex justify-center">
-          <Button className="mt-40 max-lg:w-full">
-            Book a call <FiChevronRight />
+          <Button className="mt-40 max-lg:w-full uppercase">
+            Get in touch <FiChevronRight />
           </Button>
         </p>
         <Image
@@ -398,7 +399,7 @@ export default function DesignSprints() {
           className="mx-auto mt-8 md:absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
         />
       </header>
-      <section className="py-80">
+      <section className="pt-20 pb-80">
         <div
           className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-24 md:mt-48`}
         >
@@ -412,6 +413,70 @@ export default function DesignSprints() {
             requirements, and perform User Testing on an early visual prototype
             in order to gather real customer feedback.
           </p>
+        </div>
+      </section>
+      <section className="py-80">
+        <h2
+          className={`${condensedHeadings.className} text-8xl font-thin uppercase pb-40`}
+        >
+          Choose a sprint
+          <br /> that fits your vision
+        </h2>
+        <header className="grid grid-cols-3 gap-5 pb-40">
+          <h3
+            className={`${condensedHeadings.className} text-h2 uppercase col-span-1`}
+          >
+            &nbsp;
+          </h3>
+          <div className="text-body4 md:text-body1 col-span-2">
+            <p className={`${serifText.className} mb-20 font-light`}>
+              This 8-day process uses design thinking to produce a realistic
+              prototype, define behavioural requirements, and perform User
+              Testing on a early visual prototype in order to gather real user
+              feedback.
+            </p>
+          </div>
+        </header>
+        <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+          <SprintType
+            type="brand sprint"
+            duration="1 Week"
+            title="creating your unique brand identity"
+            background="black"
+          />
+          <SprintType
+            type="product design sprint"
+            duration="2 Weeks"
+            title="Build winning products"
+            background="primary"
+          />
+          <SprintType
+            type="Vision Sprint"
+            duration="2 Days"
+            title="Crafting the big picture"
+            background="primary"
+          />
+          <SprintType
+            type="freedom tech sprint"
+            duration="2 Weeks"
+            title="decentralised innovation"
+            background="white"
+          />
+          <SprintType
+            type="ai sprint"
+            duration="2 Weeks"
+            title="exploring ai for enhanced ux"
+            background="white"
+          />
+          <SprintType
+            type="process sprint"
+            duration="3 Days"
+            title="optimising workflow efficiently"
+            background="white"
+          />
+        </div>
+        <div className="flex justify-center pt-80 pb-0">
+          <Image src={RedefineSprintImage} alt="" className="" />
         </div>
       </section>
       <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -454,67 +519,6 @@ export default function DesignSprints() {
           </figure>
         </div>
       </section>
-      <section className="py-80">
-        <h2
-          className={`${condensedHeadings.className} text-8xl font-thin uppercase pb-40`}
-        >
-          Choose a sprint
-          <br /> that fits your vision
-        </h2>
-        <header className="grid grid-cols-3 gap-5 pb-40">
-          <h3
-            className={`${condensedHeadings.className} text-h2 uppercase col-span-1`}
-          >
-            &nbsp;
-          </h3>
-          <div className="text-body4 md:text-body1 col-span-2">
-            <p className="mb-20">
-              This 8-day process uses design thinking to produce a realistic
-              prototype, define behavioural requirements, and perform User
-              Testing on a early visual prototype in order to gather real user
-              feedback.
-            </p>
-          </div>
-        </header>
-        <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
-          <SprintType
-            duration="1 Week"
-            title="Build winning products"
-            type="Product Design Sprint"
-            background="black"
-          />
-          <SprintType
-            duration="2 Weeks"
-            title="Build winning products"
-            type="Product Design Sprint"
-            background="white"
-          />
-          <SprintType
-            duration="3 Days"
-            title="Build winning products"
-            type="Product Design Sprint"
-            background="white"
-          />
-          <SprintType
-            duration="2 Days"
-            title="Build winning products"
-            type="Product Design Sprint"
-            background="primary"
-          />
-          <SprintType
-            duration="2 Weeks"
-            title="Build winning products"
-            type="Product Design Sprint"
-            background="primary"
-          />
-          <SprintType
-            duration="2 Weeks"
-            title="Build winning products"
-            type="Product Design Sprint"
-            background="white"
-          />
-        </div>
-      </section>
       <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <div className="text-center mb-24">
@@ -535,7 +539,7 @@ export default function DesignSprints() {
               <Image src={ClientLogos} alt="" height={120} />
             </p>
             <p className="flex justify-center">
-              <Button className="mt-40 max-lg:w-full">
+              <Button className="mt-40 max-lg:w-full uppercase">
                 Launch with the best <FiChevronRight />
               </Button>
             </p>
