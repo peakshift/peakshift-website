@@ -120,16 +120,16 @@ export default function AdoptingBitcoinPage() {
             <div>
               <p className="text-body4 md:text-body1 mb-20">
                 Peak Shift believes that designing smooth experiences is the key
-                to Bitcoin&apos;s adoption. We are continuing the work started by
-                Galoy, by focusing on enhancing the user experience needed to
+                to Bitcoin&apos;s adoption. We are continuing the work started
+                by Galoy, by focusing on enhancing the user experience needed to
                 bring wider acceptance of Bitcoin.
               </p>
               <p className="text-body4 md:text-body1">
                 We are streamlining UX design that aims at giving merchants
-                smoother, naturally flowing experiences tailored to their specific
-                needs. Besides fluid experiences, our designs leave a lasting
-                impression, and always adhere to the long-term goals and visions
-                of our clients.
+                smoother, naturally flowing experiences tailored to their
+                specific needs. Besides fluid experiences, our designs leave a
+                lasting impression, and always adhere to the long-term goals and
+                visions of our clients.
               </p>
             </div>
           </div>

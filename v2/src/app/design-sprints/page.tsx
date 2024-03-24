@@ -9,7 +9,7 @@ import ClientLogos from "./assets/logos.png";
 import QuoteBumi from "./assets/bumi.jpg";
 import Image from "next/image";
 import DiagramImage from "./assets/diagram.svg";
-import LongTermGoalsImage from "./assets/long-term-goals.svg";
+import DoodleImage from "./assets/long-term-goals.svg";
 import PatentImage from "./assets/patent.svg";
 import RedefineSprintImage from "./assets/redefine-sprints.svg";
 
@@ -318,61 +318,63 @@ type Sprint = {
   type: String;
   duration: String;
   title: String;
-  background: "black" | "primary" | "white";
+  backgroundColour: "black" | "primary" | "white";
+  backgroundImage: any;
+  diagramImage: any;
+  doodleImage: any;
 };
 
 const SprintType: React.FC<Sprint> = ({
   type,
   duration,
   title,
-  background,
+  backgroundColour,
+  backgroundImage,
+  diagramImage,
+  doodleImage,
 }) => {
   const textColorClass =
-    background === "black" || background === "primary"
+    backgroundColour === "black" || backgroundColour === "primary"
       ? "text-white"
       : "text-black";
 
   return (
-    <a
-      className={`block w-full h-[480px] bg-${background} box-border overflow-hidden flex flex-col items-start justify-start p-20 relative tracking-[normal] border-[1px] border-solid border-black`}
-      href="#"
+    <section
+      className={`w-full bg-${backgroundColour} ${textColorClass} box-border overflow-hidden flex flex-col items-start justify-start pt-[30px] px-[21px] pb-[21px] gap-[275px] tracking-[normal] border-[1px] border-solid border-black mq302:gap-[137px_275px]`}
     >
+      <div className="self-stretch flex flex-col items-start justify-start gap-[44px] max-w-full text-left text-[34.3px] font-ibm-plex-sans-condensed mq562:gap-[22px_44px]">
+        <header className="self-stretch h-[13px] relative text-lg leading-[120%] uppercase font-bold font-ibm-plex-mono text-left flex items-center whitespace-nowrap z-[1]">
+          {type}
+        </header>
+        <div className="self-stretch flex flex-row items-start justify-start relative max-w-full">
+          <p className="flex-1 relative leading-[110%] uppercase flex items-center max-w-full z-[1]">
+            {title}
+          </p>
+          <div className="h-[512px] w-[382px] !m-[0] absolute right-[-12px] bottom-[-373px] flex flex-row items-end justify-end py-5 px-3 box-border text-right text-lg font-ibm-plex-mono">
+            <Image
+              className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+              loading="lazy"
+              alt=""
+              src={backgroundImage}
+            />
+            <Image
+              className="h-[101.9px] w-[265.2px] absolute !m-[0] top-[163px] left-[-43.6px] z-[1]"
+              alt=""
+              src={diagramImage}
+            />
+            <div className="text-right uppercase relative tracking-[0.1em] leading-[150%] font-medium flex items-center shrink-0 z-[1]">
+              {duration}
+            </div>
+          </div>
+        </div>
+      </div>
       <Image
-        className="w-[330px] h-[60px] absolute !m-[0] top-[186px] left-[20px]"
+        className="w-[179px] h-[78px] relative"
         loading="lazy"
         alt=""
-        src={DiagramImage}
+        src={doodleImage}
       />
-      <Image
-        className="w-[381.9px] h-[309.4px] relative max-w-[108%] shrink-0"
-        alt=""
-        src={PatentImage}
-      />
-      <section
-        className={`w-full !m-[0] absolute h-full top-[0px] right-[0px] bottom-[0px] left-[0px] flex flex-col items-start justify-start gap-[240px] z-[1] text-left text-lg ${textColorClass}`}
-      >
-        <div className="self-stretch flex flex-col items-start justify-start p-5">
-          <div className="leading-[120%] uppercase font-medium flex items-center mb-40">
-            {type}
-          </div>
-          <div className="self-stretch relative text-[34.3px] leading-2 uppercase flex items-center">
-            {title}
-          </div>
-        </div>
-        <div className="self-stretch flex flex-row items-end justify-between pt-0 px-5 pb-5 gap-[20px] text-right">
-          <div className="h-[65px] w-48 relative flex items-center justify-center">
-            <Image
-              className="h-full w-full object-contain absolute left-[0px] top-[7px] [transform:scale(1.2)]"
-              alt=""
-              src={LongTermGoalsImage}
-            />
-          </div>
-          <div className="relative tracking-[0.1em] leading-[150%] uppercase font-medium flex items-end">
-            {duration}
-          </div>
-        </div>
-      </section>
-    </a>
+    </section>
   );
 };
 
@@ -383,13 +385,13 @@ export default function DesignSprints() {
         className={`min-h-[min(85vh,1440px)] flex flex-col justify-center relative py-16 isolate z-10`}
       >
         <h1
-          className={`${serifText.className} text-primary text-6xl text-center font-serif italic`}
+          className={`${serifText.className} text-primary sm:text-6xl text-5xl text-center font-serif italic z-10`}
         >
           — Align on vision <span className="inline-block amp">&amp;</span> test
           solutions before touching a line of code
         </h1>
         <p className="flex justify-center">
-          <Button className="mt-40 max-lg:w-full uppercase">
+          <Button className="mt-40 uppercase">
             Get in touch <FiChevronRight />
           </Button>
         </p>
@@ -399,15 +401,15 @@ export default function DesignSprints() {
           className="mx-auto mt-8 md:absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
         />
       </header>
-      <section className="pt-20 pb-80">
+      <section className="pt-20 pb-40 sm:py-80">
         <div
           className={`${serifText.className} grid grid-cols-1 md:grid-cols-2 gap-32 mt-24 md:mt-48`}
         >
-          <h3 className="font-light italic text-body4 md:text-h1 leading-[1]">
+          <h3 className="italic text-h1 md:text-6xl leading-[1] font-extralight">
             What is a Design Sprint?
           </h3>
-          <p className="text-body4 md:text-body1 font-light">
-            Our flavour of Google Ventures’ Design Sprint. This 8-day workshop
+          <p className="text-body4 md:text-body1 font-regular">
+            Our flavour of Google Ventures Design Sprint. This 8-day workshop
             uses design thinking to produce a realistic prototype that allows us
             to gain insight as an outside contractor, define behavioural
             requirements, and perform User Testing on an early visual prototype
@@ -415,21 +417,16 @@ export default function DesignSprints() {
           </p>
         </div>
       </section>
-      <section className="py-80">
+      <section className="py-40 sm:py-80">
         <h2
-          className={`${condensedHeadings.className} text-8xl font-thin uppercase pb-40`}
+          className={`${condensedHeadings.className} text-6xl sm:text-8xl font-extralight uppercase pb-40`}
         >
-          Choose a sprint
-          <br /> that fits your vision
+          <span className="sm:block">Choose a sprint&nbsp;</span>
+          <span className="sm:block">that fits your vision</span>
         </h2>
         <header className="grid grid-cols-3 gap-5 pb-40">
-          <h3
-            className={`${condensedHeadings.className} text-h2 uppercase col-span-1`}
-          >
-            &nbsp;
-          </h3>
-          <div className="text-body4 md:text-body1 col-span-2">
-            <p className={`${serifText.className} mb-20 font-light`}>
+          <div className="text-body4 md:text-body1 col-start-2 col-span-2">
+            <p className={`${serifText.className} mb-20 font-regular`}>
               This 8-day process uses design thinking to produce a realistic
               prototype, define behavioural requirements, and perform User
               Testing on a early visual prototype in order to gather real user
@@ -442,37 +439,55 @@ export default function DesignSprints() {
             type="brand sprint"
             duration="1 Week"
             title="creating your unique brand identity"
-            background="black"
+            backgroundColour="black"
+            backgroundImage={PatentImage}
+            diagramImage={DiagramImage}
+            doodleImage={DoodleImage}
           />
           <SprintType
             type="product design sprint"
             duration="2 Weeks"
             title="Build winning products"
-            background="primary"
+            backgroundColour="primary"
+            backgroundImage={PatentImage}
+            diagramImage={DiagramImage}
+            doodleImage={DoodleImage}
           />
           <SprintType
             type="Vision Sprint"
             duration="2 Days"
             title="Crafting the big picture"
-            background="primary"
+            backgroundColour="primary"
+            backgroundImage={PatentImage}
+            diagramImage={DiagramImage}
+            doodleImage={DoodleImage}
           />
           <SprintType
             type="freedom tech sprint"
             duration="2 Weeks"
             title="decentralised innovation"
-            background="white"
+            backgroundColour="white"
+            backgroundImage={PatentImage}
+            diagramImage={DiagramImage}
+            doodleImage={DoodleImage}
           />
           <SprintType
             type="ai sprint"
             duration="2 Weeks"
             title="exploring ai for enhanced ux"
-            background="white"
+            backgroundColour="white"
+            backgroundImage={PatentImage}
+            diagramImage={DiagramImage}
+            doodleImage={DoodleImage}
           />
           <SprintType
             type="process sprint"
             duration="3 Days"
             title="optimising workflow efficiently"
-            background="white"
+            backgroundColour="white"
+            backgroundImage={PatentImage}
+            diagramImage={DiagramImage}
+            doodleImage={DoodleImage}
           />
         </div>
         <div className="flex justify-center pt-80 pb-0">
