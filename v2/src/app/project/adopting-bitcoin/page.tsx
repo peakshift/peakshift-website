@@ -89,7 +89,7 @@ export default function AdoptingBitcoinPage() {
               and to expand on the prospects of Bitcoin. However, despite its
               success, navigating the complexities of Bitcoin acceptance still
               proved challenging for merchants and businesses. These challenges
-              were exacerbated by the time disparity between the law's
+              were exacerbated by the time disparity between the law&apos;s
               announcement and its enforcement. It took months for the law to
               come into effect.
             </p>

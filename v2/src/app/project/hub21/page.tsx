@@ -86,7 +86,7 @@ export default function HUB21Page() {
               nascent Bitcoin ecosystem in Belgrade. Unlike more established
               tech hubs, such as Silicon Valley, Belgrade primarily relies on
               outsourced tech talent, limiting the local entrepreneur
-              landscape's innovation potential.
+              landscape&apos;s innovation potential.
             </p>
             <div className="flex justify-end mt-24">
               <Image src={AsterixLogo} alt="Asterix Logo" />
@@ -218,8 +218,8 @@ export default function HUB21Page() {
               selected materials and finishes inspired by nature to create a
               sense of connection to the outdoors. Earthy tones, natural wood
               accents, and textured surfaces were used to evoke a sense of
-              warmth and tranquility, despite the limitations of the building's
-              environment.
+              warmth and tranquility, despite the limitations of the
+              building&apos;s environment.
             </p>
           </div>
           <div
@@ -229,7 +229,7 @@ export default function HUB21Page() {
               Creating a Calming and Inspiring Environment
             </h3>
             <p className="text-body4 md:text-body1">
-              Despite the challenges posed by the building's location and
+              Despite the challenges posed by the building&apos;s location and
               limited natural light, HUB21 succeeded in creating a calming and
               inspiring environment for its members. By carefully integrating
               biophilic design elements, leveraging innovative lighting
