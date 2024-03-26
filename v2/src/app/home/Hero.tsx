@@ -58,7 +58,7 @@ export default function Hero() {
             staggerChildren: 0.6,
             delayChildren: 2.5,
           }}
-          className="uppercase ps-16 md:ps-42 text-[40px] md:text-[72px] leading-[1.2]"
+          className={`uppercase ps-16 md:ps-42 text-[40px] md:text-[72px] leading-[1.2] font-thin`}
         >
           <motion.span className="inline-block" variants={headTextWords}>
             We

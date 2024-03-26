@@ -8,10 +8,9 @@ import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
 
 import Container from "@/Components/Container/Container";
 import { condensedHeadings, serifText } from "@/assets/fonts";
-import BgImage from "@/assets/images/research-tool.svg";
 import Button from "@/Components/Button/Button";
 
-export default function ResearchLab() {
+export default function DesignSprint() {
   const container = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -24,48 +23,43 @@ export default function ResearchLab() {
       ref={container}
     >
       <div className="relative lg:sticky top-0 overflow-hidden">
-        <Image
-          src={BgImage}
-          alt=""
-          className="absolute z-0 top-0 
-          max-lg:right-0 max-lg:translate-x-1/2 max-lg:opacity-60
-          lg:left-0 lg:-translate-x-1/2 lg:h-full"
-        />
         <Container className="relative">
           <div className="flex max-lg:flex-wrap justify-between gap-40 min-h-[100vh] w-full items-center ">
             <div className="max-w-[480px] p-16 rounded-12">
               <h2
-                className={`${condensedHeadings.className} text-primary text-h2 lg:text-[48px] font-light`}
+                className={`${condensedHeadings.className} text-primary text-h2 uppercase leading-none lg:text-[48px] font-light`}
               >
-                RESEARCH LAB
+                Communicate your Vision, Brand{" "}
+                <span className="amp">&amp;</span> Product with Measurable
+                Results
               </h2>
               <p
                 className={`${serifText.className} italic text-body2 lg:text-body1`}
               >
-                We mix technical knowledge with human centred design in order to
-                discover design patterns for bleeding edge technologies. in
-                order to make them more accessible to the mass market.
+                Explore our comprehensive range of sprints designed to rapidly
+                launch new brands, products and features, to drive rapid
+                innovation.
               </p>
-              <Button className="mt-40 max-lg:w-full">
-                <CgFileDocument /> Read our research <FiChevronRight />
+              <Button className="mt-40 max-lg:w-full" href="/design-sprints">
+                <CgFileDocument /> Learn more <FiChevronRight />
               </Button>
             </div>
             <div className="grid lg:grid-cols-2 lg:pt-64 gap-32">
               <ul className="flex flex-col gap-32">
-                {researches.slice(0, 3).map((research, i) => (
+                {sprints.slice(0, 3).map((sprint, i) => (
                   <ResearchCard
-                    key={research.title}
-                    research={research}
+                    key={sprint.title}
+                    sprint={sprint}
                     index={i}
                     scrollYProgress={scrollYProgress}
                   />
                 ))}
               </ul>
               <ul className="flex flex-col gap-32 lg:mt-64">
-                {researches.slice(3).map((research, i) => (
+                {sprints.slice(3).map((sprint, i) => (
                   <ResearchCard
-                    key={research.title}
-                    research={research}
+                    key={sprint.title}
+                    sprint={sprint}
                     index={i + 3}
                     scrollYProgress={scrollYProgress}
                   />
@@ -80,15 +74,15 @@ export default function ResearchLab() {
 }
 
 function ResearchCard({
-  research,
+  sprint,
   scrollYProgress,
   index,
 }: {
-  research: (typeof researches)[0];
+  sprint: (typeof sprints)[0];
   scrollYProgress: MotionValue<number>;
   index: number;
 }) {
-  const segmentLength = 1 / researches.length;
+  const segmentLength = 1 / sprints.length;
   const segmentStart = segmentLength * index;
   const segmentEnd = segmentStart + segmentLength;
 
@@ -104,57 +98,51 @@ function ResearchCard({
     <motion.li
       initial={{ opacity: 0, y: 200 }}
       style={{ opacity, y }}
-      key={research.title}
+      key={sprint.title}
       className={`p-16 min-w-[192px] border border-gray-200 bg-white flex flex-col gap-12`}
     >
-      <research.icon />
+      <sprint.icon />
       <p className="text-body3 text-gray-800 uppercase font-normal">
-        {research.title}
+        {sprint.title}
       </p>
       <p
         className={`text-body5 text-gray-800 ${serifText.className} italic leading-6`}
       >
-        {research.description}
+        {sprint.description}
       </p>
     </motion.li>
   );
 }
 
-const researches = [
+const sprints = [
   {
-    title: "Contacts",
+    title: "Brand Sprint",
     icon: FiUsers,
-    description:
-      "Using contacts as a foundation for private coin selection, channel management, and payment requests.",
+    description: "Creating your unique brand identity",
   },
   {
-    title: "Privacy in bitcoin",
+    title: "Product Design Sprint",
     icon: FiEyeOff,
-    description:
-      "Exploring coinjoins, payjoins, wabisabi 2.0, and more privacy focused techniques for bitcoin wallets and exchanges.",
+    description: "Build winning products",
   },
   {
-    title: "Payment requests",
+    title: "Vision Sprint",
     icon: AiOutlineScan,
-    description:
-      "Unifying payment request types to provide quality assurance + private fallbacks in bitcoin transactions.",
+    description: "Crafting the big picture",
   },
   {
-    title: "Wallet-to-wallet communication",
+    title: "Freedom Tech Sprint",
     icon: AiOutlineWallet,
-    description:
-      "Secure P2P messaging between different wallet applications to coordinate multisig, channel ops, payjoins, and more.",
+    description: "Decentralised innovation",
   },
   {
-    title: "decentralised social networks",
+    title: "AI Sprint",
     icon: AiOutlineSwap,
-    description:
-      "How distributed storage and key based identity can be leveraged to give ownership back to users.",
+    description: "Exploring ai for enhanced ux",
   },
   {
-    title: "TX builder",
+    title: "Process Sprint",
     icon: FiSettings,
-    description:
-      "Organise payment operations and have the wallet intelegently schedule, batch, and broadcast transactions.",
+    description: "Optimising workflow efficiently",
   },
 ];
