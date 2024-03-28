@@ -1,12 +1,10 @@
 "use client";
 import React, { useRef } from "react";
-import Image from "next/image";
 import { CgFileDocument } from "react-icons/cg";
 import { FiChevronRight, FiSettings } from "react-icons/fi";
 import { IoEyeOutline, IoFingerPrintOutline } from "react-icons/io5";
 import { AiOutlineScan, AiOutlineWallet, AiOutlineSwap } from "react-icons/ai";
 import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
-
 import Container from "@/Components/Container/Container";
 import { condensedHeadings, serifText } from "@/assets/fonts";
 import Button from "@/Components/Button/Button";
@@ -37,7 +35,7 @@ export default function DesignSprint() {
                 className={`${serifText.className} italic text-body2 lg:text-body1`}
               >
                 A small team that makes big impact... We partner with founders
-                and companies on the bleeding edge that don't want to waste
+                and companies on the bleeding edge that don&apos;t want to waste
                 time.
               </p>
               <Button
