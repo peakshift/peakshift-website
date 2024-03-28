@@ -2,7 +2,8 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { CgFileDocument } from "react-icons/cg";
-import { FiChevronRight, FiUsers, FiEyeOff, FiSettings } from "react-icons/fi";
+import { FiChevronRight, FiSettings } from "react-icons/fi";
+import { IoEyeOutline, IoFingerPrintOutline } from "react-icons/io5";
 import { AiOutlineScan, AiOutlineWallet, AiOutlineSwap } from "react-icons/ai";
 import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
 
@@ -29,19 +30,22 @@ export default function DesignSprint() {
               <h2
                 className={`${condensedHeadings.className} text-primary text-h2 uppercase leading-none lg:text-[48px] font-light`}
               >
-                Communicate your Vision, Brand{" "}
-                <span className="amp">&amp;</span> Product with Measurable
-                Results
+                Refine your Vision, Brand <span className="amp">&amp;</span>{" "}
+                Product with Measurable Results
               </h2>
               <p
                 className={`${serifText.className} italic text-body2 lg:text-body1`}
               >
-                Explore our comprehensive range of sprints designed to rapidly
-                launch new brands, products and features, to drive rapid
-                innovation.
+                A small team that makes big impact... We partner with founders
+                and companies on the bleeding edge that don't want to waste
+                time.
               </p>
-              <Button className="mt-40 max-lg:w-full" href="/design-sprints">
-                <CgFileDocument /> Learn more <FiChevronRight />
+              <Button
+                className="mt-40 max-lg:w-full"
+                href="https://ch234lt3std.typeform.com/to/OCi31Zif"
+                target="_blank"
+              >
+                <CgFileDocument /> Get in touch <FiChevronRight />
               </Button>
             </div>
             <div className="grid lg:grid-cols-2 lg:pt-64 gap-32">
@@ -105,9 +109,7 @@ function ResearchCard({
       <p className="text-body3 text-gray-800 uppercase font-normal">
         {sprint.title}
       </p>
-      <p
-        className={`text-body5 text-gray-800 ${serifText.className} italic leading-6`}
-      >
+      <p className={`text-body5 text-gray-800 leading-6`}>
         {sprint.description}
       </p>
     </motion.li>
@@ -117,17 +119,17 @@ function ResearchCard({
 const sprints = [
   {
     title: "Brand Sprint",
-    icon: FiUsers,
+    icon: IoFingerPrintOutline,
     description: "Creating your unique brand identity",
   },
   {
     title: "Product Design Sprint",
-    icon: FiEyeOff,
+    icon: AiOutlineScan,
     description: "Build winning products",
   },
   {
     title: "Vision Sprint",
-    icon: AiOutlineScan,
+    icon: IoEyeOutline,
     description: "Crafting the big picture",
   },
   {
