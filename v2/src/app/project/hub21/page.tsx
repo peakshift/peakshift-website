@@ -33,12 +33,12 @@ export default function HUB21Page() {
           id="project-header"
           className={`${monoText.className} uppercase flex flex-col gap-36 py-80`}
         >
-          <h1 className={`text-body1 md:text-[72px]`}>
+          <h1 className={`text-body1 md:text-[72px] leading-none`}>
             Designing a hackerspace
             <br />
             in the center of Belgrade
           </h1>
-          <ul className={`flex text-body5 md:text-h2 gap-36`}>
+          <ul className={`flex text-body5 md:text-h2 gap-36 font-light`}>
             {projectData.tags.map((tag, idx) => (
               <li key={idx}>
                 <span className="mb-36">/</span> <span>{tag}</span>
@@ -157,7 +157,7 @@ export default function HUB21Page() {
         </section>
         <section className="py-80">
           <h2
-            className={`${condensedHeadings.className} text-h3 md:text-[48px] uppercase`}
+            className={`${condensedHeadings.className} text-6xl sm:text-8xl font-extralight uppercase pb-40`}
           >
             Enhancing Well-being and Productivity with Biophilic Design
           </h2>

@@ -85,6 +85,7 @@ body {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-weight: normal;
+  -webkit-text-stroke: 1.5px #FFF;
 }
 
 @media (pointer: coarse) {

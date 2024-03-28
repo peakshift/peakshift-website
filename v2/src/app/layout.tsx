@@ -5,7 +5,7 @@ import Footer from "@/Components/Footer/Footer";
 import Frame from "@/Components/Frame/Frame";
 
 export const metadata = {
-  title: "Peak Shift Ltd",
+  title: "PEAK SHIFT LTD.",
   description: "WE CRAFT DIGITAL PRODUCTS BUILT ON WEB, MOBILE & BITCOIN.",
 };
 

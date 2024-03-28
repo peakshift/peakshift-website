@@ -34,12 +34,12 @@ export default function AdoptingBitcoinPage() {
           id="project-header"
           className={`${monoText.className} uppercase flex flex-col gap-36 py-80`}
         >
-          <h1 className={`text-body1 md:text-[72px]`}>
+          <h1 className={`text-body1 md:text-[72px] leading-none`}>
             ADOPTING BITCOIN
             <br />
             2023 EL SALVADOR
           </h1>
-          <ul className={`flex text-body5 md:text-h2 gap-36`}>
+          <ul className={`flex text-body5 md:text-h2 gap-36 font-light`}>
             {projectData.tags.map((tag, idx) => (
               <li key={idx}>
                 <span className="mb-36">/</span> <span>{tag}</span>

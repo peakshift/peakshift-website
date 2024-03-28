@@ -105,7 +105,7 @@ function ResearchCard({
       initial={{ opacity: 0, y: 200 }}
       style={{ opacity, y }}
       key={research.title}
-      className={`p-16 min-w-[192px] border border-gray-800 bg-white border-dashed flex flex-col gap-12`}
+      className={`p-16 min-w-[192px] border border-gray-200 bg-white flex flex-col gap-12`}
     >
       <research.icon />
       <p className="text-body3 text-gray-800 uppercase font-normal">

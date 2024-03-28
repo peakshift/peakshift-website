@@ -3,6 +3,16 @@ import localFont from "next/font/local";
 const IBMPlexSerifFont = localFont({
   src: [
     {
+      path: "./IBMPlexSerif-ExtraLight.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "./IBMPlexSerif-ExtraLightItalic.ttf",
+      weight: "200",
+      style: "italic",
+    },
+   {
       path: "./IBMPlexSerif-Light.ttf",
       weight: "300",
       style: "normal",
